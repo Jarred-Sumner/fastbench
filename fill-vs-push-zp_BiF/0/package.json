@@ -1,0 +1,34 @@
+{
+  "name": "@fastbench/fill-vs-push-zp_BiF",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/fill-vs-push-zp_BiF/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.317fbd790685b",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.31697533471b2",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.99b511b0ba218",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "[].fill vs [].push",
+    "id": "zp_BiF",
+    "version": 0
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js"
+  ]
+}
