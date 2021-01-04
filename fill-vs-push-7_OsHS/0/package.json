@@ -1,0 +1,34 @@
+{
+  "name": "@fastbench/fill-vs-push-7_OsHS",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/fill-vs-push-7_OsHS/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.b002ab1b797f8",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.be12aff23343f",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f70986b86413f",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "[].fill vs [].push",
+    "id": "7_OsHS",
+    "version": 0
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js"
+  ]
+}
