@@ -1,1 +1,0 @@
-textEl.innerHTML = "HI!!";
