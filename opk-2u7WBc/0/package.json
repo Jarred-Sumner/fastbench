@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/opk-2u7WBc",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/opk-2u7WBc/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.466d344f319c1",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.df79ad68315b6",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.2d0c013483673",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "opk",
+    "id": "2u7WBc",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js"
+  ]
+}
