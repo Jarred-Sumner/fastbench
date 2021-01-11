@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/ylukem-rxgr7J",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/ylukem-rxgr7J/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.137f1f81605a8",
+        "code": "containerNode.textContent += \"ylukem\";",
+        "name": "textContent",
+        "type": 1
+      },
+      {
+        "id": "0.ce470c112ed31",
+        "code": "const child = document.createElement(\"strong\")\nchild.textContent = \"ylukem\";\ncontainerNode.appendChild(child);",
+        "name": "containerNode.appendChild",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.d5af19739c817",
+      "code": "const containerNode = document.createElement('div');\ndocument.body.appendChild(containerNode);",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "ylukem",
+    "id": "rxgr7J",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "textContent.js",
+    "containerNodeappendChild.js"
+  ]
+}
