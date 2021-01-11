@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/vs-9YHObC",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-9YHObC/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.1e9cb5f76662c",
+        "code": "array.push(100);",
+        "name": "",
+        "type": 1
+      },
+      {
+        "id": "0.0a06bb8d62f7b",
+        "code": "array.length = 10000;\nfor (let i = 0; i < array.length;i++) {array[i] = 0;}",
+        "name": "",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.d22b13f83b118",
+      "code": "const array = [];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "9YHObC",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "js",
+    "js"
+  ]
+}
