@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/consolelog-xz2b9j",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/consolelog-xz2b9j/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.6c5befc546d49",
+        "code": "console.log(\"Hi Ryo.\")",
+        "name": "RYO",
+        "type": 1
+      },
+      {
+        "id": "0.82038390b5f7e",
+        "code": "console.log(\"Hi Jarred.\")",
+        "name": "JARRED",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.2602b290cee99",
+      "code": "// which is faster?",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "console.log",
+    "id": "xz2b9j",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "RYO.js",
+    "JARRED.js"
+  ]
+}
