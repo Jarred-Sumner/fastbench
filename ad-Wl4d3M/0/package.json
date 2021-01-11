@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/ad-Wl4d3M",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/ad-Wl4d3M/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.0769155ff12d7",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.b5f8661165786",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.ba2391de8c82a",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "ad",
+    "id": "Wl4d3M",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js"
+  ]
+}
