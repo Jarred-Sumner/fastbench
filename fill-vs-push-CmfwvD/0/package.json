@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/fill-vs-push-CmfwvD",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/fill-vs-push-CmfwvD/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.765a4d6683079",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.8ffc9af1e1c3a",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.81564ddccd479",
+      "code": "var a = new Array(100)\nvar b = new Array();!",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "[].fill vs [].push",
+    "id": "CmfwvD",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js"
+  ]
+}
