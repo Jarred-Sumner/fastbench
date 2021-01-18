@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/hiii-XZ-I6R",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/hiii-XZ-I6R/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.34b3afaac7e9d",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.158db0af11b0f",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.5b4372f4fafad",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "hiii",
+    "id": "XZ-I6R",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js"
+  ]
+}
