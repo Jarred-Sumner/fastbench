@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/test-benchmark-one-HazZIZ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/test-benchmark-one-HazZIZ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.9693f8f9674f4",
+        "code": "a.fill(100);",
+        "name": "very-very-long-name-oh-no-bad-bad-bad",
+        "type": 1
+      },
+      {
+        "id": "0.1cd24b1a82df7",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "second-longest-name",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.070094b625bfb",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "test benchmark one",
+    "id": "HazZIZ",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "very-very-long-name-oh-no-bad-bad-bad.js",
+    "second-longest-name.js"
+  ]
+}
