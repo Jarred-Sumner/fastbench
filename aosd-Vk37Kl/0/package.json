@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/aosd-Vk37Kl",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/aosd-Vk37Kl/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.f41a0569660b",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.adb892c055714",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.398849ff55ca",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "aosd",
+    "id": "Vk37Kl",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js"
+  ]
+}
