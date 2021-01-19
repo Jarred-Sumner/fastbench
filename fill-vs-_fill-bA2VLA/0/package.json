@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/fill-vs-_fill-bA2VLA",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/fill-vs-_fill-bA2VLA/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.44b0d1933bf32",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.7d505d9abdfdf",
+        "code": "_.fill(a, 100);",
+        "name": "_.fill",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f4c0259a416af",
+      "code": "import _ from \"https://cdn.skypack.dev/lodash\";\nimport {fill, sample} from \"https://cdn.skypack.dev/lodash\";\nimport * as lodash from \"https://cdn.skypack.dev/lodash\";var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "[].fill vs _.fill",
+    "id": "bA2VLA",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "_fill.js"
+  ]
+}
