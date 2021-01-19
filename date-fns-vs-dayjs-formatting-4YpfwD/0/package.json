@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/date-fns-vs-dayjs-formatting-4YpfwD",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/date-fns-vs-dayjs-formatting-4YpfwD/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.aa563566859a5",
+        "code": "dayjs(date).format('MM/DD/YYYY')\ndayjs(date).format('hh:mm:ss')",
+        "name": "dayjs",
+        "type": 1
+      },
+      {
+        "id": "0.d7bf14233dcb6",
+        "code": "dateFns.format(date, 'mm/dd/yyyy')\ndateFns.format(date, 'hh:mm:ss')",
+        "name": "date-fns",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.283a34aba6565",
+      "code": "import React from \"https://cdn.skypack.dev/react@17.0.1\";\nimport dayjs from \"https://cdn.skypack.dev/dayjs@1.10.3\";\nimport * as dateFns from \"https://cdn.skypack.dev/date-fns@2.16.1\";\n\nconst date = new Date(2014, 1, 11);\n\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "date-fns vs dayjs formatting",
+    "id": "4YpfwD",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "dayjs.js",
+    "date-fns.js"
+  ]
+}
