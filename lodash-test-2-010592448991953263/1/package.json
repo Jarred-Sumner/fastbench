@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/lodash-test-2-010592448991953263",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/lodash-test-2-010592448991953263/1",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.20ab78964b3e6",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.ae3d7e9dde4e7",
+        "code": "_.fill(a, 100);",
+        "name": "_.fill",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b326cc7b611a2",
+      "code": "import _ from \"https://cdn.skypack.dev/lodash\";\nimport {fill, sample} from \"https://cdn.skypack.dev/lodash\";\nimport * as lodash from \"https://cdn.skypack.dev/lodash\";var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "lodash test 2",
+    "id": "0.10592448991953263",
+    "version": 1,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "_fill.js"
+  ]
+}
