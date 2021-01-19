@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/Arrayfill-benchmark-7yEeJ7",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Arrayfill-benchmark-7yEeJ7/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.9eb713538431",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.d5e7c35813279",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.c12d6314fb2d",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Array.fill benchmark",
+    "id": "7yEeJ7",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js"
+  ]
+}
