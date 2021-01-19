@@ -1,0 +1,42 @@
+{
+  "name": "@fastbench/test-Mbq5JM",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/test-Mbq5JM/2",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.46c3a44f70c4b",
+        "code": "console.warn(\"OK...\")",
+        "name": "okpaoskdopaskd",
+        "type": 1
+      },
+      {
+        "id": "0.169fe72f5ead3",
+        "code": "a",
+        "name": "a",
+        "type": 1
+      },
+      {
+        "id": "0.9f51003269739",
+        "code": "console.log(\"HI\")",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f6a8cc6ec4323",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "test",
+    "id": "Mbq5JM",
+    "version": 2,
+    "workerType": 1
+  },
+  "files": [
+    "okpaoskdopaskd.js",
+    "a.js",
+    "consolelog(.js"
+  ]
+}
