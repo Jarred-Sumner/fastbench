@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/dayjs-vs-date-fns-G9VCzt",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/dayjs-vs-date-fns-G9VCzt/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.b578ef3ae0f79",
+        "code": "dayjs(new Date(2014, 1, 11)).format('MM/DD/YYY')",
+        "name": "dayjs",
+        "type": 1
+      },
+      {
+        "id": "0.e121eab01248b",
+        "code": "var result = format(\n  new Date(2014, 1, 11),\n  'MM/DD/YYYY'\n)",
+        "name": "date-fns",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.3ccfaad12d0a9",
+      "code": "import dayjs from \"https://cdn.skypack.dev/dayjs@1.10.3\";\nimport dateFns from \"https://cdn.skypack.dev/date-fns@2.16.1\";\n\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "day.js vs date-fns",
+    "id": "G9VCzt",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "dayjs.js",
+    "date-fns.js"
+  ]
+}
