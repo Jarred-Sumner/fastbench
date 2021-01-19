@@ -1,0 +1,35 @@
+{
+  "name": "@fastbench/test-FjBRvN",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/test-FjBRvN/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.46c3a44f70c4b",
+        "code": "console.warn(\"OK...\")",
+        "name": "okpaoskdopaskd",
+        "type": 1
+      },
+      {
+        "id": "0.169fe72f5ead3",
+        "code": "a",
+        "name": "",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f6a8cc6ec4323",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "test",
+    "id": "FjBRvN",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "okpaoskdopaskd.js",
+    "js"
+  ]
+}
