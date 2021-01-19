@@ -1,0 +1,28 @@
+{
+  "name": "@fastbench/test-27LGfN",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/test-27LGfN/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.46c3a44f70c4b",
+        "code": "console.warn(\"OK...\")",
+        "name": "ok",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f6a8cc6ec4323",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "test",
+    "id": "27LGfN",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "ok.js"
+  ]
+}
