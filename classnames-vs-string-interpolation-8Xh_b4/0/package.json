@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/classnames-vs-string-interpolation-8Xh_b4",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/classnames-vs-string-interpolation-8Xh_b4/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.5d14fbc74cc0a",
+        "code": "classnames(\"bacon\", \"egg\", \"egg\", \"cheese\", \"sandwich\")",
+        "name": "classnames",
+        "type": 1
+      },
+      {
+        "id": "0.a4f480aee4bf4",
+        "code": "[\"bacon\", \"egg\", \"egg\", \"cheese\", \"sandwich\"].join(\" \")",
+        "name": "array.join",
+        "type": 1
+      },
+      {
+        "id": "0.3a609fac6e796",
+        "code": "\"bacon egg egg cheese sandwich\"",
+        "name": "string",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.c2dc847679078",
+      "code": "import classnames from \"https://cdn.skypack.dev/classnames@2.2.6\";\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "classnames vs string interpolation",
+    "id": "8Xh_b4",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "classnames.js",
+    "arrayjoin.js",
+    "string.js"
+  ]
+}
