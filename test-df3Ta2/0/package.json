@@ -1,0 +1,56 @@
+{
+  "name": "@fastbench/test-df3Ta2",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/test-df3Ta2/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.6b56af6e46af8",
+        "code": "a.fill(100);",
+        "name": "[].fill",
+        "type": 1
+      },
+      {
+        "id": "0.aa9c1ad299228",
+        "code": "for (let i = 0; i  < 100; i++) { b.push(100); }",
+        "name": "[].push",
+        "type": 1
+      },
+      {
+        "id": "0.5b0f15ee9094c",
+        "code": "pok",
+        "name": "pok",
+        "type": 1
+      },
+      {
+        "id": "0.435786f8da205",
+        "code": "console.log(\"HI\");",
+        "name": "what",
+        "type": 1
+      },
+      {
+        "id": "0.46c3a44f70c4b",
+        "code": "console.warn(\"OK...\")",
+        "name": "ok",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f6a8cc6ec4323",
+      "code": "var a = new Array(100)\nvar b = new Array();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "test",
+    "id": "df3Ta2",
+    "version": 0,
+    "workerType": 1
+  },
+  "files": [
+    "[]fill.js",
+    "[]push.js",
+    "pok.js",
+    "what.js",
+    "ok.js"
+  ]
+}
