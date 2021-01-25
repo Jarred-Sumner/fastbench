@@ -1,0 +1,1 @@
+_.filter(array, comparator);
