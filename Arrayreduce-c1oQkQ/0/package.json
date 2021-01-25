@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/Arrayreduce-c1oQkQ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Arrayreduce-c1oQkQ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.84b2c22a23e8",
+        "code": "array.reduce(add, 0)",
+        "name": "Array.reduce",
+        "type": 1
+      },
+      {
+        "id": "0.d3f70c4ad1f62",
+        "code": "_.reduce(array, add, 0)",
+        "name": "lodash.reduce",
+        "type": 1
+      },
+      {
+        "id": "0.3d14f6d4a2264",
+        "code": "underscore.reduce(array, add, 0)",
+        "name": "underscore.reduce",
+        "type": 1
+      },
+      {
+        "id": "0.775f4333799da",
+        "code": "R.reduce(add, 0, array)",
+        "name": "ramda.reduce",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.16f5d2b97c84c",
+      "code": "import _ from 'lodash';\nimport underscore from 'underscore';\nimport * as R from 'ramda';\n\nconst array = new Array(1000).map(a => Math.random() * 1000);\n\nfunction add(value) {\n  return value + 1;\n}\n      ",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Array.reduce",
+    "id": "c1oQkQ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Arrayreduce.js",
+    "lodashreduce.js",
+    "underscorereduce.js",
+    "ramdareduce.js"
+  ]
+}
