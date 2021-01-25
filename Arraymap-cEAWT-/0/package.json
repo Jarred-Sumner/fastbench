@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/Arraymap-cEAWT-",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Arraymap-cEAWT-/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.cdae5832b610c",
+        "code": "array.map(add);",
+        "name": "Array.map",
+        "type": 1
+      },
+      {
+        "id": "0.64d98dc420edf",
+        "code": "_.map(array, add);",
+        "name": "lodash.map",
+        "type": 1
+      },
+      {
+        "id": "0.1c1c5b6ad7b47",
+        "code": "underscore.map(array, add);",
+        "name": "underscore.map",
+        "type": 1
+      },
+      {
+        "id": "0.a9ddffa2302ad",
+        "code": "R.map(add, array);",
+        "name": "ramda.map",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.a8e84e3a53607",
+      "code": "import _ from 'lodash';\nimport underscore from 'underscore';\nimport * as R from 'ramda';\n\nconst array = new Array(1000).map(a => Math.random() * 1000);\n\nfunction add(value) {\n  return value + 1;\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Array.map",
+    "id": "cEAWT-",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Arraymap.js",
+    "lodashmap.js",
+    "underscoremap.js",
+    "ramdamap.js"
+  ]
+}
