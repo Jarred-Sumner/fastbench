@@ -1,0 +1,64 @@
+{
+  "name": "@fastbench/forEach-ozI4XL",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/forEach-ozI4XL/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.aa16881986733",
+        "code": "array.forEach(forEach)",
+        "name": "Array.forEach",
+        "type": 1
+      },
+      {
+        "id": "0.80a066c73eafe",
+        "code": "_.forEach(array, forEach)",
+        "name": "lodash.forEach",
+        "type": 1
+      },
+      {
+        "id": "0.1e5df069d6179",
+        "code": "underscore.forEach(array, forEach)",
+        "name": "underscore.forEach",
+        "type": 1
+      },
+      {
+        "id": "0.9fc30e027dafa",
+        "code": "R.forEach(forEach, array)",
+        "name": "ramda.forEach",
+        "type": 1
+      },
+      {
+        "id": "0.f4633e4467524",
+        "code": "for (let value of array) {\n  value + 1;\n}",
+        "name": "for of",
+        "type": 1
+      },
+      {
+        "id": "0.57bd45ff5d53b",
+        "code": "for (i = 0; i < array.length;i++) { array[i] + 1; }",
+        "name": "for i = 0;",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.4c56e39b90ba3",
+      "code": "import _ from 'lodash';\nimport underscore from 'underscore';\nimport * as R from 'ramda';\n\nconst array = new Array(1000).map(a => Math.random() * 1000);\n\nfunction forEach(value) {\n  value + 1;\n}\n\nlet i =0;\n      ",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "forEach",
+    "id": "ozI4XL",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "ArrayforEach.js",
+    "lodashforEach.js",
+    "underscoreforEach.js",
+    "ramdaforEach.js",
+    "for of.js",
+    "for i = 0;.js"
+  ]
+}
