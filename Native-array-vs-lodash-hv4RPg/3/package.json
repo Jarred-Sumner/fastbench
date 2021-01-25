@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Native-array-vs-lodash-hv4RPg",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Native-array-vs-lodash-hv4RPg/3",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.dbc2fca84099f",
+        "code": "_.filter(array, comparator);",
+        "name": "lodash.filter",
+        "type": 1
+      },
+      {
+        "id": "0.57711b3e4f6bd",
+        "code": "array.filter(comparator);",
+        "name": "Array.filter",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.1a97cd2c48d9e",
+      "code": "import _ from 'lodash';\n\nconst array = new Array(1000).map(a => Math.random() * 1000);\narray[20] = 1;\n\n\nfunction comparator(value) {\n  return value < 0.5;\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Native array vs lodash",
+    "id": "hv4RPg",
+    "version": 3,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "lodashfilter.js",
+    "Arrayfilter.js"
+  ]
+}
