@@ -1,0 +1,1 @@
+R.forEach(forEach, array)
