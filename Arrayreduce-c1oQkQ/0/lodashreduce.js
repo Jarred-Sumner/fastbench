@@ -1,0 +1,1 @@
+_.reduce(array, add, 0)
