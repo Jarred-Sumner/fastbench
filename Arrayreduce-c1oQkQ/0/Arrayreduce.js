@@ -1,0 +1,1 @@
+array.reduce(add, 0)
