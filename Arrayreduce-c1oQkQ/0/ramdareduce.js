@@ -1,0 +1,1 @@
+R.reduce(add, 0, array)
