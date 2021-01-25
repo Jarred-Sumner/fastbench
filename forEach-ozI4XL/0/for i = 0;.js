@@ -1,0 +1,1 @@
+for (i = 0; i < array.length;i++) { array[i] + 1; }
