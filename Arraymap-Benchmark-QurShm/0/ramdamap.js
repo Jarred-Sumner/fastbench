@@ -1,0 +1,1 @@
+R.map(add, array)
