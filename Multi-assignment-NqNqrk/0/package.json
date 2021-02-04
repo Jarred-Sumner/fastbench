@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Multi-assignment-NqNqrk",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Multi-assignment-NqNqrk/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.a1b455b08bb77",
+        "code": "for (let i = 0; i < 99999; i++) {\n  variable1 = variable2 = i;\n}",
+        "name": "one line",
+        "type": 1
+      },
+      {
+        "id": "0.f35b56268dd57",
+        "code": "for (let i = 0; i < 99999; i++) {\n  variable1 = i;\n  variable2 = i;\n}",
+        "name": "two lines",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.77d4064a76592",
+      "code": "let variable1=0, variable2=0;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Multi-assignment",
+    "id": "NqNqrk",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "one line.js",
+    "two lines.js"
+  ]
+}
