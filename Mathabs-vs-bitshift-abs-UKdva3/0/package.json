@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Mathabs-vs-bitshift-abs-UKdva3",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Mathabs-vs-bitshift-abs-UKdva3/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.08559508c36bc",
+        "code": "Math.abs(v);",
+        "name": "Math.abs",
+        "type": 1
+      },
+      {
+        "id": "0.2f9e2c67c411d",
+        "code": "  mask = v >> (INT_BITS-1);\n  a = (v ^ mask) - mask;",
+        "name": "bitshift",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.009d724eadb19",
+      "code": "var INT_BITS = 32;\n\nvar a = 0;\nvar v = 100;\nvar mask = 0;\n\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Math.abs vs bitshift abs",
+    "id": "UKdva3",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Mathabs.js",
+    "bitshift.js"
+  ]
+}
