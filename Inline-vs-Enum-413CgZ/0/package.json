@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Inline-vs-Enum-413CgZ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Inline-vs-Enum-413CgZ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.ec7a09d7f2669",
+        "code": "a = 1;\na = 2;\na = 3;",
+        "name": "Inline enum",
+        "type": 1
+      },
+      {
+        "id": "0.9b52522d60f6d",
+        "code": "a = TestEnum.first;\na = TestEnum.second;\na = TestEnum.third;",
+        "name": "Object enum",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.6fd3f031f720f",
+      "code": "let a = 0;\nconst TestEnum = {\n  first: 1,\n  second: 2,\n  third: 3\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Inline vs Enum",
+    "id": "413CgZ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Inline enum.js",
+    "Object enum.js"
+  ]
+}
