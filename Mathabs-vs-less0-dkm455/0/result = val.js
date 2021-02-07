@@ -1,0 +1,1 @@
+result = value < 0 ? -value : value
