@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/slice-vs-substring-vs-substr-gBd4RP",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/slice-vs-substring-vs-substr-gBd4RP/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.f4097ff6dbd7e",
+        "code": "result = string.slice(0, 20)",
+        "name": "slice",
+        "type": 1
+      },
+      {
+        "id": "0.f82e7753fbc7e",
+        "code": "result = string.substring(0, 20)",
+        "name": "substring",
+        "type": 1
+      },
+      {
+        "id": "0.8232b33fda0ae",
+        "code": "result = string.substr(0, 20)",
+        "name": "substr",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.286eea4893c98",
+      "code": "var string = \"https://observablehq.com/@dgreensp/implementing-fractional-indexing\"\nvar result = \"\";",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "slice vs substring vs substr",
+    "id": "gBd4RP",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "slice.js",
+    "substring.js",
+    "substr.js"
+  ]
+}
