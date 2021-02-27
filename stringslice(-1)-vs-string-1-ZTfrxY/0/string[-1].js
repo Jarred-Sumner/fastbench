@@ -1,0 +1,1 @@
+a = string[string.length - 1];
