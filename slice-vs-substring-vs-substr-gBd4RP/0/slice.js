@@ -1,0 +1,1 @@
+result = string.slice(0, 20)
