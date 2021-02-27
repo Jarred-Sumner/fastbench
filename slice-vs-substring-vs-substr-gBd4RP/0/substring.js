@@ -1,0 +1,1 @@
+result = string.substring(0, 20)
