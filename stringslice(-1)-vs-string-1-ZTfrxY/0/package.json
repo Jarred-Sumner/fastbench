@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/stringslice(-1)-vs-string-1-ZTfrxY",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/stringslice(-1)-vs-string-1-ZTfrxY/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.7d83f7e472828",
+        "code": "a = string[string.length - 1];",
+        "name": "string[-1]",
+        "type": 1
+      },
+      {
+        "id": "0.cb5015a90de3c",
+        "code": "a = string.slice(-1)",
+        "name": "string.slice(-1)",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f8864e9cabef1",
+      "code": "let string = \"aposkdaspodkPOKASDASDPOKaSADPOKSDAPODKsapokd00999\";\nlet a = \"\";",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "string.slice(-1) vs string[-1]",
+    "id": "ZTfrxY",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "string[-1].js",
+    "stringslice(-1).js"
+  ]
+}
