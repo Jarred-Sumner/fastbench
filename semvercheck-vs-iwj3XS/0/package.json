@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/semvercheck-vs-iwj3XS",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/semvercheck-vs-iwj3XS/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.f651e040d983a",
+        "code": "semver.satisfies(\"1.2.3\", \"1.2.3\")",
+        "name": "semver.check",
+        "type": 1
+      },
+      {
+        "id": "0.2cf30a30fd5ab",
+        "code": "semver.satisfies(\"^1.2.3\", \"1.2.8\")",
+        "name": "semver.check caret range",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.e3f423182d627",
+      "code": "import semver from 'semver';\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "semver.check vs ",
+    "id": "iwj3XS",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "semvercheck.js",
+    "semvercheck caret range.js"
+  ]
+}
