@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/symbol-vs-num-qNjHmg",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/symbol-vs-num-qNjHmg/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.bc82443a29a52",
+        "code": "placeholderSym(sym1 === sym0)",
+        "name": "symbol",
+        "type": 1
+      },
+      {
+        "id": "0.ecb38a4b57bbc",
+        "code": "placeholderSym(num1 === num0)",
+        "name": "num",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.305a4cc0d7552",
+      "code": "const sym1 = Symbol(\"1\")\nconst sym0 = Symbol(\"0\")\n\nconst num1 = 1\nconst num0 = 0\n\nfunction placeholderSym(a) {}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "symbol vs num",
+    "id": "qNjHmg",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "symbol.js",
+    "num.js"
+  ]
+}
