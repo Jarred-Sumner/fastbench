@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/Nested-Object-vs-Flat-Object-vs-Flat-JSON-0ZkXdI",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Nested-Object-vs-Flat-Object-vs-Flat-JSON-0ZkXdI/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.29b39ca836909",
+        "code": "\nfor (let i = 0; i < 200; i++) {\n    for (let j = 0; j < 200; j++) {\n        let id1 = '@user_' + i\n        let id2 = '@labsproject_' + j\n        if (!cache[id1]) cache[id1] = {}\n        let val = cache[id1][id2] || 0\n        cache[id1][id2] = val + 1\n    }\n}",
+        "name": "Nested Object",
+        "type": 1
+      },
+      {
+        "id": "0.1cd9d6b480bf6",
+        "code": "\nfor (let i = 0; i < 200; i++) {\n    for (let j = 0; j < 200; j++) {\n        let id1 = '@user_' + i\n        let id2 = '@labsproject_' + j\n        let key = id1 + id2\n        let val = cache[key] || 0\n        cache[key] = val + 1\n    }\n}",
+        "name": "Flat Object",
+        "type": 1
+      },
+      {
+        "id": "0.52cc95df41dd2",
+        "code": "for (let i = 0; i < 200; i++) {\n    for (let j = 0; j < 200; j++) {\n        let id1 = '@user_' + i\n        let id2 = '@labsproject_' + j\n        let key = JSON.stringify([id1,id2])\n        let val = cache[key] || 0\n        cache[key] = val + 1\n    }\n}",
+        "name": "Flat JSON",
+        "type": 1
+      },
+      {
+        "id": "0.6bd2b5e3a942b",
+        "code": "\nfor (let i = 0; i < 200; i++) {\n    for (let j = 0; j < 200; j++) {\n        let id1 = '@user_' + i\n        let id2 = '@labsproject_' + j\n        if (!(id1 in cache)) cache[id1] = {}\n        let val = cache[id1][id2] || 0\n        cache[id1][id2] = val + 1\n    }\n}",
+        "name": "Nested Object In",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.214dd6284f0d",
+      "code": "const cache = {}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Nested Object vs Flat Object vs Flat JSON",
+    "id": "0ZkXdI",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Nested Object.js",
+    "Flat Object.js",
+    "Flat JSON.js",
+    "Nested Object In.js"
+  ]
+}
