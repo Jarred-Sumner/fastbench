@@ -1,0 +1,1 @@
+symbol === Symbol.for("hi");
