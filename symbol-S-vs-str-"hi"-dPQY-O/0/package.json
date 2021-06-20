@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/symbol-S-vs-str-\"hi\"-dPQY-O",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/symbol-S-vs-str-\"hi\"-dPQY-O/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.d52e97d65b642",
+        "code": "symbol === symbola;",
+        "name": "symbol === S",
+        "type": 1
+      },
+      {
+        "id": "0.0522c13b74c6f",
+        "code": "str === \"hi\"",
+        "name": "str === \"hi\"",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.4d7c4d3ae0e7a",
+      "code": "var symbol = Symbol.for(\"hi\");\nvar symbola = Symbol.for(\"hi\");\nvar str = \"hi\";",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "symbol === S vs str === \"hi\"",
+    "id": "dPQY-O",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "symbol === S.js",
+    "str === !hi!.js"
+  ]
+}
