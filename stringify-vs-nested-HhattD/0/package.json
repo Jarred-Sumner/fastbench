@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/stringify-vs-nested-HhattD",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/stringify-vs-nested-HhattD/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2ace46756baa6",
+        "code": "let obj = {}\nfor(let key of keys){\n  let s = JSON.stringify(key)\n  if(!obj[s]) obj[s] = 0;\n  obj[s] += 0.5 + Math.random()\n}",
+        "name": "stringify",
+        "type": 1
+      },
+      {
+        "id": "0.34230bda03ef6",
+        "code": "let obj = {}\nfor(let key of keys){\n  let p = obj;\n  for(let part of key){\n    if(!p[part]) p[part] = {};\n    p = p[part]\n  }\n  if(!p.value) p.value = 0;\n  p.value += 0.5 + Math.random()\n}",
+        "name": "nested",
+        "type": 1
+      },
+      {
+        "id": "0.17bcb1111385f",
+        "code": "let obj = {}\nfor(let key of keys){\n  let s = key.join(',')\n  if(!obj[s]) obj[s] = 0;\n  obj[s] += 0.5 + Math.random()\n}",
+        "name": "join",
+        "type": 1
+      },
+      {
+        "id": "0.490e1169f5ea7",
+        "code": "let obj = {}\nfor(let key of keys){\n  let p = obj;\n  for(let i = 0; i < key.length; i++){\n    let part = key[i];\n    if(i === key.length - 1){\n      if(!p[part]) p[part] = 0;\n      p[part] += 0.5 + Math.random()\n    }else{\n      if(!p[part]) p[part] = {};\n      p = p[part]\n    }\n  }\n}",
+        "name": "nested one less",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.1376b41b37ed9",
+      "code": "let keys = []\nfor(let i = 0; i < 100; i++){\n  keys.push([i, 'xyz' + i.toString(36)])\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "stringify vs nested",
+    "id": "HhattD",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "stringify.js",
+    "nested.js",
+    "join.js",
+    "nested one less.js"
+  ]
+}
