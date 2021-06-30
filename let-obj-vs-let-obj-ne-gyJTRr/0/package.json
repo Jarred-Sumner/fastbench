@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/let-obj-vs-let-obj-ne-gyJTRr",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/let-obj-vs-let-obj-ne-gyJTRr/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.b738e14efb48d",
+        "code": "let obj = {}\nfor(let key of keys){\n  let p = obj;\n  for(let part of key){\n    if(!p[part]) p[part] = {};\n    p = p[part]\n  }\n  if(!p.value) p.value = 0;\n  p.value += 0.5 + Math.random()\n}",
+        "name": "let obj = {}",
+        "type": 1
+      },
+      {
+        "id": "0.ad6119ec65855",
+        "code": "let obj = new Map()\nfor(let key of keys){\n  let p = obj;\n  for(let part of key){\n    if(!p.has(part)) p.set(part, new Map());\n    p = p.get(part)\n  }\n  if(!p.has('value')) p.set('value', 0);\n  p.set('value', p.get('value') + 0.5 + Math.random())\n}",
+        "name": "let obj = ne",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.9253591015596",
+      "code": "let keys = []\nfor(let i = 0; i < 100; i++){\n  keys.push([i, 'xyz' + i.toString(36)])\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "let obj = {} vs let obj = ne",
+    "id": "gyJTRr",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "let obj = {}.js",
+    "let obj = ne.js"
+  ]
+}
