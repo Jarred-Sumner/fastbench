@@ -1,0 +1,1 @@
+a.forEach(v => console.log('v'))
