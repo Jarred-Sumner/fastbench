@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/aforEach(v-vs-for-(const-v-gWGsAr",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/aforEach(v-vs-for-(const-v-gWGsAr/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c67a5aa8c19ff",
+        "code": "a.forEach(v => console.log('v'))",
+        "name": "a.forEach(v ",
+        "type": 1
+      },
+      {
+        "id": "0.c5b5b68b3a434",
+        "code": "for (const v of a) {\n  console.log('v')\n}",
+        "name": "for (const v",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.2227d216cf3968",
+      "code": "let a = new Array(200).fill('hey');",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "a.forEach(v  vs for (const v",
+    "id": "gWGsAr",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "aforEach(v .js",
+    "for (const v.js"
+  ]
+}
