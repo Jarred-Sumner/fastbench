@@ -1,0 +1,1 @@
+arr.forEach(v => console.log('v'))
