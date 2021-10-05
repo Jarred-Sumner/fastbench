@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/for-(let-i-vs-for-(const-v-vs-arrforEach(-vs-_forEach(v-Ne681l",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/for-(let-i-vs-for-(const-v-vs-arrforEach(-vs-_forEach(v-Ne681l/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.abc0b0e1892d28",
+        "code": "for (let i = 0, n = arr.length; i < arr.length; i++) {\n  console.log(arr[i]);\n}",
+        "name": "for (let i =",
+        "type": 1
+      },
+      {
+        "id": "0.f31fb5156633c",
+        "code": "for (const val of arr) {\n  console.log(val);\n}",
+        "name": "for (const v",
+        "type": 1
+      },
+      {
+        "id": "0.7157a9a0bffb08",
+        "code": "arr.forEach(v => console.log('v'))",
+        "name": "arr.forEach(",
+        "type": 1
+      },
+      {
+        "id": "0.72aa5966d719a",
+        "code": "forEach(arr, (v) => console.log('v'))",
+        "name": "_.forEach(v ",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b915975f98c02",
+      "code": "import { forEach } from 'https://esm.sh/smoldash';\nlet arr = new Array(100).fill('hey');",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "for (let i = vs for (const v vs arr.forEach( vs _.forEach(v ",
+    "id": "Ne681l",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "for (let i =.js",
+    "for (const v.js",
+    "arrforEach(.js",
+    "_forEach(v .js"
+  ]
+}
