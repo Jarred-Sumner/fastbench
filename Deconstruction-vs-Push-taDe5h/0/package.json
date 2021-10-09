@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Deconstruction-vs-Push-taDe5h",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Deconstruction-vs-Push-taDe5h/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.a7829b3441fd8",
+        "code": "arr = [ ...arr, 'new' ];",
+        "name": "arr = [ ...arr, <new>]",
+        "type": 1
+      },
+      {
+        "id": "0.adff93d98e451",
+        "code": "arr.push('new')",
+        "name": "arr.push(<new>)",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.6c521f6a9e20b8",
+      "code": "let arr = new Array(1000).fill({a: true, b: 42, c: 'salut'})",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Deconstruction vs Push",
+    "id": "taDe5h",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "arr = [ arr, !new!].js",
+    "arrpush(!new!).js"
+  ]
+}
