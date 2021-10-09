@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/for-array-of-divs-O0F7D_",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/for-array-of-divs-O0F7D_/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.80c0d9853a8968",
+        "code": "for (let i = 0, n = arr.length; i < arr.length; i++) {\n  console.log(arr[i])\n}",
+        "name": "for (i = 0)",
+        "type": 1
+      },
+      {
+        "id": "0.fddba9b8051628",
+        "code": "for (const e of arr) {\n  console.log(e)\n}",
+        "name": "for of",
+        "type": 1
+      },
+      {
+        "id": "0.aaafe402678e18",
+        "code": "arr.forEach(e => console.log(e))",
+        "name": "forEach",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.c08d45119e41e",
+      "code": "const arr = new Array(2000).fill(document.createElement('div'));",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "for array of divs",
+    "id": "O0F7D_",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "for (i = 0).js",
+    "for of.js",
+    "forEach.js"
+  ]
+}
