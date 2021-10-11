@@ -1,0 +1,1 @@
+let arr = new Array(1000).fill({a:42,b:'salut',c:{a:42,b:'salut'}})
