@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/for-i-0-vs-for-of-vs-forEach-fVoLHm",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/for-i-0-vs-for-of-vs-forEach-fVoLHm/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.00aa6e6506f05",
+        "code": "for (i = 0; i < arr.length; i++) {\n  console.dir(arr[i]);\n}",
+        "name": "for i = 0",
+        "type": 1
+      },
+      {
+        "id": "0.185fadc388dc4",
+        "code": "for (const item of arr) {\n  console.dir(item)\n}",
+        "name": "for of",
+        "type": 1
+      },
+      {
+        "id": "0.bec2bf0e263c",
+        "code": "arr.forEach(v => console.dir(v))",
+        "name": "forEach",
+        "type": 1
+      },
+      {
+        "id": "0.6e8c4d10728e6",
+        "code": "for (i = 0, n = arr.length; i < n; i++) {\n  console.dir(arr[i]);\n}",
+        "name": "for i = 0 2",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.62e35af42d2a5",
+      "code": "let arr = new Array(1000).fill({a:42,b:'salut',c:{a:42,b:'salut'}})",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "for i = 0 vs for of vs forEach",
+    "id": "fVoLHm",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "for i = 0.js",
+    "for of.js",
+    "forEach.js",
+    "for i = 0 2.js"
+  ]
+}
