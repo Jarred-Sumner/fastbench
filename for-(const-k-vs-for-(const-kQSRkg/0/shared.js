@@ -1,0 +1,1 @@
+const obj = {a: 42, b: 'string', c: [42, 'string', {d: 42}], e: {a: 42, b: 'string'}}
