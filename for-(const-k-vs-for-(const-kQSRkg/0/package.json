@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/for-(const-k-vs-for-(const-kQSRkg",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/for-(const-k-vs-for-(const-kQSRkg/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.3a434625bd5d7",
+        "code": "for (const k in obj) {\n  console.log(obj[k])\n}",
+        "name": "for (const k",
+        "type": 1
+      },
+      {
+        "id": "0.ea89402012ba5",
+        "code": "for (const [k,v] in obj) {\n  console.log(v)\n}",
+        "name": "for (const [",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.72002345949a3",
+      "code": "const obj = {a: 42, b: 'string', c: [42, 'string', {d: 42}], e: {a: 42, b: 'string'}}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "for (const k vs for (const [",
+    "id": "kQSRkg",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "for (const k.js",
+    "for (const [.js"
+  ]
+}
