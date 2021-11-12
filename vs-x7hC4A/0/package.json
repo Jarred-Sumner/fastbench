@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/vs-x7hC4A",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-x7hC4A/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.27e3867dc8c69",
+        "code": "data.find(x => x == 800)",
+        "name": "data.find(x ",
+        "type": 1
+      },
+      {
+        "id": "0.0d2d3f04f8274",
+        "code": "data.filter(x => x == 800)",
+        "name": "data.filter(",
+        "type": 1
+      },
+      {
+        "id": "0.cd68450d5b065",
+        "code": "data.sort(x => x == 800)",
+        "name": "data.sort(x ",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.072bfc5bcaa08",
+      "code": "const data = [ ...new Array(1000).keys() ]",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "x7hC4A",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "datafind(x .js",
+    "datafilter(.js",
+    "datasort(x .js"
+  ]
+}
