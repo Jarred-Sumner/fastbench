@@ -1,0 +1,1 @@
+const data = [ ...new Array(1000).keys() ]
