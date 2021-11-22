@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/kaki-uOZY-G",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/kaki-uOZY-G/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.15618041f1c9c",
+        "code": "map.set(\"hello\", \"hi\")",
+        "name": "MAP",
+        "type": 1
+      },
+      {
+        "id": "0.7e0319f143f39",
+        "code": "obj[\"hello\"] = \"hi\"",
+        "name": "Object",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.a3f1959126731",
+      "code": "const map = new Map()\n\nconst obj = {}\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "kaki",
+    "id": "uOZY-G",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "MAP.js",
+    "Object.js"
+  ]
+}
