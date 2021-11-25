@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/intersectRec-vs-intersect(re-EZfCcn",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/intersectRec-vs-intersect(re-EZfCcn/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.b15b5a34aa888",
+        "code": "intersectRect(rectA, rectB)\nintersectRect(rectA, rectC)",
+        "name": "intersectRec",
+        "type": 1
+      },
+      {
+        "id": "0.09f3ebb995b97",
+        "code": "intersect(rectA, rectB)\nintersect(rectA, rectC)",
+        "name": "intersect(re",
+        "type": 1
+      },
+      {
+        "id": "0.026f865347994",
+        "code": "intersect3(rectA, rectB)\nintersect3(rectA, rectC)",
+        "name": "intersect3(r",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f667fe9d9e268",
+      "code": "const rectA = {\n  left:   10,\n  top:    10,\n  right:  30,\n  bottom: 30\n};\n\nconst rectB = {\n  left:   20,\n  top:    20,\n  right:  50,\n  bottom: 50\n};\n\nconst rectC = {\n  left:   70,\n  top:    70,\n  right:  90,\n  bottom: 90\n};\n\nfunction intersectRect(r1, r2) {\n  return !(r2.left > r1.right || \n           r2.right < r1.left || \n           r2.top > r1.bottom ||\n           r2.bottom < r1.top);\n}\n\nfunction intersect(a, b) {\n  return (a.left <= b.right &&\n          b.left <= a.right &&\n          a.top <= b.bottom &&\n          b.top <= a.bottom)\n}\n\nfunction intersect3(a, b) {\n  return Math.max(a.left, b.left) < Math.min(a.right, b.right) &&\n          Math.max(a.top, b.top) < Math.min(a.bottom, b.bottom);\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "intersectRec vs intersect(re",
+    "id": "EZfCcn",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "intersectRec.js",
+    "intersect(re.js",
+    "intersect3(r.js"
+  ]
+}
