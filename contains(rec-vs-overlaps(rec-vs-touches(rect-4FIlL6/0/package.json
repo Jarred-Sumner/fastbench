@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/contains(rec-vs-overlaps(rec-vs-touches(rect-4FIlL6",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/contains(rec-vs-overlaps(rec-vs-touches(rect-4FIlL6/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.7c4aeaa2e0371",
+        "code": "contains(rectA, rectB)\ncontains(rectA, rectC)",
+        "name": "contains(rec",
+        "type": 1
+      },
+      {
+        "id": "0.9202952dd3236",
+        "code": "overlaps(rectA, rectB)\noverlaps(rectA, rectC)",
+        "name": "overlaps(rec",
+        "type": 1
+      },
+      {
+        "id": "0.d507f13f89c65",
+        "code": "touches(rectA, rectB)\ntouches(rectA, rectC)",
+        "name": "touches(rect",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.1265b3f85b76e",
+      "code": "const rectA = {\n  left:   10,\n  top:    10,\n  right:  30,\n  bottom: 30\n};\n\nconst rectB = {\n  left:   20,\n  top:    20,\n  right:  50,\n  bottom: 50\n};\n\nconst rectC = {\n  left:   70,\n  top:    70,\n  right:  90,\n  bottom: 90\n};\n\n// Check if rectangle a contains rectangle b\n// Each object (a and b) should have 2 properties to represent the\n// top-left corner (x1, y1) and 2 for the bottom-right corner (x2, y2).\nfunction contains(a, b) {\n  return !(\n    b.left < a.left ||\n    b.top < a.top ||\n    b.right > a.right ||\n    b.bottom > a.bottom\n  );\n}\n\n// Check if rectangle a overlaps rectangle b\n// Each object (a and b) should have 2 properties to represent the\n// top-left corner (x1, y1) and 2 for the bottom-right corner (x2, y2).\nfunction overlaps(a, b) {\n  // no horizontal overlap\n  if (a.left >= b.right || b.left >= a.right) return false;\n\n  // no vertical overlap\n  if (a.top >= b.bottom || b.top >= a.bottom) return false;\n\n  return true;\n}\n\n// Check if rectangle a touches rectangle b\n// Each object (a and b) should have 2 properties to represent the\n// top-left corner (x1, y1) and 2 for the bottom-right corner (x2, y2).\nfunction touches(a, b) {\n  // has horizontal gap\n  if (a.left > b.right || b.left > a.right) return false;\n\n  // has vertical gap\n  if (a.top > b.bottom || b.top > a.bottom) return false;\n\n  return true;\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "contains(rec vs overlaps(rec vs touches(rect",
+    "id": "4FIlL6",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "contains(rec.js",
+    "overlaps(rec.js",
+    "touches(rect.js"
+  ]
+}
