@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Array-loops-OfPdp6",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Array-loops-OfPdp6/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.e867771e944f2",
+        "code": "data.forEach((a) => a)",
+        "name": "forEach",
+        "type": 1
+      },
+      {
+        "id": "0.81197256b883",
+        "code": "data.map((a) => a)",
+        "name": "map",
+        "type": 1
+      },
+      {
+        "id": "0.ae067e0ad2597",
+        "code": "for (const a of data) {\n  a\n}",
+        "name": "for..of",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.4048cc526dfb",
+      "code": "const data = new Array(100000)",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Array loops",
+    "id": "OfPdp6",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "forEach.js",
+    "map.js",
+    "forof.js"
+  ]
+}
