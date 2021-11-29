@@ -1,0 +1,1 @@
+data.forEach((a) => a)
