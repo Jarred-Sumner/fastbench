@@ -1,0 +1,57 @@
+{
+  "name": "@fastbench/Array-loops-M0OzC3",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Array-loops-M0OzC3/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.e867771e944f2",
+        "code": "data.forEach((a) => {})",
+        "name": "forEach",
+        "type": 1
+      },
+      {
+        "id": "0.81197256b883",
+        "code": "data.map((a) => {})",
+        "name": "map",
+        "type": 1
+      },
+      {
+        "id": "0.ae067e0ad2597",
+        "code": "for (const a of data) {}",
+        "name": "for..of",
+        "type": 1
+      },
+      {
+        "id": "0.35de3b1a03da8",
+        "code": "for (let i = 0; i < data.length; i++) {\n  const a = data[i];\n}",
+        "name": "for",
+        "type": 1
+      },
+      {
+        "id": "0.579f5688b98af",
+        "code": "let a;\nlet i = 0;\n\nwhile (a = data[i]) {\n  i++;\n}",
+        "name": "while",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.4048cc526dfb",
+      "code": "const data = new Array(100000).fill(null)",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Array loops",
+    "id": "M0OzC3",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "forEach.js",
+    "map.js",
+    "forof.js",
+    "for.js",
+    "while.js"
+  ]
+}
