@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Observable-ZyKicw",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Observable-ZyKicw/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.46ce6b0d47f2f",
+        "code": "iterOps.pipe([])",
+        "name": "iter-ops",
+        "type": 1
+      },
+      {
+        "id": "0.a2fa9e8ea49d5",
+        "code": "rxjs.Observable()",
+        "name": "Observable",
+        "type": 1
+      },
+      {
+        "id": "0.ac541caca6229",
+        "code": "new dxjs.Iterative()",
+        "name": "Iterative",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.1d170ff247108",
+      "code": "import iterOps from \"https://cdn.skypack.dev/iter-ops@0.7.0\";\nimport * as rxjs from \"https://cdn.skypack.dev/rxjs@7.3.0\";\nimport * as dxjs from \"https://cdn.skypack.dev/dxjs@0.0.2\";\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Observable",
+    "id": "ZyKicw",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "iter-ops.js",
+    "Observable.js",
+    "Iterative.js"
+  ]
+}
