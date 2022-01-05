@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/delve-array-vs-delve-string-vs-direct-Gbxvtf",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/delve-array-vs-delve-string-vs-direct-Gbxvtf/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c3c3d654add27",
+        "code": "delve(obj, ['a', 'b', 'c'])",
+        "name": "delve array",
+        "type": 1
+      },
+      {
+        "id": "0.32980db7488a",
+        "code": "delve(obj, 'a.b.c')",
+        "name": "delve string",
+        "type": 1
+      },
+      {
+        "id": "0.e893b0bb5b1d6",
+        "code": "obj['a']['b']['c']",
+        "name": "direct",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.c4639e6a707a5",
+      "code": "import delve from \"https://cdn.skypack.dev/dlv@1.1.3\";\n\nconst obj = {\n\ta: {\n\t\tb: {\n\t\t\tc: 1,\n\t\t\td: undefined,\n\t\t\te: null\n\t\t}\n\t}\n};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "delve array vs delve string vs direct",
+    "id": "Gbxvtf",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "delve array.js",
+    "delve string.js",
+    "direct.js"
+  ]
+}
