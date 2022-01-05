@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/flattie-vs-flatObj-vs-flattenObject-vs-flat-VqNZ4k",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/flattie-vs-flatObj-vs-flattenObject-vs-flat-VqNZ4k/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.76da53f33a46a",
+        "code": "flattie(data)",
+        "name": "flattie",
+        "type": 1
+      },
+      {
+        "id": "0.0df5d00ac5a5e",
+        "code": "flatObj(data)",
+        "name": "flatObj",
+        "type": 1
+      },
+      {
+        "id": "0.06e6bf1ad059",
+        "code": "flattenObject(data)",
+        "name": "flattenObject",
+        "type": 1
+      },
+      {
+        "id": "0.6c61d5b4729d2",
+        "code": "flat(data)",
+        "name": "flat",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.37a5ee9914a1e",
+      "code": "import {flattie} from \"https://cdn.skypack.dev/flattie@1.1.0\";\nimport flatObj from \"https://cdn.skypack.dev/flat-obj@3.0.0\";\nimport flattenObject from \"https://cdn.skypack.dev/flatten-object@1.2.0\";\nimport flat from \"https://cdn.skypack.dev/flat@5.0.2\";\n\nconst data = {\n\ta: 1,\n\tb: {\n\t\ta: 2,\n\t\tb: 3,\n\t\tc: {\n\t\t\ta: 4,\n\t\t\tb: null,\n\t\t\tc: [1, 2, 3],\n\t\t\td: 456\n\t\t},\n\t\td: 'foo'\n\t},\n\tc: 456\n};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "flattie vs flatObj vs flattenObject vs flat",
+    "id": "VqNZ4k",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "flattie.js",
+    "flatObj.js",
+    "flattenObject.js",
+    "flat.js"
+  ]
+}
