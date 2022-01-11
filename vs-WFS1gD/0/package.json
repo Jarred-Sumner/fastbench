@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/vs-WFS1gD",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-WFS1gD/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.f5c2d308e7e44",
+        "code": "[1,2,3,5,6,8,9,10].map(v=>console.log(v))",
+        "name": "[1,2,3,5,6,8",
+        "type": 1
+      },
+      {
+        "id": "0.d9643c9b29827",
+        "code": "[1,2,3,5,6,8,9,10].map(v=>console.log(v))",
+        "name": "[1,2,3,5,6,8",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.4cc230c0c9926",
+      "code": "[1,2,3,5,6,8,9,10].map(v=>console.log(v))",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "WFS1gD",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "[1,2,3,5,6,8.js",
+    "[1,2,3,5,6,8.js"
+  ]
+}
