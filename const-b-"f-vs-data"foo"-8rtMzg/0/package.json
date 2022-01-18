@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/const-b-\"f-vs-data\"foo\"-8rtMzg",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/const-b-\"f-vs-data\"foo\"-8rtMzg/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.a5f261690355f",
+        "code": "const b = \"foo\" in data",
+        "name": "const b = \"f",
+        "type": 1
+      },
+      {
+        "id": "0.ba89cbc515486",
+        "code": "data[\"foo\"]",
+        "name": "data[\"foo\"]",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b73cdd508ef0d",
+      "code": "const data = {\n  foo: 1,\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "const b = \"f vs data[\"foo\"]",
+    "id": "8rtMzg",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const b = !f.js",
+    "data[!foo!].js"
+  ]
+}
