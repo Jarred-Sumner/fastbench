@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/const-b-\"f-vs-data\"foo\"-BCfftQ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/const-b-\"f-vs-data\"foo\"-BCfftQ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.a5f261690355f",
+        "code": "const b = \"foo\" in data",
+        "name": "\"foo\" in data",
+        "type": 1
+      },
+      {
+        "id": "0.ba89cbc515486",
+        "code": "data[\"foo\"]",
+        "name": "data[\"foo\"]",
+        "type": 1
+      },
+      {
+        "id": "0.b60fb88c01c84",
+        "code": "data.hasOwnProperty('foo');",
+        "name": "hasOwnProperty",
+        "type": 1
+      },
+      {
+        "id": "0.0daceed98b299",
+        "code": "Object.prototype.hasOwnProperty.call(data, 'foo');",
+        "name": "prototype.hasOwnProperty",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b73cdd508ef0d",
+      "code": "const data = {\n  foo: 1,\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "const b = \"f vs data[\"foo\"]",
+    "id": "BCfftQ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "foo! in data.js",
+    "data[!foo!].js",
+    "hasOwnProperty.js",
+    "prototypehasOwnProperty.js"
+  ]
+}
