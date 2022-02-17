@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/klona(data)-vs-utilclone(d-vs-JSONparse(J-XjuZs4",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/klona(data)-vs-utilclone(d-vs-JSONparse(J-XjuZs4/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.eabc02d25ce9f",
+        "code": "console.log(klona(data))",
+        "name": "klona",
+        "type": 1
+      },
+      {
+        "id": "0.51177145ae33e",
+        "code": "util.clone(data)",
+        "name": "util.clone",
+        "type": 1
+      },
+      {
+        "id": "0.3332ed2be1cc2",
+        "code": "JSON.parse(JSON.stringify(data))",
+        "name": "JSON.parse",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.c7cf38f8c82d5",
+      "code": "import { klona } from \"https://cdn.skypack.dev/klona@2.0.4/lite\";\n\nlet uniqueId = 0;\nconst util = {\n  type(o) {\n    return Object.prototype.toString.call(o).slice(8, -1);\n  },\n  objId(obj) {\n    if (!obj[\"__id\"]) {\n      Object.defineProperty(obj, \"__id\", { value: ++uniqueId });\n    }\n    return obj[\"__id\"];\n  },\n  clone(o, visited) {\n    visited = visited || {};\n    var clone;\n    var id;\n    switch (util.type(o)) {\n      case \"Object\":\n        id = util.objId(o);\n        if (visited[id]) {\n          return visited[id];\n        }\n        clone = {};\n        visited[id] = clone;\n        for (var key in o) {\n          if (o.hasOwnProperty(key)) {\n            clone[key] = util.clone(o[key], visited);\n          }\n        }\n        return clone;\n      case \"Array\":\n        id = util.objId(o);\n        if (visited[id]) {\n          return visited[id];\n        }\n        clone = [];\n        visited[id] = clone;\n        o.forEach(function(v, i) {\n          clone[i] = util.clone(v, visited);\n        });\n        return clone;\n      default:\n        return o;\n    }\n  }\n};\n\nconst data = {\n  'comment': [\n    {\n      pattern: /(^|[^\\\\])\\/\\*[\\s\\S]*?(?:\\*\\/|$)/,\n      lookbehind: true,\n      greedy: true\n    },\n    {\n      pattern: /(^|[^\\\\:])\\/\\/.*/,\n      lookbehind: true,\n      greedy: true\n    }\n  ],\n  'string': {\n    pattern: /([\"'])(?:\\\\(?:\\r\\n|[\\s\\S])|(?!\\1)[^\\\\\\r\\n])*\\1/,\n    greedy: true\n  },\n  'class-name': {\n    pattern: /(\\b(?:class|extends|implements|instanceof|interface|new|trait)\\s+|\\bcatch\\s+\\()[\\w.\\\\]+/i,\n    lookbehind: true,\n    inside: {\n      'punctuation': /[.\\\\]/\n    }\n  },\n  'keyword': /\\b(?:break|catch|continue|do|else|finally|for|function|if|in|instanceof|new|null|return|throw|try|while)\\b/,\n  'boolean': /\\b(?:false|true)\\b/,\n  'function': /\\b\\w+(?=\\()/,\n  'number': /\\b0x[\\da-f]+\\b|(?:\\b\\d+(?:\\.\\d*)?|\\B\\.\\d+)(?:e[+-]?\\d+)?/i,\n  'operator': /[<>]=?|[!=]=?=?|--?|\\+\\+?|&&?|\\|\\|?|[?*/~^%]/,\n  'punctuation': /[{}[\\];(),.:]/\n};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "klona(data) vs util.clone(d vs JSON.parse(J",
+    "id": "XjuZs4",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "klona.js",
+    "utilclone.js",
+    "JSONparse.js"
+  ]
+}
