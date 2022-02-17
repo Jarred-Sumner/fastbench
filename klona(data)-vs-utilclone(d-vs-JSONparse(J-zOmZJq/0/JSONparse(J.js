@@ -1,0 +1,1 @@
+JSON.parse(JSON.stringify(data))
