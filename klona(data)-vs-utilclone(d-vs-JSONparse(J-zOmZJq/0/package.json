@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/klona(data)-vs-utilclone(d-vs-JSONparse(J-zOmZJq",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/klona(data)-vs-utilclone(d-vs-JSONparse(J-zOmZJq/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.eabc02d25ce9f",
+        "code": "klona(data)",
+        "name": "klona(data)",
+        "type": 1
+      },
+      {
+        "id": "0.51177145ae33e",
+        "code": "util.clone(data)",
+        "name": "util.clone(d",
+        "type": 1
+      },
+      {
+        "id": "0.3332ed2be1cc2",
+        "code": "JSON.parse(JSON.stringify(data))",
+        "name": "JSON.parse(J",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.c7cf38f8c82d5",
+      "code": "import { klona } from \"https://cdn.skypack.dev/klona@2.0.4/lite\";\n\nlet uniqueId = 0;\nconst util = {\n  type(o) {\n    return Object.prototype.toString.call(o).slice(8, -1);\n  },\n  objId(obj) {\n    if (!obj[\"__id\"]) {\n      Object.defineProperty(obj, \"__id\", { value: ++uniqueId });\n    }\n    return obj[\"__id\"];\n  },\n  clone(o, visited) {\n    visited = visited || {};\n    var clone;\n    var id;\n    switch (util.type(o)) {\n      case \"Object\":\n        id = util.objId(o);\n        if (visited[id]) {\n          return visited[id];\n        }\n        clone = {};\n        visited[id] = clone;\n        for (var key in o) {\n          if (o.hasOwnProperty(key)) {\n            clone[key] = util.clone(o[key], visited);\n          }\n        }\n        return clone;\n      case \"Array\":\n        id = util.objId(o);\n        if (visited[id]) {\n          return visited[id];\n        }\n        clone = [];\n        visited[id] = clone;\n        o.forEach(function(v, i) {\n          clone[i] = util.clone(v, visited);\n        });\n        return clone;\n      default:\n        return o;\n    }\n  }\n};\n\nconst data = {\n  a: 123,\n  b: {\n    name: \"John\"\n  },\n};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "klona(data) vs util.clone(d vs JSON.parse(J",
+    "id": "zOmZJq",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "klona(data).js",
+    "utilclone(d.js",
+    "JSONparse(J.js"
+  ]
+}
