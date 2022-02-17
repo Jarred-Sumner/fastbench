@@ -1,0 +1,1 @@
+klona(data)
