@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/regex-start-vs-startsWith-vs-indexOf-start-QC0VbH",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/regex-start-vs-startsWith-vs-indexOf-start-QC0VbH/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.43fdd9298576c",
+        "code": "var x = 0;\nvar TOTAL_STRINGS = TOTAL_STRINGS;\nvar data = data;\nvar regex = regexStart;\nwhile (x < TOTAL_STRINGS) {\n  const str = data[x];\n  regex.test(str);\n  x += 1;\n}",
+        "name": "regex start",
+        "type": 1
+      },
+      {
+        "id": "0.66b579697d92b",
+        "code": "var x = 0;\nvar TOTAL_STRINGS = TOTAL_STRINGS;\nvar data = data;\nvar regex = regexStart;\nwhile (x < TOTAL_STRINGS) {\n  const str = data[x];\n  str.startsWith(match) === 0;\n  x += 1;\n}",
+        "name": "startsWith",
+        "type": 1
+      },
+      {
+        "id": "0.bacf5aae177a6",
+        "code": "var x = 0;\nvar TOTAL_STRINGS = TOTAL_STRINGS;\nvar data = data;\nvar regex = regexStart;\nwhile (x < TOTAL_STRINGS) {\n  const str = data[x];\n  str.indexOf(match) === 0;\n  x += 1;\n}",
+        "name": "indexOf start",
+        "type": 1
+      },
+      {
+        "id": "0.ebdc19e00d7c9",
+        "code": "var x = 0;\nvar TOTAL_STRINGS = TOTAL_STRINGS;\nvar data = data;\nvar regex = regexStart;\nwhile (x < TOTAL_STRINGS) {\n  const str = data[x];\n  str.charAt(0) === str;\n  x += 1;\n}",
+        "name": "charAt(0)",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.714bd0a806c4a",
+      "code": "const regexStart = /^test/;\nconst regexEnd = /test$/;\nconst match = 'test';\nconst matchLength = match.length;\n\nvar data = [];\nconst possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";\nvar TOTAL_STRINGS = 100000;\n\nfunction getRandomInt(max) {\n  return Math.floor(Math.random() * max);\n}\n\nfunction makeRandomString(len) {\n  var text = \"\";\n  for( var i=0; i < len; i++ ) {\n    text += possible.charAt(getRandomInt(possible.length));\n  }\n  return text;\n}\n\nwhile (data.length < TOTAL_STRINGS) {\n  data.push(makeRandomString(getRandomInt(20)));\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "regex start vs startsWith vs indexOf start",
+    "id": "QC0VbH",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "regex start.js",
+    "startsWith.js",
+    "indexOf start.js",
+    "charAt(0).js"
+  ]
+}
