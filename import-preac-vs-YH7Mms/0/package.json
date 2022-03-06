@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/import-preac-vs-YH7Mms",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/import-preac-vs-YH7Mms/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.eacd294bdaf37",
+        "code": "import preact from \"https://cdn.skypack.dev/preact@10.6.6\";\nconst x = 2;\nconsole.time(x);\nconsole.timeEnd(x);",
+        "name": "import preac",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.7df0d18747fd9",
+      "code": "import preact from \"https://cdn.skypack.dev/preact@10.6.6\";\nconst x = 1;\nconsole.log(x)",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "import preac vs ",
+    "id": "YH7Mms",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "import preac.js"
+  ]
+}
