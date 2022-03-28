@@ -1,0 +1,64 @@
+{
+  "name": "@fastbench/Plain-text-output-vs-Showdown-vs-Snarkdown-Tuj89C",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Plain-text-output-vs-Showdown-vs-Snarkdown-Tuj89C/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.6cadc14aa6575",
+        "code": "const a = showdownConverter.makeHtml(sample);",
+        "name": "Showdown",
+        "type": 1
+      },
+      {
+        "id": "0.a1f3a08497ba9",
+        "code": "const a = snarkdown(sample);",
+        "name": "Snarkdown",
+        "type": 1
+      },
+      {
+        "id": "0.67c593519d0ff",
+        "code": "const a = markdownIt.render(sample);",
+        "name": "Markdown-it",
+        "type": 1
+      },
+      {
+        "id": "0.90bbbd43d1d83",
+        "code": "const a = marked.parse(sample);",
+        "name": "Marked",
+        "type": 1
+      },
+      {
+        "id": "0.4aab51287b324",
+        "code": "const parsed = commonmarkReader.parse(sample);\nconst a = commonmarkWriter.render(parsed);",
+        "name": "Commonmark",
+        "type": 1
+      },
+      {
+        "id": "0.e05f5481b899e",
+        "code": "const a = microDown.parse(sample);",
+        "name": "MicroDown",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.17a45724e81b6",
+      "code": "import microDown from \"https://cdn.skypack.dev/micro-down@1.6.2\";\nimport * as commonmark from \"https://cdn.skypack.dev/commonmark@0.30.0\";\nimport { marked } from \"https://cdn.skypack.dev/marked@4.0.12\";\nimport MarkdownIt from \"https://jspm.dev/markdown-it@12.3.2\";\nimport snarkdown from \"https://cdn.skypack.dev/snarkdown@2.0.0\";\nimport showdown from \"https://cdn.skypack.dev/showdown@2.0.0\";\n\nconst commonmarkReader = new commonmark.Parser();\nconst commonmarkWriter = new commonmark.HtmlRenderer();\nconst markdownIt = new MarkdownIt();\nconst showdownConverter = new showdown.Converter();\n\nconst sample = `The C implementation provides both a shared library (\\`libcmark\\`) and a\nstandalone program \\`cmark\\` that converts CommonMark to HTML.  It is\nwritten in standard C99 and has no library dependencies.  The parser is\nvery fast (see [benchmarks](benchmarks.md)).`;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Plain text output vs Showdown vs Snarkdown",
+    "id": "Tuj89C",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Showdown.js",
+    "Snarkdown.js",
+    "Markdown-it.js",
+    "Marked.js",
+    "Commonmark.js",
+    "MicroDown.js"
+  ]
+}
