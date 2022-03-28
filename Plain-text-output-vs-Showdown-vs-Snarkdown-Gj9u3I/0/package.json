@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Plain-text-output-vs-Showdown-vs-Snarkdown-Gj9u3I",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Plain-text-output-vs-Showdown-vs-Snarkdown-Gj9u3I/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.e97dd92fecf74",
+        "code": "const a = sample;",
+        "name": "Plain text output",
+        "type": 1
+      },
+      {
+        "id": "0.6cadc14aa6575",
+        "code": "const a = showdownConverter.makeHtml(sample);",
+        "name": "Showdown",
+        "type": 1
+      },
+      {
+        "id": "0.a1f3a08497ba9",
+        "code": "const a = snarkdown(sample);",
+        "name": "Snarkdown",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.17a45724e81b6",
+      "code": "import snarkdown from \"https://cdn.skypack.dev/snarkdown@2.0.0\";\nimport showdown from \"https://cdn.skypack.dev/showdown@2.0.0\";\n\nconst showdownConverter = new showdown.Converter();\n\nconst sample = `The C implementation provides both a shared library (\\`libcmark\\`) and a\nstandalone program \\`cmark\\` that converts CommonMark to HTML.  It is\nwritten in standard C99 and has no library dependencies.  The parser is\nvery fast (see [benchmarks](benchmarks.md)).\n\nIt is easy to use \\`libcmark\\` in python, lua, ruby, and other dynamic\nlanguages: see the \\`wrappers/\\` subdirectory for some simple examples.\n\nThe JavaScript implementation provides both an NPM package and a\nsingle JavaScript file, with no dependencies, that can be linked into\nan HTML page. For further information, see the\n[README in the js directory](js/README.md).\n\n**A note on security:**\nNeither implementation attempts to sanitize link attributes or\nraw HTML.  If you use these libraries in applications that accept\nuntrusted user input, you must run the output through an HTML\nsanitizer to protect against\n[XSS attacks](http://en.wikipedia.org/wiki/Cross-site_scripting).`;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Plain text output vs Showdown vs Snarkdown",
+    "id": "Gj9u3I",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Plain text output.js",
+    "Showdown.js",
+    "Snarkdown.js"
+  ]
+}
