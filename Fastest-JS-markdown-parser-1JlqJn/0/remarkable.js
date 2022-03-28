@@ -1,0 +1,1 @@
+const a = remarkable.render(sample);
