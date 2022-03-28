@@ -1,0 +1,1 @@
+const a = marked.parse(sample);
