@@ -1,0 +1,85 @@
+{
+  "name": "@fastbench/Fastest-JS-markdown-parser-7otKAo",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Fastest-JS-markdown-parser-7otKAo/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.6cadc14aa6575",
+        "code": "const a = showdownConverter.makeHtml(sample);",
+        "name": "Showdown",
+        "type": 1
+      },
+      {
+        "id": "0.a1f3a08497ba9",
+        "code": "const a = snarkdown(sample);",
+        "name": "Snarkdown",
+        "type": 1
+      },
+      {
+        "id": "0.67c593519d0ff",
+        "code": "const a = markdownIt.render(sample);",
+        "name": "Markdown-it",
+        "type": 1
+      },
+      {
+        "id": "0.90bbbd43d1d83",
+        "code": "const a = marked.parse(sample);",
+        "name": "Marked",
+        "type": 1
+      },
+      {
+        "id": "0.4aab51287b324",
+        "code": "const parsed = commonmarkReader.parse(sample);\nconst a = commonmarkWriter.render(parsed);",
+        "name": "Commonmark",
+        "type": 1
+      },
+      {
+        "id": "0.e05f5481b899e",
+        "code": "const a = microDown.parse(sample);",
+        "name": "MicroDown",
+        "type": 1
+      },
+      {
+        "id": "0.73729a1367d3e",
+        "code": "const a = parseMd(sample);",
+        "name": "parseMd",
+        "type": 1
+      },
+      {
+        "id": "0.3ce87bb585813",
+        "code": "const a = micromark(sample);",
+        "name": "micromark",
+        "type": 1
+      },
+      {
+        "id": "0.e00612ec85475",
+        "code": "const a = remarkable.render(sample);",
+        "name": "remarkable",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.17a45724e81b6",
+      "code": "import { Remarkable } from \"https://cdn.skypack.dev/remarkable@2.0.1\";\nimport {micromark} from \"https://cdn.skypack.dev/micromark@3.0.10\";\nimport microDown from \"https://cdn.skypack.dev/micro-down@1.6.2\";\nimport * as commonmark from \"https://cdn.skypack.dev/commonmark@0.30.0\";\nimport { marked } from \"https://cdn.skypack.dev/marked@4.0.12\";\nimport MarkdownIt from \"https://jspm.dev/markdown-it@12.3.2\";\nimport snarkdown from \"https://cdn.skypack.dev/snarkdown@2.0.0\";\nimport showdown from \"https://cdn.skypack.dev/showdown@2.0.0\";\n\nconst remarkable = new Remarkable('commonmark');\nconst commonmarkReader = new commonmark.Parser();\nconst commonmarkWriter = new commonmark.HtmlRenderer();\nconst markdownIt = new MarkdownIt();\nconst showdownConverter = new showdown.Converter();\n\nfunction parseMd(md){\n  //ul\n  md = md.replace(/^\\s*\\n\\*/gm, '<ul>\\n*');\n  md = md.replace(/^(\\*.+)\\s*\\n([^\\*])/gm, '$1\\n</ul>\\n\\n$2');\n  md = md.replace(/^\\*(.+)/gm, '<li>$1</li>');\n  \n  //ol\n  md = md.replace(/^\\s*\\n\\d\\./gm, '<ol>\\n1.');\n  md = md.replace(/^(\\d\\..+)\\s*\\n([^\\d\\.])/gm, '$1\\n</ol>\\n\\n$2');\n  md = md.replace(/^\\d\\.(.+)/gm, '<li>$1</li>');\n  \n  //blockquote\n  md = md.replace(/^\\>(.+)/gm, '<blockquote>$1</blockquote>');\n  \n  //h\n  md = md.replace(/[\\#]{6}(.+)/g, '<h6>$1</h6>');\n  md = md.replace(/[\\#]{5}(.+)/g, '<h5>$1</h5>');\n  md = md.replace(/[\\#]{4}(.+)/g, '<h4>$1</h4>');\n  md = md.replace(/[\\#]{3}(.+)/g, '<h3>$1</h3>');\n  md = md.replace(/[\\#]{2}(.+)/g, '<h2>$1</h2>');\n  md = md.replace(/[\\#]{1}(.+)/g, '<h1>$1</h1>');\n  \n  //alt h\n  md = md.replace(/^(.+)\\n\\=+/gm, '<h1>$1</h1>');\n  md = md.replace(/^(.+)\\n\\-+/gm, '<h2>$1</h2>');\n  \n  //images\n  md = md.replace(/\\!\\[([^\\]]+)\\]\\(([^\\)]+)\\)/g, '<img src=\"$2\" alt=\"$1\" />');\n  \n  //links\n  md = md.replace(/[\\[]{1}([^\\]]+)[\\]]{1}[\\(]{1}([^\\)\\\"]+)(\\\"(.+)\\\")?[\\)]{1}/g, '<a href=\"$2\" title=\"$4\">$1</a>');\n  \n  //font styles\n  md = md.replace(/[\\*\\_]{2}([^\\*\\_]+)[\\*\\_]{2}/g, '<b>$1</b>');\n  md = md.replace(/[\\*\\_]{1}([^\\*\\_]+)[\\*\\_]{1}/g, '<i>$1</i>');\n  md = md.replace(/[\\~]{2}([^\\~]+)[\\~]{2}/g, '<del>$1</del>');\n  \n  //pre\n  md = md.replace(/^\\s*\\n\\`\\`\\`(([^\\s]+))?/gm, '<pre class=\"$2\">');\n  md = md.replace(/^\\`\\`\\`\\s*\\n/gm, '</pre>\\n\\n');\n  \n  //code\n  md = md.replace(/[\\`]{1}([^\\`]+)[\\`]{1}/g, '<code>$1</code>');\n  \n  //p\n  md = md.replace(/^\\s*(\\n)?(.+)/gm, function(m){\n    return  /\\<(\\/)?(h\\d|ul|ol|li|blockquote|pre|img)/.test(m) ? m : '<p>'+m+'</p>';\n  });\n  \n  //strip p from pre\n  md = md.replace(/(\\<pre.+\\>)\\s*\\n\\<p\\>(.+)\\<\\/p\\>/gm, '$1$2');\n  \n  return md;\n}\n\nconst sample = `# Example\n\nA third of the distance across the Beach, the meadow ends and sand begins. This slopes gradually up for another third of the distance, to the foot of the sand hills, which seem tumbled into their places by some mighty power, sometimes three tiers of them deep, sometimes two, _and sometimes only one._ A third of the distance across the Beach, the meadow ends and sand begins.\n\nThe outline of this inner shore is most irregular, curving and bending in and out and back upon itself, making coves and points and creeks and channels, and often pushing out in flats with not water enough on them at low tide to wet your ankles.\n\n## Subtitle\n\nThis is another fine paragraph\n\n### Smaller subtitle\n\nThis is a paragraph \\`with\\` ~style~ *italic* _italic_ **bold** __bold__\n\n![image](https://rsms.me/raster/examples/image1.jpg)\n\n*Hello [link](https://rsms.me/) lol*\n\nHello [*link*](https://rsms.me/) lol \"cat\"\n\nHello from *[link](https://rsms.me/)* to __everyone__ \\`reading this\\`\n\nHere's an [**important** anchor link](#example).\n\nline 1\nline 2\n\nCode & Poetry\n-------------\n\n    You can also indent\n    blocks to display\n    code or poetry.\n\n    Indented code/poetry blocks\n    can be hard-wrapped.\n\n**Or, wrap your code in three backticks:**\n\n\\`\\`\\`js\nfunction codeBlocks() {\n  return \"Can be inserted\"\n}\n\\`\\`\\`\n\n\n### Embedded HTML\n\nWith default settings, markdown-wasm allows embedded HTML.\n\n> It has been disabled in this demo for safety reasons, by means of setting \\`ParseFlags.NO_HTML\\`.\n> Not setting the \\`NO_HTML\\` flag allows embedding HTML like this:\n\n<input type=“text” value=“type”></input>\n\n\n### Block Quotes\n\n> You can insert quotes by\n> preceeding each line with \\`>\\`.\n>\n> Blockquotes can also contain line\n> breaks.\n\n\n## Lists\n\n### Unordered lists\n\n- Unordered\n- Lists\n- Hello\n\n### Ordered lists\n\n1. Ordered\n2. Lists\n4. Numbers are ignored\n1. Ordered\n\n121) Ordered lists can start\n122) with any number and\n123) use . as well as ) as a separator.\n\n### Task lists\n\n- [ ] Task 1\n- [x] Task 2\n- [ ] Task 3\n- Regular list item\n\n## Tables\n\n| Column 1 | Column 2 | Column 3 | Column 4\n|----------|:---------|:--------:|---------:\n| default | left | center | right\n\n### Table of image file types\n\n| Header                    | Mime type    | Extensions | Description\n|---------------------------|--------------|------------|-------------\n| \\`89 50 4E 47 0D 0A 1A 0A\\` | image/png    | png        | PNG image\n| \\`47 49 46 38 39 61\\`       | image/gif    | gif        | GIF image\n| \\`FF D8 FF\\`                | image/jpeg   | jpg jpeg   | JPEG image\n| \\`4D 4D 00 2B\\`             | image/tiff   | tif tiff   | TIFF image\n| \\`42 4D\\`                   | image/bmp    | bmp        | Bitmap image\n| \\`00 00 01 00\\`             | image/x-icon | ico        | Icon image\n\n\n`;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Fastest JS markdown parser",
+    "id": "7otKAo",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Showdown.js",
+    "Snarkdown.js",
+    "Markdown-it.js",
+    "Marked.js",
+    "Commonmark.js",
+    "MicroDown.js",
+    "parseMd.js",
+    "micromark.js",
+    "remarkable.js"
+  ]
+}
