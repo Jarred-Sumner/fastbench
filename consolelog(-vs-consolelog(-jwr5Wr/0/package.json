@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/consolelog(-vs-consolelog(-jwr5Wr",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/consolelog(-vs-consolelog(-jwr5Wr/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.70c507ce242f8",
+        "code": "console.log(\"DDDDDDDDDIMI\", 412421)",
+        "name": "console.log(",
+        "type": 1
+      },
+      {
+        "id": "0.24bb26a8c0fd6",
+        "code": "console.log(\"DDDDDDDDDIMI\")",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.37d212c758332",
+      "code": "const d = 1",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "console.log( vs console.log(",
+    "id": "jwr5Wr",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "consolelog(.js",
+    "consolelog(.js"
+  ]
+}
