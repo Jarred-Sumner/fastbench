@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/let-arr-1-vs-KmGwe6",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/let-arr-1-vs-KmGwe6/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.61a586591645f8",
+        "code": "let arr = [1,2,3,4,5,6,7,8,9,10];\nfor (let i = 0; i < arr.length; i++) {\n  arr[i] = arr[i] + 1;\n}",
+        "name": "let arr = [1",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.ee9f4dbcb1f028",
+      "code": "let arr = [1,2,3,4,5,6,7,8,9,10];\narr.map(x => x + 1);",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "let arr = [1 vs ",
+    "id": "KmGwe6",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "let arr = [1.js"
+  ]
+}
