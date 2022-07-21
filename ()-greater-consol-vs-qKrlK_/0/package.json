@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/()-greater-consol-vs-qKrlK_",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/()-greater-consol-vs-qKrlK_/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.3f8ecb2b486a8",
+        "code": "function test() {\n  console.log(\"test\")\n}",
+        "name": "() => consol",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.3587527fbfde5",
+      "code": "function test () {\n  console.log(\"hello world\");\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "() => consol vs ",
+    "id": "qKrlK_",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "() =! consol.js"
+  ]
+}
