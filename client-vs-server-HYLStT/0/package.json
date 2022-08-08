@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/client-vs-server-HYLStT",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/client-vs-server-HYLStT/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.f63fe4891eb0e",
+        "code": "/(?:\\P{IDC}|^)(abcdé)(?=\\P{IDC}|$)/gu.exec(\"test\")",
+        "name": "client",
+        "type": 1
+      },
+      {
+        "id": "0.48fb1484caec4",
+        "code": "/(?<=\\P{IDC}|^)abcdé(?=\\P{IDC}|$)/gu.exec(\"test\")",
+        "name": "server",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.d567fcd746a75",
+      "code": "/\\btest\\b/g.exec(\"test\")",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "client vs server",
+    "id": "HYLStT",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "client.js",
+    "server.js"
+  ]
+}
