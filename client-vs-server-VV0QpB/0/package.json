@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/client-vs-server-VV0QpB",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/client-vs-server-VV0QpB/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.f63fe4891eb0e",
+        "code": "/(?:\\P{IDC}|^)(test)(?=\\P{IDC}|$)/gu.exec(\"test\")",
+        "name": "client",
+        "type": 1
+      },
+      {
+        "id": "0.48fb1484caec4",
+        "code": "/(?<=\\P{IDC}|^)test(?=\\P{IDC}|$)/gu.exec(\"test\")",
+        "name": "server",
+        "type": 1
+      },
+      {
+        "id": "0.832626e70932",
+        "code": "/\\btest\\b/g.exec(\"test\")",
+        "name": "current",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.d567fcd746a75",
+      "code": ";",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "client vs server",
+    "id": "VV0QpB",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "client.js",
+    "server.js",
+    "current.js"
+  ]
+}
