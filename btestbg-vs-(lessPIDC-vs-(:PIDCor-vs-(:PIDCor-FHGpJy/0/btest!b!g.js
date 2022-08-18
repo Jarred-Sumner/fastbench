@@ -1,0 +1,1 @@
+/\btest\b/g.exec("test")
