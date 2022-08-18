@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/btestbg-vs-(lessPIDC-vs-(:PIDCor-vs-(:PIDCor-FHGpJy",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/btestbg-vs-(lessPIDC-vs-(:PIDCor-vs-(:PIDCor-FHGpJy/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.4ede26f7b10cd",
+        "code": "/\\btest\\b/g.exec(\"test\")",
+        "name": "/\\btest\\b/g.",
+        "type": 1
+      },
+      {
+        "id": "0.65305ca6aaeda",
+        "code": "/(?<=\\P{IDC}|^)test(?=\\P{IDC}|$)/gu.exec(\"test\")",
+        "name": "/(?<=\\P{IDC}",
+        "type": 1
+      },
+      {
+        "id": "0.8457d532cc6d6",
+        "code": "/(?:\\P{IDC}|^)(test)(?=\\P{IDC}|$)/gu.exec(\"test\")",
+        "name": "/(?:\\P{IDC}|",
+        "type": 1
+      },
+      {
+        "id": "0.456e7315f5fc4",
+        "code": "/(?:\\P{IDC}|^)(test)(?:\\P{IDC}|$)/gu.exec(\"test\")",
+        "name": "/(?:\\P{IDC}|",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.8d757b4d3629e",
+      "code": ";",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "/\\btest\\b/g. vs /(?<=\\P{IDC} vs /(?:\\P{IDC}| vs /(?:\\P{IDC}|",
+    "id": "FHGpJy",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "btest!b!g.js",
+    "(!=!P{IDC}.js",
+    "(!P{IDC}!.js",
+    "(!P{IDC}!.js"
+  ]
+}
