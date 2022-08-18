@@ -1,0 +1,1 @@
+/(?:\P{IDC}|^)(test)(?:\P{IDC}|$)/gu.exec("test")
