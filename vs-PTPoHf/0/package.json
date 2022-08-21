@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/vs-PTPoHf",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-PTPoHf/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.1adce0407eb2b",
+        "code": "const N = 100;\nfor (let i = 0; i < N; ++i) {\n  for (let j = i + 1; j < N; ++j) {\n    console.log(i + j);\n  }\n}",
+        "name": "const N = 10",
+        "type": 1
+      },
+      {
+        "id": "0.e810f9053267a",
+        "code": "const N = 100;\nfor (let i = 0; i < N; ++i) {\n  for (let j = i + 1; j < N; ++j) {\n    console.log(i + j);\n  }\n}",
+        "name": "const N = 10",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.076553eb5267e",
+      "code": "const N = 100;\nfor (let i = 0; i < N; ++i) {\n  for (let j = i + 1; j < N; ++j) {\n    console.log(i + j);\n  }\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "PTPoHf",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const N = 10.js",
+    "const N = 10.js"
+  ]
+}
