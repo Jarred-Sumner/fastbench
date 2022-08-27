@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Format-select-MovWE",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Format-select-MovWE/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.27910495c65e6",
+        "code": "MessagePipe(transformers).compile(message1)(props);",
+        "name": "MessagePipe",
+        "type": 1
+      },
+      {
+        "id": "0.7da7bf1e3d043",
+        "code": "new MessageFormat().compile(message2)(props);",
+        "name": "MessageFormat",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.83cf2fb3f3727",
+      "code": "import MessageFormat from \"https://cdn.skypack.dev/@messageformat/core@3.0.1\";\nimport { MessagePipe, defaultTransformers } from \"https://cdn.skypack.dev/messagepipe@0.2.1\";\n\nconst transformers = defaultTransformers();\nconst message1 = '{gender | select, male:\"He\", female:\"She\", other:\"They\"} liked this.';\nconst message2 = '{gender, select, male{He} female{She} other{They}} liked this.';\nconst props = {\n  gender: \"female\",\n};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Format select",
+    "id": "-MovWE",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "MessagePipe.js",
+    "MessageFormat.js"
+  ]
+}
