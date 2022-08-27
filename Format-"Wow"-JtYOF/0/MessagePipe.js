@@ -1,0 +1,1 @@
+MessagePipe().compile(message)(props);
