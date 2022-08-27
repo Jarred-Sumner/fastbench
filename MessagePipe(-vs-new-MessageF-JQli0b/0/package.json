@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/MessagePipe(-vs-new-MessageF-JQli0b",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/MessagePipe(-vs-new-MessageF-JQli0b/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.27910495c65e6",
+        "code": "MessagePipe().compile(message)();",
+        "name": "MessagePipe(",
+        "type": 1
+      },
+      {
+        "id": "0.7da7bf1e3d043",
+        "code": "new MessageFormat(\"at\").compile(message)({});",
+        "name": "new MessageF",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.83cf2fb3f3727",
+      "code": "import MessageFormat from \"https://cdn.skypack.dev/@messageformat/core@3.0.1\";\nimport { MessagePipe } from \"https://cdn.skypack.dev/messagepipe@0.2.1\";\n\nconst message = 'Hello Mars!';",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "MessagePipe( vs new MessageF",
+    "id": "JQli0b",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "MessagePipe(.js",
+    "new MessageF.js"
+  ]
+}
