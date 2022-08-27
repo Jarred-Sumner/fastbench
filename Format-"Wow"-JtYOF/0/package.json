@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Format-\"Wow\"-JtYOF",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Format-\"Wow\"-JtYOF/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.27910495c65e6",
+        "code": "MessagePipe().compile(message)(props);",
+        "name": "MessagePipe",
+        "type": 1
+      },
+      {
+        "id": "0.7da7bf1e3d043",
+        "code": "new MessageFormat().compile(message)(props);",
+        "name": "MessageFormat",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.83cf2fb3f3727",
+      "code": "import MessageFormat from \"https://cdn.skypack.dev/@messageformat/core@3.0.1\";\nimport { MessagePipe } from \"https://cdn.skypack.dev/messagepipe@0.2.1\";\n\nconst message = 'Wow';\nconst props = {};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Format \"Wow\"",
+    "id": "-JtYOF",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "MessagePipe.js",
+    "MessageFormat.js"
+  ]
+}
