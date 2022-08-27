@@ -1,0 +1,1 @@
+new MessageFormat().compile(message)(props);
