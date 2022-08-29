@@ -1,0 +1,1 @@
+new MessageFormat6(message).format(props);
