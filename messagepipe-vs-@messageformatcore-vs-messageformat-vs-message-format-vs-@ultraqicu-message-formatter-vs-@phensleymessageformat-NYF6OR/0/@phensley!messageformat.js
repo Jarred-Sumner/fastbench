@@ -1,0 +1,1 @@
+new PhensleyMessageFormatter().format(message, [], props);
