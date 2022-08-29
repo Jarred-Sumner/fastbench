@@ -1,0 +1,64 @@
+{
+  "name": "@fastbench/messagepipe-vs-@messageformatcore-vs-messageformat-vs-message-format-vs-@ultraqicu-message-formatter-vs-@phensleymessageformat-rSBbQK",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/messagepipe-vs-@messageformatcore-vs-messageformat-vs-message-format-vs-@ultraqicu-message-formatter-vs-@phensleymessageformat-rSBbQK/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.96c4dd51c5de3",
+        "code": "MessagePipe().compile(message)(props);",
+        "name": "messagepipe",
+        "type": 1
+      },
+      {
+        "id": "0.18e2b0256d4bb",
+        "code": "new MessageFormat().compile(message)(props);",
+        "name": "@messageformat/core",
+        "type": 1
+      },
+      {
+        "id": "0.68ac260b93e0b",
+        "code": "new MessageFormatOld().compile(message)(props);",
+        "name": "messageformat",
+        "type": 1
+      },
+      {
+        "id": "0.97805cd37c944",
+        "code": "new MessageFormat6(message).format(props);",
+        "name": "message-format",
+        "type": 1
+      },
+      {
+        "id": "0.41bc340c6455b",
+        "code": "new UltraqIcuMessageFormatter().format(message, props);",
+        "name": "@ultraq/icu-message-formatter",
+        "type": 1
+      },
+      {
+        "id": "0.37c8a5b81503",
+        "code": "new PhensleyMessageFormatter().format(message, [], props);",
+        "name": "@phensley/messageformat",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.ef78aec2bd094",
+      "code": "import { MessagePipe } from \"https://cdn.skypack.dev/messagepipe@0.2.2\";\nimport MessageFormat from \"https://cdn.skypack.dev/@messageformat/core@3.0.1\";\nimport MessageFormatOld from \"https://cdn.skypack.dev/messageformat@2.3.0\";\nimport MessageFormat6 from \"https://cdn.skypack.dev/message-format@6.2.4\";\nimport { MessageFormatter as UltraqIcuMessageFormatter } from \"https://cdn.skypack.dev/@ultraq/icu-message-formatter@0.12.0\";\nimport { MessageFormatter as PhensleyMessageFormatter } from \"https://cdn.skypack.dev/@phensley/messageformat@1.5.1\";\n\nconst message = 'Hello {planet}!';\nconst props = {\n  planet: \"Mars\",\n};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "messagepipe vs @messageformat/core vs messageformat vs message-format vs @ultraq/icu-message-formatter vs @phensley/messageformat",
+    "id": "rSBbQK",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "messagepipe.js",
+    "@messageformat!core.js",
+    "messageformat.js",
+    "message-format.js",
+    "@ultraq!icu-message-formatter.js",
+    "@phensley!messageformat.js"
+  ]
+}
