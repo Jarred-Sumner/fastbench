@@ -1,0 +1,1 @@
+MessagePipe(defaultTransformers()).compile(message1)(props);
