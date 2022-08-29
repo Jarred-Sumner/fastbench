@@ -1,0 +1,1 @@
+message.replace("{planet}", props.planet)
