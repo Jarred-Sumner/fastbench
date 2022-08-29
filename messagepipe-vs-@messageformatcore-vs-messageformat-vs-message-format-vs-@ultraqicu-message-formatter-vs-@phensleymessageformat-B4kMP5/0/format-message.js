@@ -1,0 +1,1 @@
+formatMessage(message, props)
