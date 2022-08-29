@@ -1,0 +1,1 @@
+new UltraqIcuMessageFormatter().format(message, props);
