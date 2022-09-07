@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/const-beep-vs-Y9K86c",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/const-beep-vs-Y9K86c/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.72a20cb94b841",
+        "code": "const beep = () => console.log('hello')\n\nbeep()",
+        "name": "const beep =",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.8d988ff6360ed",
+      "code": "function beep() {\n  console.log('hello')\n}\n\nbeep()",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "const beep = vs ",
+    "id": "Y9K86c",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const beep =.js"
+  ]
+}
