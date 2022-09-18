@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/consolelog(-UUqUpP",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/consolelog(-UUqUpP/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.37bc8b3b3dd4c",
+        "code": "console.log(1)",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.6927da6f61621",
+      "code": "console.log(1)",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "console.log(",
+    "id": "UUqUpP",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "consolelog(.js"
+  ]
+}
