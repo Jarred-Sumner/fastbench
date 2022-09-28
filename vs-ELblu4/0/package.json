@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/vs-ELblu4",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-ELblu4/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c17c43c5847aa",
+        "code": "const v = 42;",
+        "name": "console.log(",
+        "type": 1
+      },
+      {
+        "id": "0.c5dcaf507a137",
+        "code": "var v = 42;",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.61c472cac9387",
+      "code": "console.log(\"Hello, world!\")",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "ELblu4",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "consolelog(.js",
+    "consolelog(.js"
+  ]
+}
