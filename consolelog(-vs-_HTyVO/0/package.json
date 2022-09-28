@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/consolelog(-vs-_HTyVO",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/consolelog(-vs-_HTyVO/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.574ec275e7694",
+        "code": "console.log('test')",
+        "name": "console.log('test')",
+        "type": 1
+      },
+      {
+        "id": "0.730bfd1c0861f",
+        "code": "console.log(\"test\")",
+        "name": "console.log(\"test\")",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.84c083410b5c2",
+      "code": "console.log(\"runned!\")",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "console.log( vs ",
+    "id": "_HTyVO",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "consolelog('test').js",
+    "consolelog(!test!).js"
+  ]
+}
