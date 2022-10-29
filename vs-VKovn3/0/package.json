@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/vs-VKovn3",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-VKovn3/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.ffe6379b77ce3",
+        "code": "console.log(\"HI\")",
+        "name": "console.log(",
+        "type": 1
+      },
+      {
+        "id": "0.9d45569ee37e3",
+        "code": "console.log(\"HI sdsdf\")\nconsole.log(\"HI sdsdf\")\nconsole.log(\"HI sdsdf\")",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.5fc67e7aca5c1",
+      "code": "console.log(\"HI\")",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "VKovn3",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "consolelog(.js",
+    "consolelog(.js"
+  ]
+}
