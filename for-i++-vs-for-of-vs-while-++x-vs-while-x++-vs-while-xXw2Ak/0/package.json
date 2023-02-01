@@ -1,0 +1,57 @@
+{
+  "name": "@fastbench/for-i++-vs-for-of-vs-while-++x-vs-while-x++-vs-while-xXw2Ak",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/for-i++-vs-for-of-vs-while-++x-vs-while-x++-vs-while-xXw2Ak/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.bd38ffdb1227b",
+        "code": "for (var x = 0; x < arr.length; x++) {\n  dosmth = arr[x];\n}",
+        "name": "for i++",
+        "type": 1
+      },
+      {
+        "id": "0.f9a5f80786304",
+        "code": "for (let val of arr) {\n  dosmth = val;\n}",
+        "name": "for of",
+        "type": 1
+      },
+      {
+        "id": "0.172fa8406b2a7",
+        "code": "var x = 0, l = arr.length;\nwhile (x < l) {\n  dosmth = arr[x];\n\t++x;\n}",
+        "name": "while ++x",
+        "type": 1
+      },
+      {
+        "id": "0.6937748be4b52",
+        "code": "var x = 0, l = arr.length;\nwhile (x < l) {\n  dosmth = arr[x];\n\tx++;\n}",
+        "name": "while x++",
+        "type": 1
+      },
+      {
+        "id": "0.2567adb506fed",
+        "code": "var x = arr.length;\nwhile (x--) {\n  dosmth = arr[x];\n}",
+        "name": "while --",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.63d07a4e9abfc",
+      "code": "const arr = new Array(500).fill(\"a\");\nvar dosmth;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "for i++ vs for of vs while ++x vs while x++ vs while --",
+    "id": "xXw2Ak",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "for i++.js",
+    "for of.js",
+    "while ++x.js",
+    "while x++.js",
+    "while --.js"
+  ]
+}
