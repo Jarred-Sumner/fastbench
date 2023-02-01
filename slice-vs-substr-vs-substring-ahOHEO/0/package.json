@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/slice-vs-substr-vs-substring-ahOHEO",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/slice-vs-substr-vs-substring-ahOHEO/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.59958712d4da9",
+        "code": "example.slice(10)",
+        "name": "slice",
+        "type": 1
+      },
+      {
+        "id": "0.0f9103a4bda99",
+        "code": "example.substr(10)",
+        "name": "substr",
+        "type": 1
+      },
+      {
+        "id": "0.b2ed68d61a812",
+        "code": "example.substring(10)",
+        "name": "substring",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.8ed95bb1bbe8",
+      "code": "var example = 'there is no spoon'",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "slice vs substr vs substring",
+    "id": "ahOHEO",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "slice.js",
+    "substr.js",
+    "substring.js"
+  ]
+}
