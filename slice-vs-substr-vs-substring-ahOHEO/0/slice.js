@@ -1,0 +1,1 @@
+example.slice(10)
