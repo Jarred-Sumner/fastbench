@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/itemsforEac-vs-for(item-of-wix4dm",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/itemsforEac-vs-for(item-of-wix4dm/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.91c15563faaec",
+        "code": "items.forEach(console.log)",
+        "name": "items.forEac",
+        "type": 1
+      },
+      {
+        "id": "0.a41cf2719862e",
+        "code": "for(item of items) {\n  console.log(item)\n}",
+        "name": "for(item of ",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.45a5f0e0f09a6",
+      "code": "const items = new Array(1000).fill(Math.random())",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "items.forEac vs for(item of ",
+    "id": "wix4dm",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "itemsforEac.js",
+    "for(item of .js"
+  ]
+}
