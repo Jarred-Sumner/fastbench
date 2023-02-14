@@ -1,0 +1,1 @@
+const items = new Array(1000).fill(Math.random())
