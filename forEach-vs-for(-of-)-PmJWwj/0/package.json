@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/forEach-vs-for(-of-)-PmJWwj",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/forEach-vs-for(-of-)-PmJWwj/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.67d4ba6687431",
+        "code": "items.forEach(item => console.log(item))",
+        "name": "forEach",
+        "type": 1
+      },
+      {
+        "id": "0.c9a85fcd75299",
+        "code": "for(item of items) {\n  console.log(item)\n}",
+        "name": "for( of )",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.5a83a5e9fe2e9",
+      "code": "const items = new Array(1000).fill(Math.random())",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "forEach vs for( of )",
+    "id": "PmJWwj",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "forEach.js",
+    "for( of ).js"
+  ]
+}
