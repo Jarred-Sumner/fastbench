@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Index-array-with-Int-vs-Index-array-with-Float-YT-iF3",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Index-array-with-Int-vs-Index-array-with-Float-YT-iF3/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c20afb1cf704e",
+        "code": "let sum = 0;\nfor(let i=0; i<length; i++) {\n  sum += dataInt[idxInt[i]];\n}",
+        "name": "Index array with Int",
+        "type": 1
+      },
+      {
+        "id": "0.cc549bf534c1b",
+        "code": "let sum = 0;\nfor(let i=0; i<length; i++) {\n  sum += dataMix[idxMix[i]];\n}",
+        "name": "Index array with Float",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.a1186b5e8c195",
+      "code": "const data = [0, 1];\nconst dataInt = data.map(v=>0-v);\nconst dataMix = data.map(v=>-v);\n\nconst length = 100;\nconst idxInt = [];\nconst idxMix = [];\nfor(let i=0; i<length; i++) {\n  idxInt.push(i%2);\n  idxMix.push(-(i%2));\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Index array with Int vs Index array with Float",
+    "id": "YT-iF3",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Index array with Int.js",
+    "Index array with Float.js"
+  ]
+}
