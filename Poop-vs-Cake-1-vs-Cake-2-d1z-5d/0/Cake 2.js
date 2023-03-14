@@ -1,0 +1,1 @@
+cake2.type === "cake"
