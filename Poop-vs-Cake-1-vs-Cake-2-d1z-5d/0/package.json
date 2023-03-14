@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Poop-vs-Cake-1-vs-Cake-2-d1z-5d",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Poop-vs-Cake-1-vs-Cake-2-d1z-5d/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.926491b45344f",
+        "code": "poop instanceof Poop",
+        "name": "Poop",
+        "type": 1
+      },
+      {
+        "id": "0.927b97c3e0263",
+        "code": "cake1.type === \"cake\"",
+        "name": "Cake 1",
+        "type": 1
+      },
+      {
+        "id": "0.891925169b3b1",
+        "code": "cake2.type === \"cake\"",
+        "name": "Cake 2",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.772e52ee62a96",
+      "code": "class Poop {\n  toString() {\n    return \"Poop\"\n  }\n}\nconst poop = new Poop()\n\nfunction Cake() {\n  return {\n    type: 'cake',\n    toString() {\n      return \"Cake\"\n    }\n  }\n}\nconst cake1 = new Cake()\nconst cake2 = Cake()",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Poop vs Cake 1 vs Cake 2",
+    "id": "d1z-5d",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Poop.js",
+    "Cake 1.js",
+    "Cake 2.js"
+  ]
+}
