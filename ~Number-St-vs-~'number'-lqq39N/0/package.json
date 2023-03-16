@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/~Number-St-vs-~'number'-lqq39N",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/~Number-St-vs-~'number'-lqq39N/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2d4abc5a6b8be",
+        "code": "~[Number, String].indexOf(a.constructor)",
+        "name": "~[Number, St",
+        "type": 1
+      },
+      {
+        "id": "0.f8e0fc3038dc2",
+        "code": "~['number', 'string'].indexOf(typeof a)",
+        "name": "~['number', ",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.885dfebbefa87",
+      "code": "const a = \"a\"\nconst b = 2",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "~[Number, St vs ~['number', ",
+    "id": "lqq39N",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "~[Number, St.js",
+    "~['number', .js"
+  ]
+}
