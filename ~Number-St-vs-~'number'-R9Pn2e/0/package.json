@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/~Number-St-vs-~'number'-R9Pn2e",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/~Number-St-vs-~'number'-R9Pn2e/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2d4abc5a6b8be",
+        "code": "a.constructor === String",
+        "name": "constructor",
+        "type": 1
+      },
+      {
+        "id": "0.f8e0fc3038dc2",
+        "code": "typeof a === 'string'",
+        "name": "typeof",
+        "type": 1
+      },
+      {
+        "id": "0.f9b1500bc2d88",
+        "code": "a instanceof String",
+        "name": "instanceof",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.885dfebbefa87",
+      "code": "const a = \"a\"\nconst b = 2",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "~[Number, St vs ~['number', ",
+    "id": "R9Pn2e",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "constructor.js",
+    "typeof.js",
+    "instanceof.js"
+  ]
+}
