@@ -1,0 +1,1 @@
+callbacks.forEach((cb) => cb())
