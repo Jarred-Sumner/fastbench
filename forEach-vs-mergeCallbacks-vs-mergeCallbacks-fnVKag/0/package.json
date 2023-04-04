@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/forEach-vs-mergeCallbacks-vs-mergeCallbacks-fnVKag",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/forEach-vs-mergeCallbacks-vs-mergeCallbacks-fnVKag/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.26629bb38bf24",
+        "code": "callbacks.forEach((cb) => cb())",
+        "name": "forEach",
+        "type": 1
+      },
+      {
+        "id": "0.384c343057881",
+        "code": "mergedCallbacks()",
+        "name": "mergeCallbacks",
+        "type": 1
+      },
+      {
+        "id": "0.55ac492550f39",
+        "code": "mergedCallbacks2()",
+        "name": "mergeCallbacks2",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.d451fd94feba1",
+      "code": "function mergeCallbacks(arr) {\n  const merger = eval(`(function (collection) {\n    ${arr.map((_, i) => `var f${i} = collection[${i}];`).join(\" \")}\n    return (function () {\n      ${arr.map((_, i) => `f${i}();`).join(\" \")}\n    });\n  })`);\n  const baked = merger(arr);\n  return baked;\n}\n\nfunction mergeCallbacks2(arr) {\n  const merger = new Function(\n    '[' + arr.map((_, i) => `f${i}`) + ']',\n    arr.map((_, i) => `f${i}();`).join(\" \")\n  );\n  return () => merger(arr);\n}\n\nconst callbacks = [() => 1, () => 2, () => 3, () => 4];\n\nconst mergedCallbacks = mergeCallbacks(callbacks)\nconst mergedCallbacks2 = mergeCallbacks2(callbacks)",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "forEach vs mergeCallbacks vs mergeCallbacks",
+    "id": "fnVKag",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "forEach.js",
+    "mergeCallbacks.js",
+    "mergeCallbacks2.js"
+  ]
+}
