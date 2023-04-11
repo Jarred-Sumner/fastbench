@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/standard-vs-standardAsync-1S9owQ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/standard-vs-standardAsync-1S9owQ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.4f92668a06421",
+        "code": "standard(1)",
+        "name": "standard",
+        "type": 1
+      },
+      {
+        "id": "0.f1326af5becf3",
+        "code": "standardAsync(1)",
+        "name": "standardAsync",
+        "type": 1
+      },
+      {
+        "id": "0.40142b32a6aa2",
+        "code": "generated(1)",
+        "name": "generated",
+        "type": 1
+      },
+      {
+        "id": "0.221438eff7904",
+        "code": "generatedAsync(1)",
+        "name": "generatedAsync",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.a94ddc2fdb1e7",
+      "code": "const AsyncFunction = async function () {}.constructor;\n\nfunction standard(a) {\n  return a * 2\n}\n\nasync function standardAsync(a) {\n  return a * 2\n}\n\nconst generated = new Function(\"a\", \"return a * 2\");\n\nconst generatedAsync = new AsyncFunction(\"a\", \"return a * 2\");",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "standard vs standardAsync",
+    "id": "1S9owQ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "standard.js",
+    "standardAsync.js",
+    "generated.js",
+    "generatedAsync.js"
+  ]
+}
