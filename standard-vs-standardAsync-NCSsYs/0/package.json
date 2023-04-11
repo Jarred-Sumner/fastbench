@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/standard-vs-standardAsync-NCSsYs",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/standard-vs-standardAsync-NCSsYs/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.4f92668a06421",
+        "code": "standard(1)",
+        "name": "standard",
+        "type": 1
+      },
+      {
+        "id": "0.f1326af5becf3",
+        "code": "standardAsync(1)",
+        "name": "standardAsync",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.a94ddc2fdb1e7",
+      "code": "function standard(a) {\n  return a * 2\n}\n\nasync function standardAsync(a) {\n  return a * 2\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "standard vs standardAsync",
+    "id": "NCSsYs",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "standard.js",
+    "standardAsync.js"
+  ]
+}
