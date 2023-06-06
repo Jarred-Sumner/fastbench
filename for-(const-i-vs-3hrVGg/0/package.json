@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/for-(const-i-vs-3hrVGg",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/for-(const-i-vs-3hrVGg/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.faa4627b7a626",
+        "code": "const fetchedMessage = {\n  currencyAmounts: [\n    {currency: 'RUB', amount: '100000'}, \n    {currency: 'USD', amount: '100000'}, \n    {currency: 'EUR', amount: '100000'}\n  ]\n};  \nfor (const item of fetchedMessage.currencyAmounts) {\n    const { currency, amount } = item;\n}",
+        "name": "for (const i",
+        "type": 1
+      },
+      {
+        "id": "0.8ef25878624fd",
+        "code": "const fetchedMessage = {\n  currencyAmounts: [\n    {currency: 'RUB', amount: '100000'}, \n    {currency: 'USD', amount: '100000'}, \n    {currency: 'EUR', amount: '100000'}\n  ]\n};    \n    fetchedMessage.currencyAmounts.forEach((item) => {\n      const { currency, amount } = item;\n    });\n",
+        "name": "const fetche",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.ee859f35a73e7",
+      "code": "//",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "for (const i vs ",
+    "id": "3hrVGg",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "for (const i.js",
+    "const fetche.js"
+  ]
+}
