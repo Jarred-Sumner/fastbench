@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/assign-vs-equal-6yVq2p",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/assign-vs-equal-6yVq2p/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.5b4e54fbfea9e",
+        "code": "const a = {};\nObject.assign(a, data)",
+        "name": "assign",
+        "type": 1
+      },
+      {
+        "id": "0.1e96278798ac",
+        "code": "const a = {};\na.x = data.x;\na.y = data.y;",
+        "name": "equal",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.70cc726a2847f",
+      "code": "const data = {x: 511.231231, y: 556.124124}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "assign vs equal",
+    "id": "6yVq2p",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "assign.js",
+    "equal.js"
+  ]
+}
