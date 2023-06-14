@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/template-vs-plus-pzhg_T",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/template-vs-plus-pzhg_T/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.7df3966a4080b",
+        "code": "`${x}x${y}`",
+        "name": "template",
+        "type": 1
+      },
+      {
+        "id": "0.6790f5252a396",
+        "code": "x + 'x' + y",
+        "name": "plus",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.ebb4b5e3afb7",
+      "code": "const x = 123;\nconst y = 123;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "template vs plus",
+    "id": "pzhg_T",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "template.js",
+    "plus.js"
+  ]
+}
