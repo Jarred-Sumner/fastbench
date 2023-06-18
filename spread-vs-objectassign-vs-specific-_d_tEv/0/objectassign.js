@@ -1,0 +1,1 @@
+const a = Object.assign({__exome_id: exomeId}, player)
