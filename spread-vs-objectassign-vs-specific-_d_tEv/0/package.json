@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/spread-vs-objectassign-vs-specific-_d_tEv",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/spread-vs-objectassign-vs-specific-_d_tEv/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.3bbcb12719b69",
+        "code": "const a = {\n\t__exome_id: exomeId,\n\t...player\n}",
+        "name": "spread",
+        "type": 1
+      },
+      {
+        "id": "0.4d18dfbc52aaa",
+        "code": "const a = Object.assign({__exome_id: exomeId}, player)",
+        "name": "object.assign",
+        "type": 1
+      },
+      {
+        "id": "0.e7368c056d2c9",
+        "code": "const a = {\n  __exome_id: exomeId,\n  name: player.name,\n  color: player.color,\n  x: player.x,\n  y: player.y,\n  hidden: player.hidden,\n}",
+        "name": "specific",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.28fc76bcb046c",
+      "code": "const player = {\nname: \"Oblong Society\",\ncolor: \"#c75350\",\nx: 491.4296875,\ny: -13.03125,\nhidden: false,\n}\nconst exomeId = 'MultiplayerPlayer-LJ13KCFVRD'",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "spread vs object.assign vs specific",
+    "id": "_d_tEv",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "spread.js",
+    "objectassign.js",
+    "specific.js"
+  ]
+}
