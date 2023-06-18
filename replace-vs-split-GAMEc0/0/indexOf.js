@@ -1,0 +1,1 @@
+value.slice(value.indexOf("-") + 1)
