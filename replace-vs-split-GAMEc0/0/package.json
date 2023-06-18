@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/replace-vs-split-GAMEc0",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/replace-vs-split-GAMEc0/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.1dd5f6141deb7",
+        "code": "value.replace(/^[^-]+-/, \"\")",
+        "name": "replace",
+        "type": 1
+      },
+      {
+        "id": "0.90e58dd20ebb3",
+        "code": "value.split(\"-\").pop()",
+        "name": "split",
+        "type": 1
+      },
+      {
+        "id": "0.32b025faeac52",
+        "code": "value.slice(value.indexOf(\"-\") + 1)",
+        "name": "indexOf",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b85cba6ad90e2",
+      "code": "const value = 'MultiplayerPlayer-ASD123'",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "replace vs split",
+    "id": "GAMEc0",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "replace.js",
+    "split.js",
+    "indexOf.js"
+  ]
+}
