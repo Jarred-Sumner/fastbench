@@ -1,0 +1,1 @@
+value.split("-").pop()
