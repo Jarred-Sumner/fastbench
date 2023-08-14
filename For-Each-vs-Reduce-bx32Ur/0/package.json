@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/For-Each-vs-Reduce-bx32Ur",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/For-Each-vs-Reduce-bx32Ur/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.7a51a823f70f4",
+        "code": "const newArr = [];\n\narr.forEach((item) => {\n  const handler = item.fn() \n  newArr.push(handler)\n})\n",
+        "name": "For Each",
+        "type": 1
+      },
+      {
+        "id": "0.8af76ee0d4bbe",
+        "code": "const newArr = arr.reduce((acc, curr) => {\n  const obj = curr.fn() \n  acc.push(obj)\n  return acc\n}, [])",
+        "name": "Reduce",
+        "type": 1
+      },
+      {
+        "id": "0.6209406333bdc",
+        "code": "const newArr = [];\n\nfor (let i = 0; i < arr.length; i++) {\n  const obj = arr[i].fn() \n  newArr.push(obj)  \n}",
+        "name": "For",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.3449e589deb67",
+      "code": "const arr = [];\n\nfor (let i = 0; i < 10000; i++) {\n    arr.push({\n        fn: function() {\n          return { something: 'something'}\n        }\n    });\n}\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "For Each vs Reduce",
+    "id": "bx32Ur",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "For Each.js",
+    "Reduce.js",
+    "For.js"
+  ]
+}
