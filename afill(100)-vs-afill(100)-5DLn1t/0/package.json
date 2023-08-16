@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/afill(100)-vs-afill(100)-5DLn1t",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/afill(100)-vs-afill(100)-5DLn1t/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.a26946c94c25b",
+        "code": "a.fill(100)",
+        "name": "a.fill(100)",
+        "type": 1
+      },
+      {
+        "id": "0.95f92734a3fe9",
+        "code": "for (let i = 0; i < 100; i++) {\n  a.push(i)\n}",
+        "name": "a.fill(100)",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.9159774d921ab",
+      "code": "const a = [];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "a.fill(100) vs a.fill(100)",
+    "id": "5DLn1t",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "afill(100).js",
+    "afill(100).js"
+  ]
+}
