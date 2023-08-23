@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/const-newArr-vs-arraymap((n-vs-const-newArr-JEpwRW",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/const-newArr-vs-arraymap((n-vs-const-newArr-JEpwRW/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.66dd4a7ca2455",
+        "code": "for (let i = 0; i < array.length; i++) {\n  newArray[i] = array[i] * 2;\n}",
+        "name": "For loop with index access",
+        "type": 1
+      },
+      {
+        "id": "0.ec4f96d914087",
+        "code": "array.map((n) => n * 2);",
+        "name": "Array.map",
+        "type": 1
+      },
+      {
+        "id": "0.f8d49d0e58b75",
+        "code": "for (let i = 0; i < array.length; i++) {\n  newArray.push(array[i]);\n}",
+        "name": "For loop with array.push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b8e0f864e4c36",
+      "code": "const array = new Array(1000);\nconst newArray = [];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "const newArr vs array.map((n vs const newArr",
+    "id": "JEpwRW",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "For loop with index access.js",
+    "Arraymap.js",
+    "For loop with arraypush.js"
+  ]
+}
