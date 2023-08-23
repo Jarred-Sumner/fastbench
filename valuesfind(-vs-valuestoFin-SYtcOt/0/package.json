@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/valuesfind(-vs-valuestoFin-SYtcOt",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/valuesfind(-vs-valuestoFin-SYtcOt/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.3f8926bdab501",
+        "code": "values.find((value) => value === toFind);",
+        "name": "values.find(",
+        "type": 1
+      },
+      {
+        "id": "0.65a9ea0b12647",
+        "code": "values[toFind];",
+        "name": "values[toFin",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.7dffdfb05a3a7",
+      "code": "const values = [1, 2, 3, 4, 5];\nconst map = {\n  1: 0,\n  2: 1,\n  3: 2,\n  4: 3,\n  5: 4\n}\n\nconst toFind = values[Math.floor(Math.random() * values.length)];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "values.find( vs values[toFin",
+    "id": "SYtcOt",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "valuesfind(.js",
+    "values[toFin.js"
+  ]
+}
