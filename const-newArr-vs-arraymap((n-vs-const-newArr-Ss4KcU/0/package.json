@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/const-newArr-vs-arraymap((n-vs-const-newArr-Ss4KcU",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/const-newArr-vs-arraymap((n-vs-const-newArr-Ss4KcU/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.66dd4a7ca2455",
+        "code": "for (let i = 0; i < array.length; i++) {\n  newArray[i] = array[i] * 2;\n}",
+        "name": "const newArr",
+        "type": 1
+      },
+      {
+        "id": "0.ec4f96d914087",
+        "code": "array.map((n) => n * 2);",
+        "name": "array.map((n",
+        "type": 1
+      },
+      {
+        "id": "0.f8d49d0e58b75",
+        "code": "for (let i = 0; i < array.length; i++) {\n  newArray.push(array[i]);\n}",
+        "name": "const newArr",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b8e0f864e4c36",
+      "code": "const array = new Array(1000);\nconst newArray = [];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "const newArr vs array.map((n vs const newArr",
+    "id": "Ss4KcU",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const newArr.js",
+    "arraymap((n.js",
+    "const newArr.js"
+  ]
+}
