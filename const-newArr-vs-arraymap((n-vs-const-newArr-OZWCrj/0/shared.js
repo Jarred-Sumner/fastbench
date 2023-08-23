@@ -1,0 +1,1 @@
+const array = new Array(1000);
