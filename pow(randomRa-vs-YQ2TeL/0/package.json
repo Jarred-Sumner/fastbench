@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/pow(randomRa-vs-YQ2TeL",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/pow(randomRa-vs-YQ2TeL/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2c91098ab2cd6",
+        "code": "pow(randomRange(1, 1000), randomRangeInt(1, 1000))",
+        "name": "pow(randomRa",
+        "type": 1
+      },
+      {
+        "id": "0.3a58c538cd8d8",
+        "code": "Math.pow(randomRange(1, 1000), randomRangeInt(1, 1000))",
+        "name": "Math.pow(ran",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.936d090b499da",
+      "code": "function pow(num, pow) {\n    var result = num;\n    while (--pow) {\n       result *= num;\n    }\n    return result;\n}\n\n\nfunction randomRange(min, max) {\n  return (Math.random() * (max - min + 1) + min);\n}\n\nfunction randomRangeInt(min, max) {\n  return Math.floor(Math.random() * (max - min + 1) + min);\n}\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "pow(randomRa vs ",
+    "id": "YQ2TeL",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "pow(randomRa.js",
+    "Mathpow(ran.js"
+  ]
+}
