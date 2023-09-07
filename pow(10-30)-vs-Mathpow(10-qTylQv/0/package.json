@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/pow(10-30)-vs-Mathpow(10-qTylQv",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/pow(10-30)-vs-Mathpow(10-qTylQv/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.01c3b44a7bcad",
+        "code": "pow(10, 30)",
+        "name": "pow(10, 30)",
+        "type": 1
+      },
+      {
+        "id": "0.57385376b31c4",
+        "code": "Math.pow(10, 30)",
+        "name": "Math.pow(10,",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.731cb84bcee83",
+      "code": "function pow(num, pow) {\n    var result = num;\n    while (--pow) {\n       result *= num;\n    }\n    return result;\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "pow(10, 30) vs Math.pow(10,",
+    "id": "qTylQv",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "pow(10, 30).js",
+    "Mathpow(10,.js"
+  ]
+}
