@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/pow(10-30)-vs-Mathpow(10-7kFh-2",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/pow(10-30)-vs-Mathpow(10-7kFh-2/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.01c3b44a7bcad",
+        "code": "pow(randomRange(1, 100), randomRange(1, 100))",
+        "name": "pow(10, 30)",
+        "type": 1
+      },
+      {
+        "id": "0.57385376b31c4",
+        "code": "Math.pow(randomRange(1, 100), randomRange(1, 100))",
+        "name": "Math.pow(ran",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.731cb84bcee83",
+      "code": "function pow(num, pow) {\n    var result = num;\n    while (--pow) {\n       result *= num;\n    }\n    return result;\n}\n\n\nfunction randomRange(min, max) {\n  return Math.floor(Math.random() * (max - min + 1) + min)\n}\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "pow(10, 30) vs Math.pow(10,",
+    "id": "7kFh-2",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "pow(10, 30).js",
+    "Mathpow(ran.js"
+  ]
+}
