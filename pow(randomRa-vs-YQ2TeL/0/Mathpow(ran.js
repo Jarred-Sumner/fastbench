@@ -1,0 +1,1 @@
+Math.pow(randomRange(1, 1000), randomRangeInt(1, 1000))
