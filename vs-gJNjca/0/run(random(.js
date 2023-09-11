@@ -1,0 +1,2 @@
+
+run(random(), random());
