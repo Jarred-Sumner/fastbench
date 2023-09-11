@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/function-tes-vs-eF5Kq9",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/function-tes-vs-eF5Kq9/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.1bd59f269778a",
+        "code": "function test() {\r\n  console.log(\"test\")\r\n}",
+        "name": "function tes",
+        "type": 1
+      },
+      {
+        "id": "0.db41b8b7aca1b",
+        "code": "function test() {\r\n  console.log(\"test\")\r\n}",
+        "name": "function tes",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.40b0a70049c1d",
+      "code": "function test() {\r\n  console.log(\"test\")\r\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "function tes vs ",
+    "id": "eF5Kq9",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "function tes.js",
+    "function tes.js"
+  ]
+}
