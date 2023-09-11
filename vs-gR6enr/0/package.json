@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/vs-gR6enr",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-gR6enr/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.664d4eac19ec6",
+        "code": "const obj = {}\nobj['teste'] = 0;\n\n\n\n\n",
+        "name": "const obj = ",
+        "type": 1
+      },
+      {
+        "id": "0.9641450b63d95",
+        "code": "const obj = new Map()\nobj.set('teste', 0);\n\n\n",
+        "name": "const obj = ",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b7b0608f78261",
+      "code": "console.log(Date.now())",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "gR6enr",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const obj = .js",
+    "const obj = .js"
+  ]
+}
