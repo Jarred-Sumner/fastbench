@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/function-tes-vs-QI4fJW",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/function-tes-vs-QI4fJW/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.1bd59f269778a",
+        "code": "function test() {\r\n  let l = 0\r\nfor(let i = 0; i < 1e7; i++) {l += i}\r\n}",
+        "name": "function tes",
+        "type": 1
+      },
+      {
+        "id": "0.db41b8b7aca1b",
+        "code": "function test() {\r\n  console.log(\"test\")\r\n}",
+        "name": "function tes",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.40b0a70049c1d",
+      "code": "function test() {\r\n  console.log(\"test\")\r\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "function tes vs ",
+    "id": "QI4fJW",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "function tes.js",
+    "function tes.js"
+  ]
+}
