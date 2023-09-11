@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/let-i-0-d-vs-let-i-0-w-04gr-",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/let-i-0-d-vs-let-i-0-w-04gr-/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.d1e2ab984876",
+        "code": "let i = 0;\ndo {\n  console.log(i);\n  i++;\n} while(i < 10)",
+        "name": "let i = 0;\nd",
+        "type": 1
+      },
+      {
+        "id": "0.b223a01d3b3b3",
+        "code": "for (let i = 0; i < 10 ; i++) {\n  console.log(i);\n}",
+        "name": "let i = 0;\nw",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.5d2c099bc261e8",
+      "code": "for (let i = 0; i < 10 ; i++) {\n  console.log(i);\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "let i = 0;\nd vs let i = 0;\nw",
+    "id": "-04gr-",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "let i = 0;!d.js",
+    "let i = 0;!w.js"
+  ]
+}
