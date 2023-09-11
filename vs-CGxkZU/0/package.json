@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/vs-CGxkZU",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-CGxkZU/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.664d4eac19ec6",
+        "code": "const obj = {}\n\nconst len = 100000;\n\nfor (let i = 0; i < len; i++) {\n  const key = i + 'teste';\n  obj[key] = i;\n}\n\nconsole.log(obj[len - 1 + 'teste'])\n\n\n\n\n",
+        "name": "const obj = ",
+        "type": 1
+      },
+      {
+        "id": "0.9641450b63d95",
+        "code": "const obj = new Map()\n\nconst len = 100000;\n\nfor (let i = 0; i < len; i++) {\n  const key = i + 'teste';\n  obj.set(key, i)\n}\n\nconsole.log(obj.get(len - 1) + 'teste')\n\n\n",
+        "name": "const obj = ",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b7b0608f78261",
+      "code": "console.log(Date.now())",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "CGxkZU",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const obj = .js",
+    "const obj = .js"
+  ]
+}
