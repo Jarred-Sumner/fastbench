@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/vs-gJNjca",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-gJNjca/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.664d4eac19ec6",
+        "code": "\nrun(random(), random());",
+        "name": "\nrun(random(",
+        "type": 1
+      },
+      {
+        "id": "0.9641450b63d95",
+        "code": "run(num(), random());\n",
+        "name": "const obj = ",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b7b0608f78261",
+      "code": "function random() {\n  const num = Math.random();\n  if (num > 0.3) return num + '';\n  return num;\n}\n\nfunction num () {\n  return Math.random()\n}\n\nfunction run (a, b) {\n  return a;\n}\n\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "gJNjca",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "run(random(.js",
+    "const obj = .js"
+  ]
+}
