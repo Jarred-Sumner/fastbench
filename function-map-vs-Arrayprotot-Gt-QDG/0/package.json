@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/function-map-vs-Arrayprotot-Gt-QDG",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/function-map-vs-Arrayprotot-Gt-QDG/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c25cb77e2c5",
+        "code": "Array.prototype.mapArray = function(callback) {\r\n    let result = [];\r\n    for (let i = 0; i < this.length; i++) {\r\n        result.push(callback(this[i], i, this));\r\n    }\r\n    return result;\r\n}\r\n\r\nlet numbers = [1, 2, 3, 4, 5];\r\nlet squaredNumbers = numbers.mapArray(function(number) {\r\n    return number * number;\r\n});\r\nconsole.log(squaredNumbers); // [1, 4, 9, 16, 25]\r\n\r\n\r\n",
+        "name": "function map",
+        "type": 1
+      },
+      {
+        "id": "0.bfaeb0fd49b46",
+        "code": "\r\n\r\n\r\n\r\n\r\nfunction mapArray(array, callback) {\r\n    let result = [];\r\n    for (let i = 0; i < array.length; i++) {\r\n        result.push(callback(array[i], i, array));\r\n    }\r\n    return result;\r\n}\r\n\r\nlet numbers = [1, 2, 3, 4, 5];\r\nlet squaredNumbers = mapArray(numbers, (number) => {return number * number;})\r\nconsole.log(squaredNumbers); // [1, 4, 9, 16, 25]\r\n",
+        "name": "Array.protot",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.7019881bd7629",
+      "code": "console.log(\"hi\")",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "function map vs Array.protot",
+    "id": "Gt-QDG",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "function map.js",
+    "Arrayprotot.js"
+  ]
+}
