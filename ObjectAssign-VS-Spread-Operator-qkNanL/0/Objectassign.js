@@ -1,0 +1,1 @@
+const newObj = Object.assign({}, obj1, obj2, obj3)
