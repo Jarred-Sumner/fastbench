@@ -1,0 +1,1 @@
+const newObj = { ...obj1, ...obj2, ...obj3 }
