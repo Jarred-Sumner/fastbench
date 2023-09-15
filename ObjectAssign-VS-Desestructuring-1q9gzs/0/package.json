@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/ObjectAssign-VS-Desestructuring-1q9gzs",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/ObjectAssign-VS-Desestructuring-1q9gzs/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.14f11ca1012c4",
+        "code": "const newObj = { ...obj1, ...obj2, ...obj3 }",
+        "name": "Desestructuring",
+        "type": 1
+      },
+      {
+        "id": "0.c17e8efdfac8b",
+        "code": "const newObj = Object.assign({}, obj1, obj2, obj3)",
+        "name": "Object.assign",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.3b5a71ddab12e",
+      "code": "let obj1 = {}\nlet obj2 = {}\nlet obj3 = {}\n\nfor(let i = 0; i < 500; i++) {\n  obj1[Math.floor(Math.random() * 1000000)] = Math.floor(Math.random() * 10000);\n  obj2[Math.floor(Math.random() * 1000000)] = Math.floor(Math.random() * 10000);\n  obj3[Math.floor(Math.random() * 1000000)] = Math.floor(Math.random() * 10000);\n}\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Object.Assign VS Desestructuring",
+    "id": "1q9gzs",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Desestructuring.js",
+    "Objectassign.js"
+  ]
+}
