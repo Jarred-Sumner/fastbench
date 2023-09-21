@@ -1,0 +1,57 @@
+{
+  "name": "@fastbench/S-7LQ5gl",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/S-7LQ5gl/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.9ea29596977ba",
+        "code": "string.indexOf(\"t\") === 0;",
+        "name": "String.prototype.indexOf()",
+        "type": 1
+      },
+      {
+        "id": "0.3b74353825cef",
+        "code": "string.startsWith(\"t\");",
+        "name": "String.prototype.startsWith()",
+        "type": 1
+      },
+      {
+        "id": "0.00e2854169425",
+        "code": "string.charCodeAt(0) === 116;",
+        "name": "String.prototype.charCodeAt()",
+        "type": 1
+      },
+      {
+        "id": "0.072128035979",
+        "code": "string[0] === \"t\";",
+        "name": "String[x]",
+        "type": 1
+      },
+      {
+        "id": "0.db2a9d8e74f93",
+        "code": "string.at(0) === \"t\";",
+        "name": "String.prototype.at()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.e6b53c86c79d9",
+      "code": "const string = \"this is a reasonably long string\";\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "S",
+    "id": "7LQ5gl",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "StringprototypeindexOf().js",
+    "StringprototypestartsWith().js",
+    "StringprototypecharCodeAt().js",
+    "String[x].js",
+    "Stringprototypeat().js"
+  ]
+}
