@@ -1,0 +1,1 @@
+string.charCodeAt(0) === 116;
