@@ -1,0 +1,1 @@
+Array.from({ length: 1_000 }).fill({ key1: "abc", key2: "def" })
