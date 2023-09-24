@@ -1,0 +1,1 @@
+Array.from({ length: 10_000 }, () => ({ key1: "abc", key2: "def" }))
