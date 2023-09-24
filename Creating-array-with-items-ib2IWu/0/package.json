@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/Creating-array-with-items-ib2IWu",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Creating-array-with-items-ib2IWu/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.62ef4cecab04c",
+        "code": "Array.from({ length: 10_000 }, () => ({ key1: \"abc\", key2: \"def\" }))",
+        "name": "Array.from()",
+        "type": 1
+      },
+      {
+        "id": "0.d828a17228588",
+        "code": "Array.from({ length: 10_000 }).map(() => ({ key1: \"abc\", key2: \"def\" }))",
+        "name": "Array.from().map()",
+        "type": 1
+      },
+      {
+        "id": "0.fe3f2136671a7",
+        "code": "Array.from({ length: 10_000 }).fill({ key1: \"abc\", key2: \"def\" })",
+        "name": "Array.from().fill()",
+        "type": 1
+      },
+      {
+        "id": "0.66558cab405c2",
+        "code": "Array(10_000).fill({ key1: \"abc\", key2: \"def\" })",
+        "name": "Array().fill()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b2f038106f11b",
+      "code": "//",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Creating array with items",
+    "id": "ib2IWu",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Arrayfrom().js",
+    "Arrayfrom()map().js",
+    "Arrayfrom()fill().js",
+    "Array()fill().js"
+  ]
+}
