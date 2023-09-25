@@ -1,0 +1,1 @@
+input.replace(/^[\t\n\r ]+|[\t\n\r ]+$/g, "")
