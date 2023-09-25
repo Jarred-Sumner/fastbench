@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/replace-vs-trim-e_vK1D",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/replace-vs-trim-e_vK1D/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2e74f5267c764",
+        "code": "input.replace(/^[\\t\\n\\r ]+|[\\t\\n\\r ]+$/g, \"\")",
+        "name": "replace",
+        "type": 1
+      },
+      {
+        "id": "0.aabefad910574",
+        "code": "input.trim()",
+        "name": "trim",
+        "type": 1
+      },
+      {
+        "id": "0.3d5031395cb1a",
+        "code": "trimIf(input)",
+        "name": "trimIf",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.ad8bae5283c7c",
+      "code": "const input = `asd`\n\nfunction trimIf(input) {\n  const start = input[0];\n  const end = input[input.length];\n  if (start !== ' ' && start !== '\\n' && start !== '\\r' && start !== '\\t' &&\n  end !== ' ' && end !== '\\n' && end !== '\\r' && end !== '\\t') {\n    return input;\n  }\n  \n  return input.trim();\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "replace vs trim",
+    "id": "e_vK1D",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "replace.js",
+    "trim.js",
+    "trimIf.js"
+  ]
+}
