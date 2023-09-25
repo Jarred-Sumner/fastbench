@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/split-vs-let-array1-HoDOtf",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/split-vs-let-array1-HoDOtf/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.7084f27ad32f3",
+        "code": "const a = str1.split(regex1);\n\nregex1.lastIndex = 0;",
+        "name": "split",
+        "type": 1
+      },
+      {
+        "id": "0.d492ccaf631e",
+        "code": "let array1;\n\nlet output = [];\nlet lastIndex = 0;\nwhile ((array1 = regex1.exec(str1)) !== null) {\n  output.push(str1.slice(lastIndex, regex1.lastIndex - array1[0].length));\n  lastIndex = regex1.lastIndex;\n  output.push(array1[0]);\n}\n\noutput.push(str1.slice(lastIndex));\n\nconst a = output;\n\nregex1.lastIndex = 0;",
+        "name": "let array1;\n",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.20605708ec77c",
+      "code": "const regex1 = /(foo)/g;\nconst str1 = 'table football, foosball';\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "split vs let array1;\n",
+    "id": "HoDOtf",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "split.js",
+    "let array1;!.js"
+  ]
+}
