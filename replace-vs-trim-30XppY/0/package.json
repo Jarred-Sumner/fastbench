@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/replace-vs-trim-30XppY",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/replace-vs-trim-30XppY/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2e74f5267c764",
+        "code": "input.replace(/^[\\t\\n\\r ]+|[\\t\\n\\r ]+$/g, \"\")",
+        "name": "replace",
+        "type": 1
+      },
+      {
+        "id": "0.aabefad910574",
+        "code": "input.trim()",
+        "name": "trim",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.ad8bae5283c7c",
+      "code": "const input = `asd`",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "replace vs trim",
+    "id": "30XppY",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "replace.js",
+    "trim.js"
+  ]
+}
