@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/split-vs-let-array1-pD2xTG",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/split-vs-let-array1-pD2xTG/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.7084f27ad32f3",
+        "code": "const a = split();\n\nregex1.lastIndex = 0;",
+        "name": "split",
+        "type": 1
+      },
+      {
+        "id": "0.d492ccaf631e",
+        "code": "const a = exec();\n\nregex1.lastIndex = 0;",
+        "name": "exec",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.20605708ec77c",
+      "code": "const regex1 = /(foo)/g;\nconst str1 = 'table football, foosball';\n\n\nfunction split() {\n  return str1.split(regex1);\n}\n\nfunction exec() {\n  let array1;\n  \n  let output = [];\n  let lastIndex = 0;\n  while ((array1 = regex1.exec(str1)) !== null) {\n    output.push(\n      str1.slice(lastIndex, regex1.lastIndex - array1[0].length),\n      array1[0],\n    );\n    lastIndex = regex1.lastIndex;\n  }\n  \n  output.push(str1.slice(lastIndex));\n  return output;\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "split vs let array1;\n",
+    "id": "pD2xTG",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "split.js",
+    "exec.js"
+  ]
+}
