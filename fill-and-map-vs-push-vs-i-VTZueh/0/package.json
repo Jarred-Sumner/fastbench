@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/fill-and-map-vs-push-vs-i-VTZueh",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/fill-and-map-vs-push-vs-i-VTZueh/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.a3a4b7a710497",
+        "code": "const array = new Array(height)\n\t.fill(null)\n\t.map((_, index) => [index])",
+        "name": "fill & map",
+        "type": 1
+      },
+      {
+        "id": "0.dc1ebf1891aed",
+        "code": "const array = [];\n\nfor (let i = 0; i < height; i++) {\n  array.push([i]);\n}",
+        "name": "push",
+        "type": 1
+      },
+      {
+        "id": "0.34e354f7513b7",
+        "code": "const array = [];\narray.length = height\n\nfor (let i = 0; i < height; i++) {\n  array[i] = [i];\n}",
+        "name": "[i] =",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.7f31460116e2a",
+      "code": "const height = 100",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "fill & map vs push vs [i] =",
+    "id": "VTZueh",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "fill & map.js",
+    "push.js",
+    "[i] =.js"
+  ]
+}
