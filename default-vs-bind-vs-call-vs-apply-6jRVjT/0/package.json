@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/default-vs-bind-vs-call-vs-apply-6jRVjT",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/default-vs-bind-vs-call-vs-apply-6jRVjT/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.a17029936ab3b",
+        "code": "asd(1,{},[],4)",
+        "name": "default",
+        "type": 1
+      },
+      {
+        "id": "0.6f6e31863d082",
+        "code": "asd.bind({})(1,{},[],4)",
+        "name": "bind",
+        "type": 1
+      },
+      {
+        "id": "0.fe30645bf282a",
+        "code": "asd.call({}, 1,{},[],4)",
+        "name": "call",
+        "type": 1
+      },
+      {
+        "id": "0.0552c7289cb15",
+        "code": "asd.apply({}, [1,{},[],4])",
+        "name": "apply",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.8412249418b72",
+      "code": "function asd() {}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "default vs bind vs call vs apply",
+    "id": "6jRVjT",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "default.js",
+    "bind.js",
+    "call.js",
+    "apply.js"
+  ]
+}
