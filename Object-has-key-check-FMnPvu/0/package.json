@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Object-has-key-check-FMnPvu",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Object-has-key-check-FMnPvu/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.8e503ebeda9d4",
+        "code": "Object.hasOwn(obj, \"key1\");\n",
+        "name": "Object.hasOwn()",
+        "type": 1
+      },
+      {
+        "id": "0.82fb5bfcfea2f",
+        "code": "obj.hasOwnProperty(\"key1\");\n",
+        "name": "Object.prototype.hasOwnProperty()",
+        "type": 1
+      },
+      {
+        "id": "0.3b2ac5c1e31dc",
+        "code": "\"key1\" in obj;\n",
+        "name": "in",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.2308da5f4772d",
+      "code": "const obj = {\n  key1: { name: \"1\" },\n  key2: { name: \"2\" },\n  key3: { name: \"3\" },\n};\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Object has key check",
+    "id": "FMnPvu",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "ObjecthasOwn().js",
+    "ObjectprototypehasOwnProperty().js",
+    "in.js"
+  ]
+}
