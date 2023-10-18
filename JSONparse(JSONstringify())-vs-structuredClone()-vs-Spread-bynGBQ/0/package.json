@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/JSONparse(JSONstringify())-vs-structuredClone()-vs-Spread-bynGBQ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/JSONparse(JSONstringify())-vs-structuredClone()-vs-Spread-bynGBQ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.55775d3747183",
+        "code": "JSON.parse(JSON.stringify(array));\n",
+        "name": "JSON.parse(JSON.stringify())",
+        "type": 1
+      },
+      {
+        "id": "0.54db0dae458c9",
+        "code": "structuredClone(array)",
+        "name": "structuredClone()",
+        "type": 1
+      },
+      {
+        "id": "0.b2cf7fc97cbed",
+        "code": "array.map((obj) => ({ ...obj, targets: [...obj.targets] }))",
+        "name": "Spread",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.9d51ed39fb7ac",
+      "code": "const array = [\n  { id: crypto.randomUUID(), value: Math.random(), targets: [\"1164302916006187008\", \"1164302950227513344\"], type: \"Abc\" },  \n  { id: crypto.randomUUID(), value: Math.random(), targets: [\"1164302980019654656\"], type: \"Def\" },\n  { id: crypto.randomUUID(), value: Math.random(), targets: [], type: \"Ghi\" },\n];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "JSON.parse(JSON.stringify()) vs structuredClone() vs Spread",
+    "id": "bynGBQ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "JSONparse(JSONstringify()).js",
+    "structuredClone().js",
+    "Spread.js"
+  ]
+}
