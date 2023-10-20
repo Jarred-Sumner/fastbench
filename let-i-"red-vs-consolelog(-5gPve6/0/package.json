@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/let-i-\"red-vs-consolelog(-5gPve6",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/let-i-\"red-vs-consolelog(-5gPve6/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.24151d91188938",
+        "code": "let i = \"blue\";\n\nif(i === \"red\"){\n  console.log(\"merah\")\n} else if(i === \"blue\"){\n  console.log(\"biru\")\n} else if(i === \"green\"){\n  console.log(\"hijau\")\n}",
+        "name": "let i = \"red",
+        "type": 1
+      },
+      {
+        "id": "0.fac882c5519178",
+        "code": "console.log(x.get(\"blue\"))",
+        "name": "console.log(",
+        "type": 1
+      },
+      {
+        "id": "0.4e9f73056e8f",
+        "code": "console.log(x[\"blue\"]);",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.0e46d82d364ed",
+      "code": "const o = {\"red\": \"merah\", \"blue\": \"biru\", \"green\": \"hijau\"};\nconst x = new Map();\nx.set(\"red\", \"merah\");\nx.set(\"blue\", \"biru\");\nx.set(\"green\", \"hijau\");",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "let i = \"red vs console.log(",
+    "id": "5gPve6",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "let i = !red.js",
+    "consolelog(.js",
+    "consolelog(.js"
+  ]
+}
