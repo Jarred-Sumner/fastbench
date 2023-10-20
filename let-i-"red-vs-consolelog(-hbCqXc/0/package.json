@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/let-i-\"red-vs-consolelog(-hbCqXc",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/let-i-\"red-vs-consolelog(-hbCqXc/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.24151d91188938",
+        "code": "let i = \"red\";\n\nif(i === \"red\"){\n  console.log(\"merah\")\n} else if(i === \"blue\"){\n  console.log(\"biru\")\n} else if(i === \"green\"){\n  console.log(\"hijau\")\n}",
+        "name": "let i = \"red",
+        "type": 1
+      },
+      {
+        "id": "0.fac882c5519178",
+        "code": "console.log(x[\"red\"])",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.0e46d82d364ed",
+      "code": "const x = {\"red\": \"merah\", \"blue\": \"biru\", \"green\": \"hijau\"}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "let i = \"red vs console.log(",
+    "id": "hbCqXc",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "let i = !red.js",
+    "consolelog(.js"
+  ]
+}
