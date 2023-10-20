@@ -1,0 +1,1 @@
+const x = {"red": "merah", "blue": "biru", "green": "hijau"}
