@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/let-i-\"red-vs-consolelog(-aVr40S",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/let-i-\"red-vs-consolelog(-aVr40S/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.24151d91188938",
+        "code": "console.log(x.get(\"gree\"));\nconsole.log(x.get(\"green\"));\nconsole.log(x.get(\"red\"));\nconsole.log(x.get(\"blue\"));",
+        "name": "if",
+        "type": 1
+      },
+      {
+        "id": "0.fac882c5519178",
+        "code": "\nf(\"gree\");\nf(\"green\");\nf(\"red\");\nf(\"blue\");",
+        "name": "map",
+        "type": 1
+      },
+      {
+        "id": "0.4e9f73056e8f",
+        "code": "console.log(o[\"gree\"]);\nconsole.log(o[\"green\"]);\nconsole.log(o[\"red\"]);\nconsole.log(o[\"blue\"]);",
+        "name": "obj",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.0e46d82d364ed",
+      "code": "const o = {\"red\": \"merah\", \"blue\": \"biru\", \"green\": \"hijau\"};\nconst x = new Map();\nx.set(\"red\", \"merah\");\nx.set(\"blue\", \"biru\");\nx.set(\"green\", \"hijau\");\nlet f = i => {\n  if(i === \"red\"){\n  console.log(\"merah\");\n} else if(i === \"blue\"){\n  console.log(\"biru\");\n} else if(i === \"green\"){\n  console.log(\"hijau\");\n}\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "let i = \"red vs console.log(",
+    "id": "aVr40S",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "if.js",
+    "map.js",
+    "obj.js"
+  ]
+}
