@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/obj-map-ms_NOB",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/obj-map-ms_NOB/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.24151d91188938",
+        "code": "console.log(x.get(9));\nconsole.log(x.get(2));\nconsole.log(x.get(5));\nconsole.log(x.get(1));\nconsole.log(x.get(4));\nconsole.log(x.get(3));",
+        "name": "if",
+        "type": 1
+      },
+      {
+        "id": "0.fac882c5519178",
+        "code": "\nf(9);\nf(2);\nf(5);\nf(1);\nf(4);\nf(3);",
+        "name": "map",
+        "type": 1
+      },
+      {
+        "id": "0.4e9f73056e8f",
+        "code": "console.log(o[9]);\nconsole.log(o[2]);\nconsole.log(o[5]);\nconsole.log(o[1]);\nconsole.log(o[4]);\nconsole.log(o[3]);",
+        "name": "obj",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.0e46d82d364ed",
+      "code": "const o = {3: \"merah\", 2: \"biru\", 1: \"hijau\", 5: \"kuning\", 4: \"hitam\"};\nconst x = new Map();\nx.set(3, \"merah\");\nx.set(2, \"biru\");\nx.set(1, \"hijau\");\nx.set(5, \"kuning\");\nx.set(4, \"hitam\");\nlet f = i => {\n  if(i === 3){\n  console.log(\"merah\");\n} else if(i === 2){\n  console.log(\"biru\");\n} else if(i === 1){\n  console.log(\"hijau\");\n} else if(i === 5){\n  console.log(\"kuning\");\n} else if(i === 4){\n  console.log(\"hitam\");\n}\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "obj map",
+    "id": "ms_NOB",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "if.js",
+    "map.js",
+    "obj.js"
+  ]
+}
