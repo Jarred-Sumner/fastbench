@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/String-array-sort-mexyZ0",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/String-array-sort-mexyZ0/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.b7ada9f05eb59",
+        "code": "array.toSorted();\n",
+        "name": "default sorter",
+        "type": 1
+      },
+      {
+        "id": "0.cd768376098fc",
+        "code": "array.toSorted((a, b) => a.localeCompare(b));\n",
+        "name": "localeCompare",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.26b9acb8c576c",
+      "code": "const array = [\r\n  'SOUNDBOARD',\r\n  'COMMUNITY',\r\n  'DISCOVERABLE',\r\n  'MEMBER_PROFILES',\r\n  'ANIMATED_ICON',\r\n  'NEW_THREAD_PERMISSIONS',\r\n  'MEMBER_VERIFICATION_GATE_ENABLED',\r\n  'ENABLED_DISCOVERABLE_BEFORE',\r\n  'WELCOME_SCREEN_ENABLED',\r\n  'VANITY_URL',\r\n  'BANNER',\r\n  'THREE_DAY_THREAD_ARCHIVE',\r\n  'AUTO_MODERATION',\r\n  'THREADS_ENABLED',\r\n  'SEVEN_DAY_THREAD_ARCHIVE',\r\n  'GUILD_ONBOARDING',\r\n  'PRIVATE_THREADS',\r\n  'TEXT_IN_VOICE_ENABLED',\r\n  'PREVIEW_ENABLED',\r\n  'NEWS',\r\n  'CHANNEL_ICON_EMOJIS_GENERATED',\r\n  'ROLE_ICONS',\r\n  'GUILD_ONBOARDING_HAS_PROMPTS',\r\n  'GUILD_ONBOARDING_EVER_ENABLED',\r\n  'INVITE_SPLASH',\r\n  'ANIMATED_BANNER',\r\n]",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "String array sort",
+    "id": "mexyZ0",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "default sorter.js",
+    "localeCompare.js"
+  ]
+}
