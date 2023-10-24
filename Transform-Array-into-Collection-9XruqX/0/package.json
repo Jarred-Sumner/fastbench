@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Transform-Array-into-Collection-9XruqX",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Transform-Array-into-Collection-9XruqX/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.67b4f0f7054ee",
+        "code": "data.reduce((coll, item) => coll.set(item.id, item), new Collection());\n",
+        "name": "Array.prototype.reduce()",
+        "type": 1
+      },
+      {
+        "id": "0.51cb689eff003",
+        "code": "new Collection(data.map((item) => [item.id, item]));\n",
+        "name": "new Collection()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.e09b19adc935d",
+      "code": "import { Collection } from \"@discordjs/collection\";\n\nconst data = [\n  { id: \"123123123\", name: \"abcd\" },\n  { id: \"123412341\", name: \"yeet\" },\n  { id: \"121212121\", name: \"yote\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n  { id: \"111111111\", name: \"etc.\" },\n];\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Transform Array into Collection",
+    "id": "9XruqX",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Arrayprototypereduce().js",
+    "new Collection().js"
+  ]
+}
