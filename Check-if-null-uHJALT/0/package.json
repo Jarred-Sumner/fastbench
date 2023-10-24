@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Check-if-null-uHJALT",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Check-if-null-uHJALT/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.72ed3f5a0ed77",
+        "code": "const r = Math.random() > 0.5 ? n : null;\n\nr === null;",
+        "name": "x === null",
+        "type": 1
+      },
+      {
+        "id": "0.c46e7ef9c7843",
+        "code": "const r = Math.random() > 0.5 ? n : null;\n\nBoolean(r);",
+        "name": "Boolean(x)",
+        "type": 1
+      },
+      {
+        "id": "0.36d2246fb8a",
+        "code": "const r = Math.random() > 0.5 ? n : null;\n\n!!r;",
+        "name": "!!x",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.88d8087cb6255",
+      "code": "const n = Date.now();",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Check if null",
+    "id": "uHJALT",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "x === null.js",
+    "Boolean(x).js",
+    "x.js"
+  ]
+}
