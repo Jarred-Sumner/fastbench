@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/test-yOGRuC",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/test-yOGRuC/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.02f92cdc30604",
+        "code": "const denormalisedUserGroups = [];\n\n    for (const group of userGroups) {\n      if (group.userAccess === 0) {\n        const { id, userGroupId } = group;\n        denormalisedUserGroups.push(\n          { id, userGroupId, userAccess: 1},\n          { id, userGroupId, userAccess: 2 }\n        );\n        continue;\n      }\n\n      denormalisedUserGroups.push(group);\n    }",
+        "name": "const denorm",
+        "type": 1
+      },
+      {
+        "id": "0.9e86cd12abf06",
+        "code": "userGroups.reduce((arr, group) => {\n    const { id, userGroupId, userAccess } = group;\n  if (userAccess === 0) {\n        arr.push(\n          { id, userGroupId, userAccess: 1},\n          { id, userGroupId, userAccess: 2 }\n        );\n  } else arr.push({id, userGroupId, userAccess})\n  \n  return arr;\n}, [])",
+        "name": "userGroups.r",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.7320cbdebec81",
+      "code": "const userGroups = [\n  { userAccess: 0, userGroupId: 's', id: 0 },\n  { userAccess: 1, userGroupId: 'b', id: 1 }\n  ]\n  \n  const denormalisedUserGroups = [];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "test",
+    "id": "yOGRuC",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const denorm.js",
+    "userGroupsr.js"
+  ]
+}
