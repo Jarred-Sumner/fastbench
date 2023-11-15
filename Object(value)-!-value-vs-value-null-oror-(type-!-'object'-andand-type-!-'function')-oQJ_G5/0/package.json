@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Object(value)-!-value-vs-value-null-oror-(type-!-'object'-andand-type-!-'function')-oQJ_G5",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Object(value)-!-value-vs-value-null-oror-(type-!-'object'-andand-type-!-'function')-oQJ_G5/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.edad94324631c",
+        "code": "values.forEach(isPrimitive1)",
+        "name": "Object(value) !== value",
+        "type": 1
+      },
+      {
+        "id": "0.4dbedd55b859b",
+        "code": "values.forEach(isPrimitive2)",
+        "name": "value === null || (type != 'object' && type != 'function')",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.7447e9a8a9e1a",
+      "code": "function isPrimitive1(value) {\n  return Object(value) !== value\n}\n\nfunction isPrimitive2(value) {\n  if (value === null) {\n    return true\n  }\n  const type = typeof value\n  return type != 'object' && type != 'function'\n}\n\nconst values = [null, undefined, true, false, 1, 10n, 'str', Symbol()]",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Object(value) !== value vs value === null || (type != 'object' && type != 'function')",
+    "id": "oQJ_G5",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Object(value) !== value.js",
+    "value === null ! (type != 'object' && type != 'function').js"
+  ]
+}
