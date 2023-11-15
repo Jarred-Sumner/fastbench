@@ -1,0 +1,1 @@
+values.forEach(isPrimitive1)
