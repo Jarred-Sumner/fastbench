@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/slice-vs-concat-hgV_70",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/slice-vs-concat-hgV_70/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.e135eee3ea7ca",
+        "code": "array.slice().reverse()",
+        "name": "slice",
+        "type": 1
+      },
+      {
+        "id": "0.b7b5659710363",
+        "code": "array.slice().reduceRight((_, item) => {}, null)",
+        "name": "concat",
+        "type": 1
+      },
+      {
+        "id": "0.8da834aec827a",
+        "code": "for (let i = array.length - 1; i >= 0; i--) {\n  \n}",
+        "name": "reverse for loop",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.8f5fafb3be1f5",
+      "code": "const array = new Array(2100).fill(null).map((_, i) => i);",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "slice vs concat",
+    "id": "hgV_70",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "slice.js",
+    "concat.js",
+    "reverse for loop.js"
+  ]
+}
