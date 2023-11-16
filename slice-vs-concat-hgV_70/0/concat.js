@@ -1,0 +1,1 @@
+array.slice().reduceRight((_, item) => {}, null)
