@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/consolelog(-vs-consolelog(-9wcZx5",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/consolelog(-vs-consolelog(-9wcZx5/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2064d0cded4d",
+        "code": "function foo() {\n  return route;\n}\n\nfoo();",
+        "name": "console.log(",
+        "type": 1
+      },
+      {
+        "id": "0.dc766789a90ff",
+        "code": "function foo() {\n  return `${route}`;\n}\n\nfoo()",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.c3393a7e57e6",
+      "code": "const route = '/users/route'",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "console.log( vs console.log(",
+    "id": "9wcZx5",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "consolelog(.js",
+    "consolelog(.js"
+  ]
+}
