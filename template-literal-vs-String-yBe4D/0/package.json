@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/template-literal-vs-String-yBe4D",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/template-literal-vs-String-yBe4D/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.7fdc58ebc337d",
+        "code": "`${type}`.replace(/#|!|\\?/g, '')",
+        "name": "template literal",
+        "type": 1
+      },
+      {
+        "id": "0.0efdfe1bc7d43",
+        "code": "String(type).replace(/#|!|\\?/g, '')",
+        "name": "String",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.3758888cf22dd",
+      "code": "const type = \"#!Error\"",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "template literal vs String",
+    "id": "-yBe4D",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "template literal.js",
+    "String.js"
+  ]
+}
