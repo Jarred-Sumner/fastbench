@@ -1,0 +1,1 @@
+String(type).replace(/#|!|\?/g, '')
