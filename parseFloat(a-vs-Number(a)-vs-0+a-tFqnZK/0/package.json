@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/parseFloat(a-vs-Number(a)-vs-0+a-tFqnZK",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/parseFloat(a-vs-Number(a)-vs-0+a-tFqnZK/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.f7e8a66cdf908",
+        "code": "parseFloat(a)",
+        "name": "parseFloat(a",
+        "type": 1
+      },
+      {
+        "id": "0.399bceafdaa98",
+        "code": "Number(a)",
+        "name": "Number(a)",
+        "type": 1
+      },
+      {
+        "id": "0.fda4d1096b5d4",
+        "code": "0+a",
+        "name": "0+a",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.01cc979f7f30d",
+      "code": "var a = \"123.456\"",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "parseFloat(a vs Number(a) vs 0+a",
+    "id": "tFqnZK",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "parseFloat(a.js",
+    "Number(a).js",
+    "0+a.js"
+  ]
+}
