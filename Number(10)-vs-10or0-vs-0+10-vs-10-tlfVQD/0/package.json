@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Number(10)-vs-10or0-vs-0+10-vs-10-tlfVQD",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Number(10)-vs-10or0-vs-0+10-vs-10-tlfVQD/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.d3e9f77f33a08",
+        "code": "10|0",
+        "name": "10|0",
+        "type": 1
+      },
+      {
+        "id": "0.4fc197b152bdb",
+        "code": "0+10",
+        "name": "0+10",
+        "type": 1
+      },
+      {
+        "id": "0.4bc3f5ccc702b",
+        "code": "10",
+        "name": "10",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.e975d80addc16",
+      "code": "var a = 123",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Number(10) vs 10|0 vs 0+10 vs 10",
+    "id": "tlfVQD",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "10!0.js",
+    "0+10.js",
+    "10.js"
+  ]
+}
