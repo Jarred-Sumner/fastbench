@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/aor0-vs-parseInt(a)-vs-parseInt(a1-cFCQv2",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/aor0-vs-parseInt(a)-vs-parseInt(a1-cFCQv2/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.719bd5dda0d8a",
+        "code": "a|0",
+        "name": "a|0",
+        "type": 1
+      },
+      {
+        "id": "0.45f5585e0133d",
+        "code": "parseInt(a)",
+        "name": "parseInt(a)",
+        "type": 1
+      },
+      {
+        "id": "0.578280228e61c",
+        "code": "parseInt(a,10)",
+        "name": "parseInt(a,1",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.0d8fa073c26fa",
+      "code": "var a = 123.456",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "a|0 vs parseInt(a) vs parseInt(a,1",
+    "id": "cFCQv2",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "a!0.js",
+    "parseInt(a).js",
+    "parseInt(a,1.js"
+  ]
+}
