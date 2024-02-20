@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/constructor-vs-method-vs-property-7jGaAu",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/constructor-vs-method-vs-property-7jGaAu/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.36dbc5da884f5",
+        "code": "new Test1()\na = 0",
+        "name": "constructor",
+        "type": 1
+      },
+      {
+        "id": "0.1153aed70da86",
+        "code": "(new Test2()).add()\na = 0",
+        "name": "method",
+        "type": 1
+      },
+      {
+        "id": "0.81e1df17a14c9",
+        "code": "(new Test3()).add()\na = 0",
+        "name": "property",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.de86cdf21d6a7",
+      "code": "let a = 0\nclass Test1 {\n\tconstructor() {\n\t\ta += 1\n\t}\n}\nclass Test2 {\n\tadd() {\n\t\ta += 1\n\t}\n}\nclass Test3 {\n\tadd = () => {\n\t\ta += 1\n\t}\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "constructor vs method vs property",
+    "id": "7jGaAu",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "constructor.js",
+    "method.js",
+    "property.js"
+  ]
+}
