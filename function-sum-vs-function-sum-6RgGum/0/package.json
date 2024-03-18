@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/function-sum-vs-function-sum-6RgGum",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/function-sum-vs-function-sum-6RgGum/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.12126d182b251",
+        "code": "function sum(array) {\n    let sum = 0;\n    for (let i = 0; i < array.length; i++) {\n        sum += array[i];\n    }\n    return sum;\n}\nconst s = sum(array);\nconsole.log(s);",
+        "name": "function sum",
+        "type": 1
+      },
+      {
+        "id": "0.d6d209ebf0373",
+        "code": "function sum2(array) {\n    return array.reduce((a, b) => a + b, 0);\n}\nconst s = sum2(array);\nconsole.log(s);",
+        "name": "function sum",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.4da06712c0c36",
+      "code": "const array = [...Array(1000).keys()]",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "function sum vs function sum",
+    "id": "6RgGum",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "function sum.js",
+    "function sum.js"
+  ]
+}
