@@ -1,0 +1,1 @@
+const data = Object.fromEntries(new Array(1000).fill(null).map((_, index) => [String.fromCharCode(index), index]))
