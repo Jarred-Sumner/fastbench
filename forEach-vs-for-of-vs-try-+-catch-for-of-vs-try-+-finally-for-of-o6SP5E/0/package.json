@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/forEach-vs-for-of-vs-try-+-catch-for-of-vs-try-+-finally-for-of-o6SP5E",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/forEach-vs-for-of-vs-try-+-catch-for-of-vs-try-+-finally-for-of-o6SP5E/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.07f100b607f1",
+        "code": "Object.keys(data).forEach(() => {})",
+        "name": "forEach",
+        "type": 1
+      },
+      {
+        "id": "0.357aefe6fe0ae",
+        "code": "for (const key in data) {}",
+        "name": "for of",
+        "type": 1
+      },
+      {
+        "id": "0.bed40933b2e47",
+        "code": "try {\n  for (const key in data) {}\n} catch (e) {}",
+        "name": "try + catch for of",
+        "type": 1
+      },
+      {
+        "id": "0.96a704a3b7f48",
+        "code": "try {\n  for (const key in data) {}\n} finally {}",
+        "name": "try + finally for of",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.329590003ccc3",
+      "code": "const data = Object.fromEntries(new Array(1000).fill(null).map((_, index) => [String.fromCharCode(index), index]))",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "forEach vs for of vs try + catch for of vs try + finally for of",
+    "id": "o6SP5E",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "forEach.js",
+    "for of.js",
+    "try + catch for of.js",
+    "try + finally for of.js"
+  ]
+}
