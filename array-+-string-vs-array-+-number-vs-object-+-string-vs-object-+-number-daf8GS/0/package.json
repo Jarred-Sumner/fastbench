@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/array-+-string-vs-array-+-number-vs-object-+-string-vs-object-+-number-daf8GS",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/array-+-string-vs-array-+-number-vs-object-+-string-vs-object-+-number-daf8GS/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.e8ff712019ccb",
+        "code": "arr[\"1\"] = 1",
+        "name": "array + string",
+        "type": 1
+      },
+      {
+        "id": "0.37601efc1e50a",
+        "code": "arr[1] = 1",
+        "name": "array + number",
+        "type": 1
+      },
+      {
+        "id": "0.907abad445ef4",
+        "code": "obj[\"1\"] = 1",
+        "name": "object + string",
+        "type": 1
+      },
+      {
+        "id": "0.3503319dd26bf",
+        "code": "obj[1] = 1",
+        "name": "object + number",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f19b8a5c09148",
+      "code": "const arr = [];\nconst obj = {};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "array + string vs array + number vs object + string vs object + number",
+    "id": "daf8GS",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "array + string.js",
+    "array + number.js",
+    "object + string.js",
+    "object + number.js"
+  ]
+}
