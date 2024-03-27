@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/one-XQSlq",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/one-XQSlq/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.f063fdafa81ab",
+        "code": "let queries = [];\r\nconst partner = [\r\n  {id: 0, languageRegion: [['deu', 'de'], ['eng', 'en']]},\r\n  {id: 1, languageRegion: [['deu', 'de']]},\r\n  {id: 2, languageRegion: [['eng', 'en']]},\r\n  {id: 3, languageRegion: [['deu', 'de'], ['eng', 'en']]},\r\n  {id: 4, languageRegion: [['deu', 'de'], ['eng', 'en']]},\r\n  {id: 5, languageRegion: [['eng', 'en']]},\r\n  {id: 6, languageRegion: [['eng', 'en']]},\r\n  {id: 7, languageRegion: [['deu', 'de']]},\r\n  {id: 8, languageRegion: [['deu', 'de']]},\r\n  {id: 9, languageRegion: [['deu', 'de'], ['eng', 'en']]},\r\n];\r\n\r\nconst trigger = [\r\n  {id: 0, language: \"deu\"},\r\n  {id: 1, language: \"deu\"},\r\n  {id: 2, language: \"deu\"},\r\n  {id: 3, language: \"eng\"},\r\n  {id: 4, language: \"eng\"},\r\n  {id: 5, language: \"deu\"},\r\n  {id: 6, language: \"eng\"},\r\n  {id: 7, language: \"deu\"},\r\n  {id: 8, language: \"deu\"},\r\n  {id: 9, language: \"deu\"},\r\n];\r\nfor (const p of partner) {\r\n  const { languageRegion } = p;\r\n\r\n  for (const lr of p.languageRegion) {\r\n    const [language] = lr;\r\n\r\n    for (const t of trigger) {\r\n      if (t.language == language) {\r\n        queries.push({p, t})\r\n      }\r\n    }   \r\n  }\r\n}",
+        "name": "one",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.df528867acfe3",
+      "code": "let queries = [];\nconst partner = [\n  {id: 0, languageRegion: [['deu', 'de'], ['eng', 'en']]},\n  {id: 1, languageRegion: [['deu', 'de']]},\n  {id: 2, languageRegion: [['eng', 'en']]},\n  {id: 3, languageRegion: [['deu', 'de'], ['eng', 'en']]},\n  {id: 4, languageRegion: [['deu', 'de'], ['eng', 'en']]},\n  {id: 5, languageRegion: [['eng', 'en']]},\n  {id: 6, languageRegion: [['eng', 'en']]},\n  {id: 7, languageRegion: [['deu', 'de']]},\n  {id: 8, languageRegion: [['deu', 'de']]},\n  {id: 9, languageRegion: [['deu', 'de'], ['eng', 'en']]},\n];\n\nconst trigger = [\n  {id: 0, language: \"deu\"},\n  {id: 1, language: \"deu\"},\n  {id: 2, language: \"deu\"},\n  {id: 3, language: \"eng\"},\n  {id: 4, language: \"eng\"},\n  {id: 5, language: \"deu\"},\n  {id: 6, language: \"eng\"},\n  {id: 7, language: \"deu\"},\n  {id: 8, language: \"deu\"},\n  {id: 9, language: \"deu\"},\n];\nfor (const p of partner) {\n  const { languageRegion } = p;\n\n  for (const lr of p.languageRegion) {\n    const [language] = lr;\n\n    for (const t of trigger) {\n      if (t.language == language) {\n        queries.push({p, t})\n      }\n    }   \n  }\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "one",
+    "id": "-XQSlq",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "one.js"
+  ]
+}
