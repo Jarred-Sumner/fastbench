@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Array-JSONstringify(x)-vs-xtoString()-0prx0s",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Array-JSONstringify(x)-vs-xtoString()-0prx0s/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.69f6f61f061ea",
+        "code": "JSON.stringify(array);",
+        "name": "JSON.stringify()",
+        "type": 1
+      },
+      {
+        "id": "0.18b3c1a629b4",
+        "code": "\"[\" + array.toString() + \"]\";",
+        "name": "toString()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.fe57251e2454",
+      "code": "const array = [\n  { key1: \"1231453549823489\", key2: 10, key3: \"asodjidsi\", nested: { obj1: \"12893893891\", key44: \"asoidiadsioasd\"  } },\n  { key1: \"1231453549823\", key2: 103, key3: \"asodjid\", nested: { obj1: \"128938912\", key44: \"adiadsioasd\"  } },\n  { key1: \"1231453549823489\", key2: 0, key3: \"asoidsi\", nested: { obj1: \"1289123891\", key44: \"asoidiadd\"  } },\n  { key1: \"123145389\", key2: 59549, key3: \"adjidsi\", nested: { obj1: \"1289389891\", key44: \"asoidsioasd\"  } },\n];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Array JSON.stringify(x) vs x.toString()",
+    "id": "0prx0s",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "JSONstringify().js",
+    "toString().js"
+  ]
+}
