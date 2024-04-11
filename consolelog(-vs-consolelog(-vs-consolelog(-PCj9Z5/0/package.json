@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/consolelog(-vs-consolelog(-vs-consolelog(-PCj9Z5",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/consolelog(-vs-consolelog(-vs-consolelog(-PCj9Z5/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.bdf059f37bdec",
+        "code": "console.log(`A: ${a} B: ${b}`);",
+        "name": "console.log(",
+        "type": 1
+      },
+      {
+        "id": "0.9cce2cb96b16f",
+        "code": "console.log('A: '+a+' B: '+b);",
+        "name": "console.log(",
+        "type": 1
+      },
+      {
+        "id": "0.654e2a9f5d1c2",
+        "code": "console.log(\"A: \"+a+\" B: \"+b);",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.5dc338f9faba1",
+      "code": "const a = \"aaaa\";\nconst b = 109301;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "console.log( vs console.log( vs console.log(",
+    "id": "PCj9Z5",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "consolelog(.js",
+    "consolelog(.js",
+    "consolelog(.js"
+  ]
+}
