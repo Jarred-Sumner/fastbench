@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/vs-XfH8ZP",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-XfH8ZP/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.25038433377a5",
+        "code": "let count = 0\nwhile(count < 100000){\n  console.log('essa')\n  count++\n}",
+        "name": "let count = ",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.e3e92ef1545d8",
+      "code": "let count = 0\nwhile(count < 100000){\n  console.log('essa')\n  count++\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "XfH8ZP",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "let count = .js"
+  ]
+}
