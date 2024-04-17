@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/0-1-vs-1-91Vp9X",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/0-1-vs-1-91Vp9X/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.ab21eb6ae3ce7",
+        "code": "const a = 0-1",
+        "name": "0-1",
+        "type": 1
+      },
+      {
+        "id": "0.da29f32eadbb4",
+        "code": "const a = -1",
+        "name": "-1",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.ae8159bf12f29",
+      "code": "const b = 123;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "0-1 vs -1",
+    "id": "91Vp9X",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "0-1.js",
+    "-1.js"
+  ]
+}
