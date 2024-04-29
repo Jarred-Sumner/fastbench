@@ -1,0 +1,1 @@
+JSON.stringify(array1) === JSON.stringify(array2)
