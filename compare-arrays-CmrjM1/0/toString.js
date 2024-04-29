@@ -1,0 +1,1 @@
+array1.toString() === array2.toString()
