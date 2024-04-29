@@ -1,0 +1,1 @@
+compareArrays2(array1, array2)
