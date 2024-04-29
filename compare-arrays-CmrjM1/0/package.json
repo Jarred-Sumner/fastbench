@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/compare-arrays-CmrjM1",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/compare-arrays-CmrjM1/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.abc45b07a3a05",
+        "code": "array1.toString() === array2.toString()",
+        "name": "toString",
+        "type": 1
+      },
+      {
+        "id": "0.3521fcaf5b325",
+        "code": "JSON.stringify(array1) === JSON.stringify(array2)",
+        "name": "JSON.stringify",
+        "type": 1
+      },
+      {
+        "id": "0.777d9a5b475d3",
+        "code": "compareArrays1(array1, array2)",
+        "name": "every",
+        "type": 1
+      },
+      {
+        "id": "0.2cb2907add433",
+        "code": "compareArrays2(array1, array2)",
+        "name": "for loop",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.56f86b903b068",
+      "code": "let array1 = [\"11\", \"22\", \"33\"];\nlet array2 = [\"11\", \"22\", \"33\"];\n\nconst compareArrays1 = (a, b) =>\n  a.length === b.length &&\n  a.every((element, index) => element === b[index]);\n  \nconst compareArrays2 = (a, b) => {\n  if (a.length !== b.length) return false;\n  else {\n    // Comparing each element of your array\n    for (var i = 0; i < a.length; i++) {\n      if (a[i] !== b[i]) {\n        return false;\n      }\n    }\n    return true;\n  }\n};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "compare arrays",
+    "id": "CmrjM1",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "toString.js",
+    "JSONstringify.js",
+    "every.js",
+    "for loop.js"
+  ]
+}
