@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/compare-vs-length-+-compare-3JCPUs",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/compare-vs-length-+-compare-3JCPUs/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.34b7a058a49ce",
+        "code": "data.filter((value) => value === 'bbbbb')",
+        "name": "compare",
+        "type": 1
+      },
+      {
+        "id": "0.40abff9e14726",
+        "code": "data.filter((value) => value.length === 5 && value === 'bbbbb')",
+        "name": "length + compare",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.d6955b45127d3",
+      "code": "const data = [...Array(10000)].map(() =>  \n [...Array(~~(Math.random() * 10  + 3))].map(() =>\n    String.fromCharCode(Math.random() * (123 - 97) + 97)\n ).join('') \n)",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "compare vs length + compare",
+    "id": "3JCPUs",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "compare.js",
+    "length + compare.js"
+  ]
+}
