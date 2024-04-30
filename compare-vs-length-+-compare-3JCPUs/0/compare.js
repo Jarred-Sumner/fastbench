@@ -1,0 +1,1 @@
+data.filter((value) => value === 'bbbbb')
