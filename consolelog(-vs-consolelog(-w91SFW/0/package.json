@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/consolelog(-vs-consolelog(-w91SFW",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/consolelog(-vs-consolelog(-w91SFW/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.518459560bc02",
+        "code": "console.log(1)",
+        "name": "console.log(",
+        "type": 1
+      },
+      {
+        "id": "0.75622da2f4f1a",
+        "code": "console.log(1)",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.836d1d4f16f7a",
+      "code": "console.log(1)",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "console.log( vs console.log(",
+    "id": "w91SFW",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "consolelog(.js",
+    "consolelog(.js"
+  ]
+}
