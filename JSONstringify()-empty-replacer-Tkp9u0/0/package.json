@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/JSONstringify()-empty-replacer-Tkp9u0",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/JSONstringify()-empty-replacer-Tkp9u0/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.354edc5b9eea7",
+        "code": "JSON.stringify(obj, null, \"\\t\");",
+        "name": "JSON.stringify(obj, null, \"\\t\")",
+        "type": 1
+      },
+      {
+        "id": "0.7968dd4106e99",
+        "code": "JSON.stringify(obj, undefined, \"\\t\");",
+        "name": "JSON.stringify(obj, undefined, \"\\t\")",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.1239b8bc3f3f5",
+      "code": "const obj = {\n  key1: 123,\n  key2: \"str\",\n  key3: {\n    key4: 123,\n    key5: [\n      123  \n    ]\n  },\n};",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "JSON.stringify() empty replacer",
+    "id": "Tkp9u0",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "JSONstringify(obj, null, !t!).js",
+    "JSONstringify(obj, undefined, !t!).js"
+  ]
+}
