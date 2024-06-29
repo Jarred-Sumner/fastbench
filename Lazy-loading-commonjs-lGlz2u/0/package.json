@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Lazy-loading-commonjs-lGlz2u",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Lazy-loading-commonjs-lGlz2u/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c70b681812e07",
+        "code": "const mod = fakeRequire(\"mod\");\nmod.fn();",
+        "name": "Relying on require cache",
+        "type": 1
+      },
+      {
+        "id": "0.75f32be3a1737",
+        "code": "mod2().fn();",
+        "name": "Lazy fn",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.d87310d516149",
+      "code": "let i = 0;\n\nconst mod = {\n  fn() {\n    ++i;\n  }\n};\n\nconst fakeRequireCache = new Map()\n\nfunction fakeRequire(n) {\n  if (fakeRequireCache.has(n)) {\n    return fakeRequireCache.get(n);\n  }\n\n  fakeRequireCache.set(n, mod);\n  return fakeRequireCache.get(n);\n}\n\nfunction getLazy(f) {\n  let cache;\n  return () => (cache ??= f());\n}\n\nconst mod2 = getLazy(() => mod);",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Lazy loading commonjs",
+    "id": "lGlz2u",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Relying on require cache.js",
+    "Lazy fn.js"
+  ]
+}
