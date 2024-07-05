@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Round-down-nR1oN-",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Round-down-nR1oN-/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.8fe85de9e281f",
+        "code": "i += Math.trunc(3.73737462)",
+        "name": "Math.trunc()",
+        "type": 1
+      },
+      {
+        "id": "0.5f792f1bfe40a",
+        "code": "i += parseInt(3.73737462, 10)",
+        "name": "parseInt()",
+        "type": 1
+      },
+      {
+        "id": "0.f3216f1d0f25a",
+        "code": "i += Math.floor(3.73737462)",
+        "name": "Math.floor()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.8aa274b466dc3",
+      "code": "let i = 0",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Round down",
+    "id": "nR1oN-",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Mathtrunc().js",
+    "parseInt().js",
+    "Mathfloor().js"
+  ]
+}
