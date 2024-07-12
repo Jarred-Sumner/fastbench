@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Parse-Number-(int)-wRNA_z",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Parse-Number-(int)-wRNA_z/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.d2692d12b27f3",
+        "code": "parseInt(val, 10);",
+        "name": "parseInt()",
+        "type": 1
+      },
+      {
+        "id": "0.030f80ec1f213",
+        "code": "Number(val);",
+        "name": "Number",
+        "type": 1
+      },
+      {
+        "id": "0.b6a45928c1ec2",
+        "code": "+val;",
+        "name": "+",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.5a2549168718b",
+      "code": "const val = \"2957820357235\";",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Parse Number (int)",
+    "id": "wRNA_z",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "parseInt().js",
+    "Number.js",
+    "+.js"
+  ]
+}
