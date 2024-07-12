@@ -1,0 +1,1 @@
+parseInt(val, 10);
