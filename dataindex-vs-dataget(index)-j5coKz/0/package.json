@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/dataindex-vs-dataget(index)-j5coKz",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/dataindex-vs-dataget(index)-j5coKz/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.5a358149ad569",
+        "code": "for (let index = 0; index < length; index++) {\n\tconst piece = data[index];\n}",
+        "name": "data[index]",
+        "type": 1
+      },
+      {
+        "id": "0.8c57a09af1a31",
+        "code": "for (let index = 0; index < length; index++) {\n\tconst piece = dataSet[index];\n}",
+        "name": "data.get(index)",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f078f44c357d1",
+      "code": "const data = new Array(2000).fill(null).map((_, index) => ({index}))\nconst dataSet = new Set(data)\nconst length = data.length",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "data[index] vs data.get(index)",
+    "id": "j5coKz",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "data[index].js",
+    "dataget(index).js"
+  ]
+}
