@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/apply-vs-spread-vs-call-qDCUqn",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/apply-vs-spread-vs-call-qDCUqn/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.44c1f19eb4d7b",
+        "code": "for (const i in data) {\n  fn.apply(null, args)\n}",
+        "name": "apply",
+        "type": 1
+      },
+      {
+        "id": "0.3d754a463649e",
+        "code": "for (const i in data) {\n  fn(...args)\n}",
+        "name": "spread",
+        "type": 1
+      },
+      {
+        "id": "0.c5a54fb851292",
+        "code": "for (const i in data) {\n  fn.call(null, ...args)\n}",
+        "name": "call",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.7fefa20cb64a",
+      "code": "const data = new Array(2000).fill(null)\n\nfunction fn() {}\nconst args = [-10000, 10000]",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "apply vs spread vs call",
+    "id": "qDCUqn",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "apply.js",
+    "spread.js",
+    "call.js"
+  ]
+}
