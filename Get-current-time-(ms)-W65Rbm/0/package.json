@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Get-current-time-(ms)-W65Rbm",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Get-current-time-(ms)-W65Rbm/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.3aec41ab24264",
+        "code": "Date.now();",
+        "name": "Date.now()",
+        "type": 1
+      },
+      {
+        "id": "0.ee740a4afbb96",
+        "code": "performance.now();",
+        "name": "performance.now()",
+        "type": 1
+      },
+      {
+        "id": "0.dd8400e12b2d7",
+        "code": "new Date().getTime();",
+        "name": "new Date().getTime()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b8ea0ad8e4569",
+      "code": "let i = 1",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Get current time (ms)",
+    "id": "W65Rbm",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Datenow().js",
+    "performancenow().js",
+    "new Date()getTime().js"
+  ]
+}
