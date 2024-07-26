@@ -1,0 +1,1 @@
+const buffer = Example.toBuffer(data);
