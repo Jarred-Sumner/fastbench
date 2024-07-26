@@ -1,0 +1,1 @@
+const buffer = kiwiSchema.encodeExample(data);
