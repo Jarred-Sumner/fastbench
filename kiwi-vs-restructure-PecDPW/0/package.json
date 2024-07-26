@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/kiwi-vs-restructure-PecDPW",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/kiwi-vs-restructure-PecDPW/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.ab3ce232ec024",
+        "code": "const buffer = kiwiSchema.encodeExample(data);",
+        "name": "kiwi",
+        "type": 1
+      },
+      {
+        "id": "0.57f03324873e9",
+        "code": "const buffer = Example.toBuffer(data);",
+        "name": "restructure",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f0e36e185f82f",
+      "code": "import { compileSchema, parseSchema } from \"https://cdn.skypack.dev/kiwi-schema@0.5.0\";\nimport * as r from \"https://cdn.skypack.dev/restructure@3.0.2\";\n\nconst kiwiSchema = compileSchema(parseSchema(`\nenum Action {\n  top = 0;\n  left = 1;\n  right = 2;\n  bottom = 3;\n}\n\nstruct Actions {\n  float x;\n  float y;\n  float dy;\n  Action[] actions;\n  bool isGrounded;\n  bool isDead;\n}\n\nmessage Example {\n  Actions actions = 1;\n}\n`))\n\nconst data = {\n  actions: {\n    \"$$exome_id\": \"Player-L7PTO5CAS94D6\",\n    \"startX\": 50,\n    \"startY\": 50,\n    \"x\": 70.99915999999992,\n    \"y\": 141.87485000299995,\n    \"dy\": 1.4999399999999743,\n    \"dx\": 0,\n    \"actions\": [\"top\", \"left\"],\n    \"isGrounded\": false,\n    \"isDead\": false,\n    \"score\": 0,\n  },\n};\n\nconst Action = new r.Enum(r.uint8, ['top', 'left', 'right', 'bottom']);\n\nconst Actions = new r.Struct({\n  x: r.float,\n  y: r.float,\n  dy: r.float,\n  actions: new r.Array(Action, r.uint8),\n  isGrounded: new r.Boolean(r.uint32),\n  isDead: new r.Boolean(r.uint32),\n});\n\nconst Example = new r.Struct({\n  actions: Actions,\n});",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "kiwi vs restructure",
+    "id": "PecDPW",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "kiwi.js",
+    "restructure.js"
+  ]
+}
