@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/const-headR-vs-const-headR-SIhyXi",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/const-headR-vs-const-headR-SIhyXi/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c05795f21029c8",
+        "code": "const [headRow, alignmentsRow, ...tbody] = input.trim().split(\"\\n\");\nconst thead = headRow\n    .slice(1, -1)\n    .split(\"|\")\n    .map((col) => col.trim());\n  const alignments = alignmentsRow\n    .slice(1, -1)\n    .split(\"|\")\n    .map((col) => {\n      const trimmedCol = col.trim();\n      if (trimmedCol.startsWith(\":\") && trimmedCol.endsWith(\":\"))\n        return \"center\";\n      if (trimmedCol.endsWith(\":\")) return \"right\";\n      if (trimmedCol.startsWith(\":\")) return \"left\";\n      return \"\";\n    });\n    \n  const body = tbody.map((line) => ({\n          type: \"element\",\n          tagName: \"tr\",\n          children: line\n            .slice(1, -1)\n            .split(\"|\")\n            .map((col, index) => ({\n              type: \"element\",\n              tagName: \"td\",\n              children: [],\n              properties: new Map([[\"align\", `${alignments[index]}`]]),\n            })),\n        }))",
+        "name": "const [headR",
+        "type": 1
+      },
+      {
+        "id": "0.7f16756ae7f248",
+        "code": "const [headRow, alignmentsRow, ...tbody] = input.trim().split(\"\\n\");\nconst thead = headRow\n    .split(\"|\")\n    .filter(c => c)\n    .map((col) => col.trim());\n  const alignments = alignmentsRow\n    .split(\"|\")\n    .filter(c => c)\n    .map((col) => {\n      const trimmedCol = col.trim();\n      if (trimmedCol.startsWith(\":\") && trimmedCol.endsWith(\":\"))\n        return \"center\";\n      if (trimmedCol.endsWith(\":\")) return \"right\";\n      if (trimmedCol.startsWith(\":\")) return \"left\";\n      return \"\";\n    });\n    \n  const body = tbody.map((line) => ({\n          type: \"element\",\n          tagName: \"tr\",\n          children: line\n            .split(\"|\")\n            .filter(c => c)\n            .map((col, index) => ({\n              type: \"element\",\n              tagName: \"td\",\n              children: [],\n              properties: new Map([[\"align\", `${alignments[index]}`]]),\n            })),\n        }))",
+        "name": "const [headR",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f6fe327896acd8",
+      "code": "const input = `\n| title        |  description   |     heading 1 | heading 2              |\n| :----------- | :------------: | ------------: | ---------------------- |\n| left-aligned | center-aligned | right-aligned | default text alignment |\n`",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "const [headR vs const [headR",
+    "id": "SIhyXi",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const [headR.js",
+    "const [headR.js"
+  ]
+}
