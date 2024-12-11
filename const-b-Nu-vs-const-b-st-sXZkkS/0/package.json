@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/const-b-Nu-vs-const-b-st-sXZkkS",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/const-b-Nu-vs-const-b-st-sXZkkS/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.b62c9fa9229e48",
+        "code": "const b = Number(startX !== endX);",
+        "name": "const b = Nu",
+        "type": 1
+      },
+      {
+        "id": "0.43314087591dd",
+        "code": "const b = startX === endX ? 0 : 1;",
+        "name": "const b = st",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.b95d979d0e2cd",
+      "code": "const startX = 69;\nconst endX = 420;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "const b = Nu vs const b = st",
+    "id": "sXZkkS",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "const b = Nu.js",
+    "const b = st.js"
+  ]
+}
