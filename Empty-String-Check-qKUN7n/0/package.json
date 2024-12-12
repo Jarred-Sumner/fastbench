@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/Empty-String-Check-qKUN7n",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Empty-String-Check-qKUN7n/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2ca54a4e07b12",
+        "code": "if (empty.length > 0) {\n  i++;\n}",
+        "name": "Length > 0",
+        "type": 1
+      },
+      {
+        "id": "0.b369371d0e647",
+        "code": "if (empty.length !== 0) {\n  i++;\n}",
+        "name": "Length !== 0",
+        "type": 1
+      },
+      {
+        "id": "0.03da8dc3cf647",
+        "code": "if (empty.length) {\n  i++;\n}",
+        "name": "Length",
+        "type": 1
+      },
+      {
+        "id": "0.91d183ad01a9a",
+        "code": "if (empty) {\n  i++;\n}",
+        "name": "Just String",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.cde158a45ad47",
+      "code": "const empty = \"\";\nlet i = 0;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Empty String Check",
+    "id": "qKUN7n",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Length ! 0.js",
+    "Length !== 0.js",
+    "Length.js",
+    "Just String.js"
+  ]
+}
