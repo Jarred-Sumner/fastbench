@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/Sorting-int-arr-vQD9sg",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Sorting-int-arr-vQD9sg/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c732db50ebf77",
+        "code": "largeArray.sort((a, b) => a - b);",
+        "name": "native sort",
+        "type": 1
+      },
+      {
+        "id": "0.12827e85e110c",
+        "code": "quickSort(largeArray)",
+        "name": "quicksort",
+        "type": 1
+      },
+      {
+        "id": "0.83a8635675864",
+        "code": "mergeSort(largeArray)",
+        "name": "mergesort",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.6c473173effcf",
+      "code": "const largeArray = [...Array(1000000)].map(() => Math.random());\n\nfunction quickSort(arr) {\n  if (arr.length <= 1) {\n    return arr;\n  }\n  const pivot = arr[arr.length - 1];\n  const left = [], right = [];\n  for (let i = 0; i < arr.length - 1; i++) {\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  return quickSort(left).concat(pivot, quickSort(right));\n}\n\nfunction mergeSort(arr) {\n  if (arr.length <= 1) {\n    return arr;\n  }\n  const mid = Math.floor(arr.length / 2);\n  const left = mergeSort(arr.slice(0, mid));\n  const right = mergeSort(arr.slice(mid));\n  return merge(left, right);\n}\n\nfunction merge(left, right) {\n  const result = [];\n  let i = 0, j = 0;\n  while (i < left.length && j < right.length) {\n    if (left[i] < right[j]) {\n      result.push(left[i++]);\n    } else {\n      result.push(right[j++]);\n    }\n  }\n  return result.concat(left.slice(i)).concat(right.slice(j));\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Sorting int arr",
+    "id": "vQD9sg",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "native sort.js",
+    "quicksort.js",
+    "mergesort.js"
+  ]
+}
