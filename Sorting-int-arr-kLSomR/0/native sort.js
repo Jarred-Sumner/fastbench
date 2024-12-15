@@ -1,0 +1,1 @@
+largeArray.sort((a, b) => a - b);
