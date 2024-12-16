@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/for-i-vs-for-of-d8edTx",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/for-i-vs-for-of-d8edTx/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.02f6bcb6fdf0e",
+        "code": "for (let i = 0; i < jsonc.length; i++) {\n  const char = jsonc[i];\n  console.log(char);\n}",
+        "name": "for i",
+        "type": 1
+      },
+      {
+        "id": "0.b69017d5bd242",
+        "code": "for (const char of jsonc) {\n  console.log(char);\n}",
+        "name": "for of",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.f6e346850b6ff",
+      "code": "const jsonc = `\n{\n\t\"glossary\": {\n\t\t\"title\": \"example glossary\",\n\t\t\"GlossDiv\": {\n\t\t\t\"title\": \"S\",\n\t\t\t\"GlossList\": {\n\t\t\t\t\"GlossEntry\": {\n\t\t\t\t\t\"ID\": \"SGML\",\n\t\t\t\t\t\"SortAs\": \"SGML\",\n\t\t\t\t\t\"GlossTerm\": \"Standard Generalized Markup Language\",\n\t\t\t\t\t\"Acronym\": \"SGML\",\n\t\t\t\t\t\"Abbrev\": \"ISO 8879:1986\",\n\t\t\t\t\t\"GlossDef\": {\n\t\t\t\t\t\t\"para\": \"A meta-markup language, used to create markup languages such as DocBook.\", /* lets gooooo */\n\t\t\t\t\t\t\"GlossSeeAlso\": [\n\t\t\t\t\t\t\t\"GML\",\n\t\t\t\t\t\t\t\"XML\"\n\t\t\t\t\t\t], // test\n\t\t\t\t\t},\n\t\t\t\t\t\"GlossSee\": \"markup\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}`;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "for i vs for of",
+    "id": "d8edTx",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "for i.js",
+    "for of.js"
+  ]
+}
