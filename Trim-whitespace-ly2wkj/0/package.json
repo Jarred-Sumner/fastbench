@@ -1,0 +1,57 @@
+{
+  "name": "@fastbench/Trim-whitespace-ly2wkj",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Trim-whitespace-ly2wkj/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.0740a5a3bc803",
+        "code": "whitespace.trim();",
+        "name": "trim",
+        "type": 1
+      },
+      {
+        "id": "0.86338999e200a",
+        "code": "whitespace.trimEnd();",
+        "name": "trimEnd",
+        "type": 1
+      },
+      {
+        "id": "0.0151a36565d87",
+        "code": "whitespace.trimStart();",
+        "name": "trimStart",
+        "type": 1
+      },
+      {
+        "id": "0.10290cebf5cad",
+        "code": "whitespace.trimLeft();",
+        "name": "trimLeft",
+        "type": 1
+      },
+      {
+        "id": "0.873939b2a92e9",
+        "code": "whitespace.trimRight();",
+        "name": "trimRight",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.207d75421c33c",
+      "code": "const whitespace = ` `;",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Trim whitespace",
+    "id": "ly2wkj",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "trim.js",
+    "trimEnd.js",
+    "trimStart.js",
+    "trimLeft.js",
+    "trimRight.js"
+  ]
+}
