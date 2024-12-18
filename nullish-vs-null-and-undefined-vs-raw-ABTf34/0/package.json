@@ -1,0 +1,43 @@
+{
+  "name": "@fastbench/nullish-vs-null-and-undefined-vs-raw-ABTf34",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/nullish-vs-null-and-undefined-vs-raw-ABTf34/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.2d7e6d1e3219c",
+        "code": "a == null && b === c",
+        "name": "nullish",
+        "type": 1
+      },
+      {
+        "id": "0.315c0f554140d",
+        "code": "(a === null || a === undefined) && b === c",
+        "name": "null & undefined",
+        "type": 1
+      },
+      {
+        "id": "0.1c885b1cbd6f4",
+        "code": "b === c",
+        "name": "raw",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.47f794b7abf1c",
+      "code": "const a = null\nconst b = undefined\nconst c = {}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "nullish vs null & undefined vs raw",
+    "id": "ABTf34",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "nullish.js",
+    "null & undefined.js",
+    "raw.js"
+  ]
+}
