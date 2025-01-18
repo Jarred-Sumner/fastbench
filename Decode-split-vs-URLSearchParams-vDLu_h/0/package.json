@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/Decode-split-vs-URLSearchParams-vDLu_h",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/Decode-split-vs-URLSearchParams-vDLu_h/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.c7394a32e912d",
+        "code": "const search = new Map();\n\ndecodeURIComponent(body).split('&').forEach(i => {\n  const [key, value] = i.split('=');\n  search.set(key, value);\n});",
+        "name": "Decode, split",
+        "type": 1
+      },
+      {
+        "id": "0.cc3fede5ef94e",
+        "code": "const search = new URLSearchParams(body);",
+        "name": "URLSearchParams",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.83c9c5119ecee",
+      "code": "const body = \"First+name=Mark&Last+name=Spasov&Email=m.spasov%40awakening.bg&Phone=0896268320&form_id=60e1104&form_name=Visionary+nights\";",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "Decode, split vs URLSearchParams",
+    "id": "vDLu_h",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "Decode, split.js",
+    "URLSearchParams.js"
+  ]
+}
