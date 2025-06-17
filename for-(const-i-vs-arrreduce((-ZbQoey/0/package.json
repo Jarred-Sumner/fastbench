@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/for-(const-i-vs-arrreduce((-ZbQoey",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/for-(const-i-vs-arrreduce((-ZbQoey/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.3a2de546ba38f",
+        "code": "for (const index of arr) {\n  newArr.push(index);\n}",
+        "name": "for (const i",
+        "type": 1
+      },
+      {
+        "id": "0.20fdc65783329",
+        "code": "arr.reduce((acc, index) => newArr.concat(index))",
+        "name": "arr.reduce((",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.fc730fcd464378",
+      "code": "const arr = [1, 2, 3, 4, 5];\nlet newArr = [];",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "for (const i vs arr.reduce((",
+    "id": "ZbQoey",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "for (const i.js",
+    "arrreduce((.js"
+  ]
+}
