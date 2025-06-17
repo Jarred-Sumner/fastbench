@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/string-+-string-vs-template-literal-Dr-Uyy",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/string-+-string-vs-template-literal-Dr-Uyy/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.ca4d983c88ce4",
+        "code": "(path || 'data') + '.' + name",
+        "name": "string + string",
+        "type": 1
+      },
+      {
+        "id": "0.6e561225ba73a",
+        "code": "`${path || 'data'}.${name}`",
+        "name": "template literal",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.1149c76aa43ec8",
+      "code": "const path = 'hello';\nconst name = 'world';",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "string + string vs template literal",
+    "id": "Dr-Uyy",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "string + string.js",
+    "template literal.js"
+  ]
+}
