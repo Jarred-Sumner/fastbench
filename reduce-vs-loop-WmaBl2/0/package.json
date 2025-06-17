@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/reduce-vs-loop-WmaBl2",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/reduce-vs-loop-WmaBl2/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.a40ae971db847",
+        "code": "const validations = foundRules.reduce(\n  (acc, rule) => acc.concat(rule.validations),\n  [],\n);",
+        "name": "reduce",
+        "type": 1
+      },
+      {
+        "id": "0.22a2065b874988",
+        "code": "const validations = [];\nfor (const rule of foundRules) {\n  validations.push(...rule.validations);\n}",
+        "name": "loop",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.726a57e985f738",
+      "code": "const foundRules = new Array(1000).fill(null).map(() => ({\n  validations: [\n    {rule:\"required\", args: []}\n  ]\n}))",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "reduce vs loop",
+    "id": "WmaBl2",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "reduce.js",
+    "loop.js"
+  ]
+}
