@@ -1,0 +1,1 @@
+arr.reduce((acc, index) => newArr.concat(index))
