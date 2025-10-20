@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/template-vs-createElement-GSLgWo",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/template-vs-createElement-GSLgWo/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.fe70c64046b57",
+        "code": "// h1Template ??= template(`<h1></h1>`);\nconst h1 = h1Template();",
+        "name": "template",
+        "type": 1
+      },
+      {
+        "id": "0.8794fda389a8a",
+        "code": "const h1 = document.createElement(\"h1\");",
+        "name": "createElement",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.4b855a64c2baa8",
+      "code": "function template(html) {\n  let node;\n  const create = () => {\n    const t = document.createElement('template')\n    t.innerHTML = html\n    return t.content.firstChild\n  }\n  return () => (node || (node = create())).cloneNode(true);\n}\nlet h1Template= template(`<h1></h1>`);",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "template vs createElement",
+    "id": "GSLgWo",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "template.js",
+    "createElement.js"
+  ]
+}
