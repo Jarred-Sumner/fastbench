@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/create()-vs-clone()-vs-template()-a-dYei",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/create()-vs-clone()-vs-template()-a-dYei/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.d4c0c85703062",
+        "code": "create()",
+        "name": "create()",
+        "type": 1
+      },
+      {
+        "id": "0.d08531ed6d63d8",
+        "code": "clone()",
+        "name": "clone()",
+        "type": 1
+      },
+      {
+        "id": "0.4e852b4d7c01a8",
+        "code": "template1()",
+        "name": "template1()",
+        "type": 1
+      },
+      {
+        "id": "0.b8cc7e59ba61",
+        "code": "template2()",
+        "name": "template2()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.24a3c441cc7fd8",
+      "code": "function create() {\n  const el = document.createElement(\"div\")\n  el.style.backgroundColor = \"red\"\n  el.innerText = \"test\"\n  return el\n}\n\nconst tmp = document.createElement(\"div\")\nfunction clone() {\n  const el = tmp.cloneNode()\n  el.style.backgroundColor = \"red\"\n  el.innerText = \"test\"\n  return el\n}\n\nfunction t(html) {\n  let node;\n  const create = () => {\n    const t = document.createElement('template')\n    t.innerHTML = html\n    return t.content.firstChild\n  }\n  return () => (node || (node = create())).cloneNode(true);\n}\n\nconst tp1 = t(\"<div style='background-color:red'>test</div>\");\nfunction template1() {\n  const el = tp1()\n  // el.style.backgroundColor = \"red\"\n  // el.innerText = \"test\"\n  return el\n}\n\nconst tp2 = t(\"<div></div>\");\nfunction template2() {\n  const el = tp2()\n  el.style.backgroundColor = \"red\"\n  el.innerText = \"test\"\n  return el\n}\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "create() vs clone() vs template()",
+    "id": "a-dYei",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "create().js",
+    "clone().js",
+    "template1().js",
+    "template2().js"
+  ]
+}
