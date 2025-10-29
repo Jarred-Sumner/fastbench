@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/el()-vs-object()-JG4FbX",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/el()-vs-object()-JG4FbX/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.5b9bbe72a3ee28",
+        "code": "string()",
+        "name": "string()",
+        "type": 1
+      },
+      {
+        "id": "0.3fff4ea5e25",
+        "code": "object()",
+        "name": "object()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.2a978e9de698e8",
+      "code": "function string() {\n  const el = document.createElement(\"div\");\n  el.style = \"background-color:red\"\n}\n\nfunction object() {\n  const el = document.createElement(\"div\");\n  el.style.backgroundColor = \"red\"\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "el() vs object()",
+    "id": "JG4FbX",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "string().js",
+    "object().js"
+  ]
+}
