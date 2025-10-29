@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/el()-vs-object()-E1aK70",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/el()-vs-object()-E1aK70/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.5b9bbe72a3ee28",
+        "code": "string()",
+        "name": "string()",
+        "type": 1
+      },
+      {
+        "id": "0.3fff4ea5e25",
+        "code": "object()",
+        "name": "object()",
+        "type": 1
+      },
+      {
+        "id": "0.bdd4adc741c94",
+        "code": "assign()",
+        "name": "assign()",
+        "type": 1
+      },
+      {
+        "id": "0.23f344723fe588",
+        "code": "attribute()",
+        "name": "attribute()",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.2a978e9de698e8",
+      "code": "function string() {\n  const el = document.createElement(\"div\");\n  el.style = \"background-color:red;color:orange;width:100px;\"\n}\n\nfunction attribute() {\n  const el = document.createElement(\"div\");\n  el.setAttribute(\"style\", \"background-color:red;color:orange;width:100px;\");\n}\n\nfunction object() {\n  const el = document.createElement(\"div\");\n  el.style.backgroundColor = \"red\";\n  el.style.color = \"orange\";\n  el.style.width = \"100px\";\n}\n\nfunction assign() {\n  const el = document.createElement(\"div\");\n  Object.assign(el.style, {\n    backgroundColor: \"red\",\n    color: \"orange\",\n    width: \"100px\",\n  })\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "el() vs object()",
+    "id": "E1aK70",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "string().js",
+    "object().js",
+    "assign().js",
+    "attribute().js"
+  ]
+}
