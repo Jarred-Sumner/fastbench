@@ -1,0 +1,50 @@
+{
+  "name": "@fastbench/set-props-immediately-vs-adjust-props-afterwards-7z5ezJ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/set-props-immediately-vs-adjust-props-afterwards-7z5ezJ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.6e2cbc6a467708",
+        "code": "// A: Create 1000 elements; set props immediately after each creation; append via fragment\nresetContainer();\n\nconst COUNT = 1000;\nconst frag = document.createDocumentFragment();\n\nfor (let i = 0; i < COUNT; i++) {\n  const el = document.createElement('div');\n  applyProps(el, PROPS); // adjust props right after creation\n  // Add a few attribute tweaks to simulate typical post-creation adjustments\n  el.setAttribute('data-index', String(i));\n  frag.appendChild(el);\n}\n\ncontainer.appendChild(frag);\n\n// Return number of children to confirm work done\ncontainer.childElementCount\n",
+        "name": "set props immediately",
+        "type": 1
+      },
+      {
+        "id": "0.b98df5be933998",
+        "code": "// B: Create 1000 elements first; then adjust props afterwards; append via fragment\nresetContainer();\n\nconst COUNT = 1000;\nconst elements = new Array(COUNT);\nconst frag = document.createDocumentFragment();\n\n// Phase 1: create elements only\nfor (let i = 0; i < COUNT; i++) {\n  elements[i] = document.createElement('div');\n}\n\n// Phase 2: adjust props for all elements\nfor (let i = 0; i < COUNT; i++) {\n  const el = elements[i];\n  applyProps(el, PROPS);\n  el.setAttribute('data-index', String(i));\n  frag.appendChild(el);\n}\n\ncontainer.appendChild(frag);\n\n// Return number of children to confirm work done\ncontainer.childElementCount\n",
+        "name": "adjust props afterwards",
+        "type": 1
+      },
+      {
+        "id": "0.7e3ab39e5269d8",
+        "code": "// C: Build HTML string once and insert in a single operation\nresetContainer();\n\nconst COUNT = 1000;\nlet html = '';\nfor (let i = 0; i < COUNT; i++) {\n  // Pre-encoded props inline to avoid extra DOM API calls\n  // Note: data-* and aria-* attributes are fine to inline\n  html += `<div class=\"item\" title=\"benchmark item\" aria-label=\"hello\" data-role=\"test\" data-index=\"${i}\">Hello</div>`;\n}\n\n// Use a temporary offscreen container to avoid layout cost\nconst tmp = document.createElement('div');\ntmp.style.position = 'fixed';\ntmp.style.left = '-9999px';\ntmp.innerHTML = html;\n\n// Move children to a fragment, then append once\nconst frag = document.createDocumentFragment();\nwhile (tmp.firstChild) frag.appendChild(tmp.firstChild);\ncontainer.appendChild(frag);\n\ncontainer.childElementCount\n",
+        "name": "html",
+        "type": 1
+      },
+      {
+        "id": "0.8e20073ea62018",
+        "code": "resetContainer();\n\nconst COUNT = 1000;\nconst template = document.createElement('div');\n\nconst frag = document.createDocumentFragment();\nfor (let i = 0; i < COUNT; i++) {\n  const el = template.cloneNode(false);\nel.className = 'item';\nel.title = 'benchmark item';\nel.setAttribute('aria-label', 'hello');\nel.dataset.role = 'test';\n  el.textContent = 'Hello';\n  el.setAttribute('data-index', String(i));\n  frag.appendChild(el);\n}\n\ncontainer.appendChild(frag);\ncontainer.childElementCount\n",
+        "name": "clone",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.7940b15dc326e8",
+      "code": "// IMPORT: runs before all benchmarks\n// Create a container and helper functions for clean, reproducible DOM work.\n\nconst CONTAINER_ID = 'benchmark-container';\nlet container = document.getElementById(CONTAINER_ID);\n\nif (!container) {\n  container = document.createElement('div');\n  container.id = CONTAINER_ID;\n  // Keep the container offscreen to avoid layout thrash affecting timings\n  container.style.position = 'fixed';\n  container.style.left = '-9999px';\n  container.style.top = '0';\n  document.body.appendChild(container);\n}\n\n// Common props to apply to each element. Keep consistent across both tests.\nconst PROPS = {\n  className: 'item',\n  title: 'benchmark item',\n  dataset: { role: 'test' },\n  textContent: 'Hello',\n  ariaLabel: 'hello',\n};\n\n// Helper to apply props to a newly created element.\n// We avoid style/layout-heavy changes; keep operations comparable and cheap.\nfunction applyProps(el, props) {\n  el.className = props.className;\n  el.title = props.title;\n  el.textContent = props.textContent;\n  el.setAttribute('aria-label', props.ariaLabel);\n  // dataset is slightly different; set explicitly\n  el.dataset.role = props.dataset.role;\n}\n\n// Ensure container is empty at the start of each benchmark run\nfunction resetContainer() {\n  // Fast clear: replace with a fresh element to avoid potential GC impact from innerHTML = ''\n  const fresh = document.createElement('div');\n  fresh.id = CONTAINER_ID;\n  fresh.style.position = container.style.position;\n  fresh.style.left = container.style.left;\n  fresh.style.top = container.style.top;\n  container.replaceWith(fresh);\n  container = fresh;\n}\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "set props immediately vs adjust props afterwards",
+    "id": "7z5ezJ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "set props immediately.js",
+    "adjust props afterwards.js",
+    "html.js",
+    "clone.js"
+  ]
+}
