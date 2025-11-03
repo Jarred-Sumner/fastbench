@@ -1,0 +1,1 @@
+array.map((child) => build(child, parent));
