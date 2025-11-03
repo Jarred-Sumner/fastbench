@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/map-vs-push-A9x2ZQ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/map-vs-push-A9x2ZQ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.507e3e5e44992",
+        "code": "array.map((child) => build(child, parent));",
+        "name": "map",
+        "type": 1
+      },
+      {
+        "id": "0.2a602c8cbc6278",
+        "code": "const out = [];\nfor (const child of array) {\n  const built = build(child, parent);\n  if (Array.isArray(built)) {\n    for (const nested of built) out.push(nested);\n  } else {\n    out.push(built);\n  }\n}",
+        "name": "push",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.60ffa235c31bc",
+      "code": "const array = new Array(1000).fill(null).map((_, index) => [String(index)])\n\nfunction build(a) {return a}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "map vs push",
+    "id": "A9x2ZQ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "map.js",
+    "push.js"
+  ]
+}
