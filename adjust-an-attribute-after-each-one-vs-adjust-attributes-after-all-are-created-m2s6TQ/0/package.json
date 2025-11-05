@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/adjust-an-attribute-after-each-one-vs-adjust-attributes-after-all-are-created-m2s6TQ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/adjust-an-attribute-after-each-one-vs-adjust-attributes-after-all-are-created-m2s6TQ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.5108d8d3dbd178",
+        "code": "// A\n\n// Create 1000 elements, append to container, and adjust an attribute after each one.\nresetBenchContainer();\nconst container = getBenchContainer();\nconst COUNT = 1000;\n\n// Use a DocumentFragment to minimize reflow during appends\nconst frag = document.createDocumentFragment();\n\nfor (let i = 0; i < COUNT; i++) {\n  const el = document.createElement('div');\n  el.textContent = 'item ' + i;\n  // Append first\n  frag.appendChild(el);\n  // Adjust attribute after creation (per-element)\n  // Using setAttribute touches the attribute map; also flips a class to simulate common work\n  el.setAttribute('data-ready', '1');\n  el.classList.toggle('flag', (i % 2) === 0);\n}\n\ncontainer.appendChild(frag);\n",
+        "name": "adjust an attribute after each one",
+        "type": 1
+      },
+      {
+        "id": "0.525f62e2977de",
+        "code": "// B\n\n// Create 1000 elements, append to container, and adjust attributes after all are created.\nresetBenchContainer();\nconst container = getBenchContainer();\nconst COUNT = 1000;\n\nconst frag = document.createDocumentFragment();\nconst elements = new Array(COUNT);\n\nfor (let i = 0; i < COUNT; i++) {\n  const el = document.createElement('div');\n  el.textContent = 'item ' + i;\n  frag.appendChild(el);\n  elements[i] = el;\n}\n\ncontainer.appendChild(frag);\n\n// Batch adjust attributes after all are in the DOM\nfor (let i = 0; i < COUNT; i++) {\n  const el = elements[i];\n  el.setAttribute('data-ready', '1');\n  el.classList.toggle('flag', (i % 2) === 0);\n}\n",
+        "name": "adjust attributes after all are created",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.0c4b221e39332",
+      "code": "function getBenchContainer() {\n  let container = document.getElementById(\"aaa\");\n  if (!container) {\n    container = document.createElement('div');\n    container.id = \"aaa\";\n    // keep out of view to avoid layout work\n    container.style.cssText = 'position:fixed;left:-9999px;top:-9999px;';\n    document.body.appendChild(container);\n  }\n  return container;\n};\n\nfunction resetBenchContainer() {\n  const container = getBenchContainer();\n  // Remove all children efficiently\n  while (container.firstChild) container.removeChild(container.firstChild);\n};\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "adjust an attribute after each one vs adjust attributes after all are created",
+    "id": "m2s6TQ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "adjust an attribute after each one.js",
+    "adjust attributes after all are created.js"
+  ]
+}
