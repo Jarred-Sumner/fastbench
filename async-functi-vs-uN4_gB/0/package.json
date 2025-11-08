@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/async-functi-vs-uN4_gB",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/async-functi-vs-uN4_gB/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.fef8bf4944ba8",
+        "code": "(async (msg) => { console.log(msg) })(\"olá\")\n",
+        "name": "async functi",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.660d8ebe1ff6b",
+      "code": "\"olá\")\n})()async function ola(msg) {\n  console.log(msg)\n}\n\n(async () => {\n  await ola(\n\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "async functi vs ",
+    "id": "uN4_gB",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "async functi.js"
+  ]
+}
