@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/A-vs-B-WgvwuD",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/A-vs-B-WgvwuD/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.b2fcb7925aa6d8",
+        "code": "const el = document.createElement(\"div\");\nel.innerHTML = \"Hello world!\";\n\nsetProps1(el, {\n  id: \"foo\",\n  \"data-custom\": \"test\",\n  style: {\n    display: \"block\",\n    color: \"orange\",\n    background: \"white\",\n  },\n  onclick(e) {\n    console.log(\"click\", e);\n  },\n});\n\nsetProps1(el, {\n  id: undefined,\n  \"data-custom\": \"test2\",\n  style: {\n    display: \"block\",\n    color: \"red\",\n    background: undefined,\n  },\n  onclick(e) {\n    console.log(\"click\", e);\n  },\n});",
+        "name": "A",
+        "type": 1
+      },
+      {
+        "id": "0.c04f60fe2e08a",
+        "code": "const el = document.createElement(\"div\");\nel.innerHTML = \"Hello world!\";\n\nsetProps2(el, {\n  id: \"foo\",\n  \"data-custom\": \"test\",\n  style: {\n    display: \"block\",\n    color: \"orange\",\n    background: \"white\",\n  },\n  onclick(e) {\n    console.log(\"click\", e);\n  },\n});\n\nsetProps2(el, {\n  id: undefined,\n  \"data-custom\": \"test2\",\n  style: {\n    display: \"block\",\n    color: \"red\",\n    background: undefined,\n  },\n  onclick(e) {\n    console.log(\"click\", e);\n  },\n});",
+        "name": "B",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.53f1144285f488",
+      "code": "function setProps1(el, propsNew) {\n  const propsOld = (el).__props || ((el).__props = {});\n  for (const k in propsOld) {\n    if (!(k in propsNew)) {\n      if (k === \"style\") el.style.cssText = \"\";\n      else if (k.startsWith(\"on\")) el[k.toLowerCase()] = null;\n      else if (k === \"class\") el.removeAttribute(\"class\");\n      else el.removeAttribute(k);\n    }\n  }\n  for (const k in propsNew) {\n    const vNew = propsNew[k];\n    const vOld = propsOld[k];\n    if (vNew === vOld) continue;\n    propsOld[k] = vNew;\n    if (k === \"style\" && typeof vNew === \"object\" && vNew) {\n      const s = el.style;\n      for (const sk in { ...vOld, ...vNew }) {\n        if (!(sk in vNew) || vNew[sk] === undefined) s[sk] = \"\";\n        else if (!vOld || vOld[sk] !== vNew[sk]) s[sk] = vNew[sk];\n      }\n    } else if (k === \"class\") el.className = vNew ?? \"\";\n    else if (k.startsWith(\"on\")) el[k.toLowerCase()] = typeof vNew === \"function\" ? vNew : null;\n    else if (vNew === undefined) el.removeAttribute(k);\n    else el.setAttribute(k, vNew);\n  }\n}\n\nfunction setProps2(el, props) {\n  const data = (el).__props ||= {};\n  const style = el.style;\n  const seen = new Set(Object.keys(props));\n\n  // Set/update new/changed props\n  for (const k in props) {\n    const v = props[k], prev = data[k];\n    if (v === prev) continue;\n    data[k] = v;\n\n    if (k === \"style\" && v && typeof v === \"object\") {\n      const o = prev || {}, n = v;\n      for (const s in o) if (!(s in n)) style.removeProperty(s);\n      for (const s in n) if (o[s] !== n[s]) style.setProperty(s, n[s]);\n    } else if (k === \"class\") el.className = v ?? \"\";\n    else if (k.startsWith(\"on\")) el[k.toLowerCase()] = typeof v === \"function\" ? v : null;\n    else if (v === undefined) el.removeAttribute(k);\n    else el.setAttribute(k, v);\n  }\n\n  // Remove deleted props\n  for (const k in data) {\n    if (seen.has(k)) continue;\n    if (k === \"style\") style.cssText = \"\";\n    else if (k.startsWith(\"on\")) el[k.toLowerCase()] = null;\n    else if (k === \"class\") el.className = \"\";\n    else el.removeAttribute(k);\n    delete data[k];\n  }\n}",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "A vs B",
+    "id": "WgvwuD",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "A.js",
+    "B.js"
+  ]
+}
