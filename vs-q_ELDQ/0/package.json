@@ -1,0 +1,36 @@
+{
+  "name": "@fastbench/vs-q_ELDQ",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/vs-q_ELDQ/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.602abe1c557dd",
+        "code": "~['number', 'string'].indexOf(typeof a)\n",
+        "name": "~['number', ",
+        "type": 1
+      },
+      {
+        "id": "0.c2179b7cab6bb8",
+        "code": "~[Number, String].indexOf(a.constructor)",
+        "name": "~[Number, St",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.6ac74248d698f",
+      "code": "const a = \"a\"\nconst b = 2\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": " vs ",
+    "id": "q_ELDQ",
+    "version": 0,
+    "workerType": 1,
+    "transform": 0
+  },
+  "files": [
+    "~['number', .js",
+    "~[Number, St.js"
+  ]
+}
