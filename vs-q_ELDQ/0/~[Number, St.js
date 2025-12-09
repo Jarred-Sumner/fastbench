@@ -1,0 +1,1 @@
+~[Number, String].indexOf(a.constructor)
