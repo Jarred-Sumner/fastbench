@@ -1,0 +1,29 @@
+{
+  "name": "@fastbench/consolelog(-A7fGFE",
+  "version": "0.0.0",
+  "url": "https://fastbench.dev/consolelog(-A7fGFE/0",
+  "fastbench": {
+    "snippets": [
+      {
+        "id": "0.3476bfba9472f8",
+        "code": "console.log(\"hello world\")",
+        "name": "console.log(",
+        "type": 1
+      }
+    ],
+    "shared": {
+      "id": "0.5e78a540587a98",
+      "code": "import React from \"https://cdn.skypack.dev/react@17.0.1\";\n",
+      "name": "shared",
+      "type": 0
+    },
+    "name": "console.log(",
+    "id": "A7fGFE",
+    "version": 0,
+    "workerType": 1,
+    "transform": 1
+  },
+  "files": [
+    "consolelog(.js"
+  ]
+}
